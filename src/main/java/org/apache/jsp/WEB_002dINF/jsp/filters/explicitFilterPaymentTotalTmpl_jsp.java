@@ -155,19 +155,13 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
       out.write('\n');
       if (_jspx_meth_c_005fset_005f34(_jspx_page_context))
         return;
-      out.write('\n');
-      if (_jspx_meth_c_005fset_005f35(_jspx_page_context))
-        return;
-      out.write('\n');
+      out.write("\n<div class=\"input-line\">\n  ");
       if (_jspx_meth_c_005fif_005f6(_jspx_page_context))
         return;
-      out.write("\n<div class=\"input-line\">\n  ");
-      if (_jspx_meth_c_005fif_005f7(_jspx_page_context))
-        return;
       out.write('\n');
       out.write(' ');
       out.write(' ');
-      if (_jspx_meth_c_005fif_005f8(_jspx_page_context))
+      if (_jspx_meth_c_005fif_005f7(_jspx_page_context))
         return;
       out.write("\n</div>\n");
     } catch (java.lang.Throwable t) {
@@ -284,7 +278,7 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(7,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f4.setVar("fltrAppearGteq30");
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(7,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f4.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(7,0) '<= 30%'",_jsp_getExpressionFactory().createValueExpression("<= 30%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f4.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(7,0) '&gt;= 30%'",_jsp_getExpressionFactory().createValueExpression("&gt;= 30%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f4 = _jspx_th_c_005fset_005f4.doStartTag();
     if (_jspx_th_c_005fset_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f4);
@@ -431,7 +425,7 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(14,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f9.setVar("fltrAppearGteq50");
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(14,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f9.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(14,0) '<= 50%'",_jsp_getExpressionFactory().createValueExpression("<= 50%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f9.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(14,0) '&gt;= 50%'",_jsp_getExpressionFactory().createValueExpression("&gt;= 50%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f9 = _jspx_th_c_005fset_005f9.doStartTag();
     if (_jspx_th_c_005fset_005f9.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f9);
@@ -578,7 +572,7 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(21,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f14.setVar("fltrAppearGteq100");
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(21,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f14.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(21,0) '<= 100%'",_jsp_getExpressionFactory().createValueExpression("<= 100%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f14.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(21,0) '&gt;= 100%'",_jsp_getExpressionFactory().createValueExpression("&gt;= 100%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f14 = _jspx_th_c_005fset_005f14.doStartTag();
     if (_jspx_th_c_005fset_005f14.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f14);
@@ -725,7 +719,7 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(28,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f19.setVar("fltrAppearLt30");
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(28,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f19.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(28,0) '< 30%'",_jsp_getExpressionFactory().createValueExpression("< 30%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f19.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(28,0) '&lt; 30%'",_jsp_getExpressionFactory().createValueExpression("&lt; 30%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f19 = _jspx_th_c_005fset_005f19.doStartTag();
     if (_jspx_th_c_005fset_005f19.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f19);
@@ -872,7 +866,7 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(35,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f24.setVar("fltrAppearLt50");
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(35,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f24.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(35,0) '< 50%'",_jsp_getExpressionFactory().createValueExpression("< 50%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f24.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(35,0) '&lt; 50%'",_jsp_getExpressionFactory().createValueExpression("&lt; 50%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f24 = _jspx_th_c_005fset_005f24.doStartTag();
     if (_jspx_th_c_005fset_005f24.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f24);
@@ -1019,7 +1013,7 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(42,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f29.setVar("fltrAppearLt100");
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(42,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f29.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(42,0) '< 100%'",_jsp_getExpressionFactory().createValueExpression("< 100%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f29.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(42,0) '&lt; 100%'",_jsp_getExpressionFactory().createValueExpression("&lt; 100%",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f29 = _jspx_th_c_005fset_005f29.doStartTag();
     if (_jspx_th_c_005fset_005f29.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f29);
@@ -1166,34 +1160,13 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(49,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f34.setVar("fltrAppearPlT");
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(49,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f34.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(49,0) '< total'",_jsp_getExpressionFactory().createValueExpression("< total",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f34.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(49,0) '&lt; total'",_jsp_getExpressionFactory().createValueExpression("&lt; total",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f34 = _jspx_th_c_005fset_005f34.doStartTag();
     if (_jspx_th_c_005fset_005f34.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f34);
       return true;
     }
     _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f34);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005fset_005f35(javax.servlet.jsp.PageContext _jspx_page_context)
-          throws java.lang.Throwable {
-    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
-    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
-    //  c:set
-    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f35 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
-    _jspx_th_c_005fset_005f35.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fset_005f35.setParent(null);
-    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(50,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f35.setVar("valPlT");
-    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(50,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f35.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(50,0) 'PAYMENTTOTAL lt ${docName}.ITSTOTAL'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"PAYMENTTOTAL lt ${docName}.ITSTOTAL",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    int _jspx_eval_c_005fset_005f35 = _jspx_th_c_005fset_005f35.doStartTag();
-    if (_jspx_th_c_005fset_005f35.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f35);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f35);
     return false;
   }
 
@@ -1205,27 +1178,22 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f6 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f6.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f6.setParent(null);
-    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(51,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f6.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${parValue eq valPlT}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(51,2) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fif_005f6.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${filterMap[forcedFor].contains(fieldName)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f6 = _jspx_th_c_005fif_005f6.doStartTag();
     if (_jspx_eval_c_005fif_005f6 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write('\n');
-        out.write(' ');
-        out.write(' ');
-        if (_jspx_meth_c_005fset_005f36(_jspx_th_c_005fif_005f6, _jspx_page_context))
-          return true;
-        out.write('\n');
-        out.write(' ');
-        out.write(' ');
-        if (_jspx_meth_c_005fset_005f37(_jspx_th_c_005fif_005f6, _jspx_page_context))
-          return true;
-        out.write('\n');
-        out.write(' ');
-        out.write(' ');
-        if (_jspx_meth_c_005fset_005f38(_jspx_th_c_005fif_005f6, _jspx_page_context))
-          return true;
-        out.write('\n');
+        out.write("\n    <b>");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"forced\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("</b>\n    <label>");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(fieldName)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("</label>\n    ");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fltrAppear}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("\n    <input type=\"hidden\" name=\"");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${parVal}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("\" value=\"");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${parValue}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("\">\n  ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f6.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -1239,69 +1207,6 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
     return false;
   }
 
-  private boolean _jspx_meth_c_005fset_005f36(javax.servlet.jsp.tagext.JspTag _jspx_th_c_005fif_005f6, javax.servlet.jsp.PageContext _jspx_page_context)
-          throws java.lang.Throwable {
-    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
-    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
-    //  c:set
-    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f36 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
-    _jspx_th_c_005fset_005f36.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fset_005f36.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f6);
-    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(52,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f36.setVar("selectedPLtT");
-    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(52,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f36.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(52,2) 'selected'",_jsp_getExpressionFactory().createValueExpression("selected",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    int _jspx_eval_c_005fset_005f36 = _jspx_th_c_005fset_005f36.doStartTag();
-    if (_jspx_th_c_005fset_005f36.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f36);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f36);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005fset_005f37(javax.servlet.jsp.tagext.JspTag _jspx_th_c_005fif_005f6, javax.servlet.jsp.PageContext _jspx_page_context)
-          throws java.lang.Throwable {
-    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
-    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
-    //  c:set
-    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f37 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
-    _jspx_th_c_005fset_005f37.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fset_005f37.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f6);
-    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(53,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f37.setVar("selectedDisabled1");
-    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(53,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f37.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(53,2) ''",_jsp_getExpressionFactory().createValueExpression("",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    int _jspx_eval_c_005fset_005f37 = _jspx_th_c_005fset_005f37.doStartTag();
-    if (_jspx_th_c_005fset_005f37.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f37);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f37);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005fset_005f38(javax.servlet.jsp.tagext.JspTag _jspx_th_c_005fif_005f6, javax.servlet.jsp.PageContext _jspx_page_context)
-          throws java.lang.Throwable {
-    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
-    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
-    //  c:set
-    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f38 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
-    _jspx_th_c_005fset_005f38.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fset_005f38.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f6);
-    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(54,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f38.setVar("fltrAppear");
-    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(54,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f38.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(54,2) '${fltrAppearPlT}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${fltrAppearPlT}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    int _jspx_eval_c_005fset_005f38 = _jspx_th_c_005fset_005f38.doStartTag();
-    if (_jspx_th_c_005fset_005f38.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f38);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f38);
-    return false;
-  }
-
   private boolean _jspx_meth_c_005fif_005f7(javax.servlet.jsp.PageContext _jspx_page_context)
           throws java.lang.Throwable {
     javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
@@ -1311,46 +1216,9 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
     _jspx_th_c_005fif_005f7.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f7.setParent(null);
     // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(57,2) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f7.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${filterMap[forcedFor].contains(fieldName)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f7.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${!filterMap[forcedFor].contains(fieldName)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f7 = _jspx_th_c_005fif_005f7.doStartTag();
     if (_jspx_eval_c_005fif_005f7 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      do {
-        out.write("\n    <b>");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"forced\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</b>\n    <label>");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(fieldName)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</label>\n    ");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fltrAppear}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\n    <input type=\"hidden\" name=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${parVal}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\" value=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${parValue}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\">\n  ");
-        int evalDoAfterBody = _jspx_th_c_005fif_005f7.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-    }
-    if (_jspx_th_c_005fif_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f7);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f7);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005fif_005f8(javax.servlet.jsp.PageContext _jspx_page_context)
-          throws java.lang.Throwable {
-    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
-    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
-    //  c:if
-    org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f8 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
-    _jspx_th_c_005fif_005f8.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fif_005f8.setParent(null);
-    // /WEB-INF/jsp/filters/explicitFilterPaymentTotalTmpl.jsp(63,2) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f8.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${!filterMap[forcedFor].contains(fieldName)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
-    int _jspx_eval_c_005fif_005f8 = _jspx_th_c_005fif_005f8.doStartTag();
-    if (_jspx_eval_c_005fif_005f8 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n    <label for=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${parVal}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -1407,24 +1275,17 @@ public final class explicitFilterPaymentTotalTmpl_jsp extends org.apache.jasper.
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${selectedLt100}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('>');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fltrAppearLt100}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</option>\n      <option value=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${valPlT}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write('"');
-        out.write(' ');
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${selectedPLtT}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write('>');
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fltrAppearPlT}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</option>\n    </select>\n  ");
-        int evalDoAfterBody = _jspx_th_c_005fif_005f8.doAfterBody();
+        int evalDoAfterBody = _jspx_th_c_005fif_005f7.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
       } while (true);
     }
-    if (_jspx_th_c_005fif_005f8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f8);
+    if (_jspx_th_c_005fif_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f7);
       return true;
     }
-    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f8);
+    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f7);
     return false;
   }
 }
