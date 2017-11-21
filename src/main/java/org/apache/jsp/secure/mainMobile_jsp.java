@@ -174,7 +174,7 @@ public final class mainMobile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"srvI18n\").getMsg(\"AccountingEntrys\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n         <a href=\"#\" onclick=\"getHtmlByAjax('GET', 'report/?nmRnd=replicateAccFormJson');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"srvI18n\").getMsg(\"Import_acc_entries\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n         <a href=\"#\" onclick=\"getHtmlByAjax('GET', 'report/?nmRnd=ledgerFormJson');\">");
+      out.write("</a>\n         <a href=\"#\" onclick=\"getHtmlByAjax('GET', 'report/?nmRnd=ledgerFormJson&mobile=mobile/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"srvI18n\").getMsg(\"Ledger\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n         <a href=\"#\" onclick=\"getHtmlByAjax('GET', 'report/?nmRnd=balanceFormJson');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"srvI18n\").getMsg(\"TrialBalance\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
