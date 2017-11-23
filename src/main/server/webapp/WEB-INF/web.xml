@@ -33,7 +33,7 @@
     <load-on-startup>1</load-on-startup>
     <init-param>
       <param-name>factoryAppBeansClass</param-name>
-      <param-value>org.beigesoft.web.factory.FactoryAppBeansSqlite</param-value>
+      <param-value>org.beigesoft.accounting.factory.FactoryAccAppBeansSqlite</param-value>
     </init-param>
     <init-param>
       <param-name>initFactoryClass</param-name>
