@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- Copyright (c) 2015-2017 Beigesoft ™
+ Copyright (c) 2016 Beigesoft ™
  
  Licensed under the GNU General Public License (GPL), Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -1367,6 +1367,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputAccountAsset_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputAccountAsset_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputEnumReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputEnumReadOnly_jsp</servlet-class>
     </servlet>
@@ -1657,6 +1662,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.filters.filterForced_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.filters.filterForced_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.filters.explicitFilterPaymentTotalTmpl_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.filters.explicitFilterPaymentTotalTmpl_jsp</servlet-class>
     </servlet>
@@ -1839,6 +1849,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputProductInProgress_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputProductInProgress_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputAccountAsset_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputAccountAsset_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2129,6 +2144,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.filters.filterCurrency_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.filters.filterCurrency_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.filters.filterForced_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.filters.filterForced_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -3322,6 +3342,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputAccountAsset_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputAccountAsset.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputEnumReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputEnumReadOnly.jsp</url-pattern>
     </servlet-mapping>
@@ -3612,6 +3637,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.filters.filterForced_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/filters/filterForced.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.filters.explicitFilterPaymentTotalTmpl_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/filters/explicitFilterPaymentTotalTmpl.jsp</url-pattern>
     </servlet-mapping>
@@ -3794,6 +3824,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputProductInProgress_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputProductInProgress.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputAccountAsset_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputAccountAsset.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4084,6 +4119,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.filters.filterCurrency_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/filters/filterCurrency.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.filters.filterForced_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/filters/filterForced.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

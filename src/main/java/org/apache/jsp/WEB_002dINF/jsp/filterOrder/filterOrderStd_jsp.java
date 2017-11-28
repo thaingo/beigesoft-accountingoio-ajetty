@@ -328,7 +328,7 @@ public final class filterOrderStd_jsp extends org.apache.jasper.runtime.HttpJspB
     // /WEB-INF/jsp/filterOrder/filterOrderStd.jsp(25,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setVar("entry");
     // /WEB-INF/jsp/filterOrder/filterOrderStd.jsp(25,6) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filterOrder/filterOrderStd.jsp(25,6) '${fieldsForList}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${fieldsForList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/filterOrder/filterOrderStd.jsp(25,6) '${mngUvds.getFieldsSettings().get(classEntity)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${mngUvds.getFieldsSettings().get(classEntity)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/filterOrder/filterOrderStd.jsp(25,6) name = varStatus type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setVarStatus("vs");
     int[] _jspx_push_body_count_c_005fforEach_005f1 = new int[] { 0 };

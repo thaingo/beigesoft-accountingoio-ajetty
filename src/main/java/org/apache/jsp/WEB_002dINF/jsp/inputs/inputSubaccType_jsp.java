@@ -105,7 +105,7 @@ public final class inputSubaccType_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\" onchange=\"inputHasBeenChanged(this);\">\n        ");
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
         return;
-      out.write("\n        <option value=\"null\" ");
+      out.write("\n        <option value=\"\" ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${selectedNothing}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(">-</option>\n        ");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
