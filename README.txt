@@ -9,7 +9,7 @@ To start application:
 1. unpack ZIP.
 2. After installing Java (Oracle) you can run any Java "JAR" file by double click on it.
   Do it with beigesoft-accountingoio-ajetty-jar-with-dependencies.jar.
-  You also can launch "JAR" file from command prompt (terminal) with command:
+  You also can launch "JAR" file from command prompt (power shell, terminal) with command:
   "java -jar beigesoft-accountingoio-ajetty-jar-with-dependencies.jar"
 3. Application menu to start/stop server will be appeared.
 4. Press "Start" button, then wait while server has been started

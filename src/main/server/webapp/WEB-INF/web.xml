@@ -562,6 +562,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickGoodsUom_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickGoodsUom_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickSubacc_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickSubacc_jsp</servlet-class>
     </servlet>
@@ -614,6 +619,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickInvItem_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickInvItem_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickGoods_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickGoods_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1487,6 +1497,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoodsUom_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoodsUom_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDepartmentIdEq1Tst_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDepartmentIdEq1Tst_jsp</servlet-class>
     </servlet>
@@ -1969,6 +1984,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputQuantityChangingCost_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputQuantityChangingCost_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoodsUom_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoodsUom_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2537,6 +2557,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickGoodsUom_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pick/pickGoodsUom.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickSubacc_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/pick/pickSubacc.jsp</url-pattern>
     </servlet-mapping>
@@ -2589,6 +2614,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickInvItem_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/pick/pickInvItem.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickGoods_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pick/pickGoods.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3462,6 +3492,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoodsUom_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputGoodsUom.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDepartmentIdEq1Tst_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputDepartmentIdEq1Tst.jsp</url-pattern>
     </servlet-mapping>
@@ -3944,6 +3979,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputQuantityChangingCost_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputQuantityChangingCost.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoodsUom_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputGoodsUom.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
