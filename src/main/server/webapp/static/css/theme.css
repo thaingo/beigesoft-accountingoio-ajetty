@@ -1,3 +1,13 @@
+.pages {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cat3ml{
+  font-size: larger;
+}
+
 body {
   padding-top: 70px;
   padding-bottom: 30px;

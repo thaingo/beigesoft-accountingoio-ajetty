@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
- * Copyright (c) 2015-2017 Beigesoft ™
+ * Copyright (c) 2016 Beigesoft ™
  *
  * Licensed under the GNU General Public License (GPL), Version 2.0
  * (the "License");
@@ -25,39 +25,14 @@ table, td, th {
   padding-right: 5px;
   padding-left: 5px;
 }
-.customerData {
-  margin-left: 30px;
-}
-.totals {
-  text-align: right;
-}
-.organizationData {
-  text-align: right;
-}
 .title-list {
   font-weight: bold;
   padding-bottom: 5px;
-}
-.doc-title {
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 10px;
 }
 .entity-title {
   font-weight: bold;
   padding-bottom: 10px;
 }
-.debit-credit-th {
-  text-align: center;
-}
-.debit-credit {
-  text-align: right;
-}
-.total {
-  padding-top: 5mm;
-  text-align: right;
-}
-
 /*Mobile:*/
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
