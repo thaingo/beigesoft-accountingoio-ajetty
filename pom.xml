@@ -89,7 +89,7 @@
     <dependency>
       <groupId>com.github.demidenko05</groupId>
       <artifactId>a-jetty-swing</artifactId>
-      <version>1.0.2</version>
+      <version>1.0.3-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.beigesoft</groupId>
@@ -108,7 +108,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>org.beigesoft.ajetty.BootStrapEmbeddedSwing</mainClass>
+              <mainClass>org.beigesoft.ajetty.BootStrapEmbeddedHttpsSwing</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
