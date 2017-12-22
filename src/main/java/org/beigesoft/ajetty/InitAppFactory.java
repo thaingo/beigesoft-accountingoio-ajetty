@@ -20,6 +20,7 @@ import org.beigesoft.delegate.IDelegateExc;
 import org.beigesoft.service.ISrvDatabase;
 import org.beigesoft.orm.service.ASrvOrm;
 import org.beigesoft.web.model.FactoryAndServlet;
+import org.beigesoft.web.service.SrvAddTheFirstUser;
 import org.beigesoft.web.factory.AFactoryAppBeans;
 
 /**
@@ -75,6 +76,9 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
       jdbcUrl = jdbcUrl.replace(ASrvOrm.WORD_CURRENT_PARENT_DIR,
         fcd.getParent() + File.separator);
     }
+    LstnDbChanged<RS> lstnDbChanged = new LstnDbChanged<RS>();
+    lstnDbChanged.setFactoryAndServlet(pFactoryAndServlet);
+    factoryAppBeans.getListenersDbChanged().add(lstnDbChanged);
     factoryAppBeans.setDatabaseName(jdbcUrl);
     String databaseUser = pFactoryAndServlet.getHttpServlet()
       .getInitParameter("databaseUser");
@@ -86,14 +90,18 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
       .setAttribute("srvI18n", factoryAppBeans.lazyGet("ISrvI18n"));
     //to create/initialize database if need:
     factoryAppBeans.lazyGet("ISrvOrm");
+    @SuppressWarnings("unchecked")
+    ISrvDatabase<RS> srvDb = (ISrvDatabase<RS>)
+      factoryAppBeans.lazyGet("ISrvDatabase");
+    SrvAddTheFirstUser<RS> srvAddFiU = new SrvAddTheFirstUser<RS>();
+    srvAddFiU.setSrvDatabase(srvDb);
+    pFactoryAndServlet.getHttpServlet().getServletContext()
+      .setAttribute("srvAddTheFirstUser", srvAddFiU);
     DataBaseLoginService srvDbl = (DataBaseLoginService)
       pFactoryAndServlet.getHttpServlet().getServletContext()
         .getAttribute("JDBCRealm");
     if (srvDbl != null) {
       SrvGetUserCredentials<RS> srvCr = new SrvGetUserCredentials<RS>();
-      @SuppressWarnings("unchecked")
-      ISrvDatabase<RS> srvDb = (ISrvDatabase<RS>)
-        factoryAppBeans.lazyGet("ISrvDatabase");
       srvCr.setSrvDatabase(srvDb);
       srvDbl.setSrvGetUserCredentials(srvCr);
     }

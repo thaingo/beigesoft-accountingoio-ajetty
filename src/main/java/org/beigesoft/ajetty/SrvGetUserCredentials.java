@@ -44,6 +44,10 @@ public class SrvGetUserCredentials<RS> implements ISrvGetUserCredentials {
     UserCredentials result = null;
     IRecordSet<RS> recordSet = null;
     try {
+      this.srvDatabase.setIsAutocommit(false);
+      this.srvDatabase.
+        setTransactionIsolation(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
+      this.srvDatabase.beginTransaction();
       recordSet = getSrvDatabase().retrieveRecords(query);
       if (recordSet.moveToFirst()) {
         ArrayList<String> roles = new ArrayList<String>();
@@ -57,7 +61,12 @@ public class SrvGetUserCredentials<RS> implements ISrvGetUserCredentials {
         } while (recordSet.moveToNext());
         result.setUserRoles(roles.toArray(new String[roles.size()]));
       }
+      this.srvDatabase.commitTransaction();
+    } catch (Exception ex) {
+      this.srvDatabase.rollBackTransaction();
+      throw ex;
     } finally {
+      this.srvDatabase.releaseResources();
       if (recordSet != null) {
         recordSet.close();
       }
@@ -78,6 +87,10 @@ public class SrvGetUserCredentials<RS> implements ISrvGetUserCredentials {
     ArrayList<UserCredentials> result = null;
     IRecordSet<RS> recordSet = null;
     try {
+      this.srvDatabase.setIsAutocommit(false);
+      this.srvDatabase.
+        setTransactionIsolation(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
+      this.srvDatabase.beginTransaction();
       recordSet = getSrvDatabase().retrieveRecords(query);
       if (recordSet.moveToFirst()) {
         result = new ArrayList<UserCredentials>();
@@ -102,7 +115,12 @@ public class SrvGetUserCredentials<RS> implements ISrvGetUserCredentials {
         } while (recordSet.moveToNext());
         uc.setUserRoles(roles.toArray(new String[roles.size()]));
       }
+      this.srvDatabase.commitTransaction();
+    } catch (Exception ex) {
+      this.srvDatabase.rollBackTransaction();
+      throw ex;
     } finally {
+      this.srvDatabase.releaseResources();
       if (recordSet != null) {
         recordSet.close();
       }
