@@ -73,6 +73,71 @@
         </plugins>
       </build>
     </profile>
+    <profile>
+      <id>check</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>2.17</version>
+            <executions>
+              <execution>
+              <id>checkstyle</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>check</goal>
+              </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
+              <excludes>**/R.java,**/BuildConfig.java,**/apache/**,**/eclipse/**</excludes>
+            </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>findbugs-maven-plugin</artifactId>
+            <version>3.0.3</version>
+            <configuration>
+              <excludeFilterFile>findbug-exclude.xml</excludeFilterFile>
+            </configuration>
+            <executions>
+              <execution>
+              <id>findbugs</id>
+              <phase>compile</phase>
+              <goals>
+                <goal>check</goal>
+              </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-pmd-plugin</artifactId>
+            <version>3.6</version>
+            <configuration>
+              <printFailingErrors>true</printFailingErrors>
+              <excludes>
+                <exclude>**/eclipse/**</exclude>
+                <exclude>**/apache/**</exclude>
+                <!--Rule:AvoidUsingHardCodedIP is wrong-->
+                <exclude>org/beigesoft/ajetty/crypto/CryptoServiceSc.java</exclude>
+              </excludes>
+            </configuration>
+            <executions>
+              <execution>
+              <id>pmd</id>
+              <phase>compile</phase>
+              <goals>
+                <goal>check</goal>
+              </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
   </profiles>
     
   <dependencies>
@@ -128,6 +193,18 @@
             <configuration>
               <descriptors>
                 <descriptor>asm-zip.xml</descriptor>
+              </descriptors>
+            </configuration>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>tar.bz2</id>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly.xml</descriptor>
               </descriptors>
             </configuration>
             <phase>package</phase>

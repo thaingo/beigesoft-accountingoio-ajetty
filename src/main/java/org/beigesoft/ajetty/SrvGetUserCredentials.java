@@ -92,7 +92,7 @@ public class SrvGetUserCredentials<RS> implements ISrvGetUserCredentials {
         setTransactionIsolation(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
       this.srvDatabase.beginTransaction();
       recordSet = getSrvDatabase().retrieveRecords(query);
-      if (recordSet.moveToFirst()) {
+      if (recordSet != null && recordSet.moveToFirst()) {
         result = new ArrayList<UserCredentials>();
         UserCredentials uc = null;
         ArrayList<String> roles = new ArrayList<String>();
@@ -124,6 +124,9 @@ public class SrvGetUserCredentials<RS> implements ISrvGetUserCredentials {
       if (recordSet != null) {
         recordSet.close();
       }
+    }
+    if (result == null) {
+      return null;
     }
     return result.toArray(new UserCredentials[result.size()]);
   }
