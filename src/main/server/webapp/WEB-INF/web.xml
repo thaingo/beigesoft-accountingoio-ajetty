@@ -144,6 +144,16 @@
     <url-pattern>/secure/sendEntities/*</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>initCryptoExchange</servlet-name>
+    <servlet-class>
+      org.beigesoft.web.servlet.WInitCryptoExchange
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>initCryptoExchange</servlet-name>
+    <url-pattern>/secure/initCryptoExchange/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>replicator</servlet-name>
     <servlet-class>
       org.beigesoft.web.servlet.WReplicator
@@ -166,7 +176,7 @@
   <servlet>
     <servlet-name>mngDatabase</servlet-name>
     <servlet-class>
-      org.beigesoft.web.servlet.WMngDatabase
+      org.beigesoft.web.servlet.WMngDatabaseExt
     </servlet-class>
     <init-param>
       <param-name>dirJsp</param-name>
@@ -2226,6 +2236,11 @@ description, distributable, and context-param elements.
         <servlet-class>org.apache.jsp.secure.fragments.loginTmpl_jsp</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>org.apache.jsp.secure.fragments.initCryptoExchangeForm_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.secure.fragments.initCryptoExchangeForm_jsp</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>org.apache.jsp.addFirstUser_jsp</servlet-name>
         <url-pattern>/addFirstUser.jsp</url-pattern>
@@ -4226,6 +4241,11 @@ description, distributable, and context-param elements.
         <url-pattern>/secure/fragments/loginTmpl.jsp</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.secure.fragments.initCryptoExchangeForm_jsp</servlet-name>
+        <url-pattern>/secure/fragments/initCryptoExchangeForm.jsp</url-pattern>
+    </servlet-mapping>
+
 <!--
 All session-config, mime-mapping, welcome-file-list, error-page, taglib,
 resource-ref, security-constraint, login-config, security-role,
@@ -4322,6 +4342,8 @@ env-entry, and ejb-ref elements should follow this fragment.
     <web-resource-collection>
       <web-resource-name></web-resource-name>
       <url-pattern>/mngSoftware/*</url-pattern>
+      <web-resource-name></web-resource-name>
+      <url-pattern>/mngDatabase/*</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>
