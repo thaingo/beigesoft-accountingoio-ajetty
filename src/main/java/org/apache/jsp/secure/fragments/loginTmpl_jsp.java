@@ -76,7 +76,7 @@ public final class loginTmpl_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n<!DOCTYPE html>\n<html>\n<head>    \n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n  <title>Beige WEB login</title>\n  <link rel=\"stylesheet\" href=\"../static/css/beige.common.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../static/img/favicon.png\">\n</head>\n<body>\n  <div class=\"alert-20\">");
+      out.write("\n<!DOCTYPE html>\n<html>\n<head>    \n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>Beige WEB login</title>\n  <link rel=\"stylesheet\" href=\"../static/css/beige.common.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../static/img/favicon.png\">\n</head>\n<body>\n  <div class=\"alert-20\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${loginErrorJsp}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</div>\n  \n  <div class=\"form-std form-33-33\">\n    <div class=\"dialog-title\">\n      Authorization\n    </div>\n    <form id=\"formLogin\" action=\"");
       out.print( response.encodeURL("j_security_check") );

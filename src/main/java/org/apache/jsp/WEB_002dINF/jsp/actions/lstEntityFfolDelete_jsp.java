@@ -78,7 +78,7 @@ public final class lstEntityFfolDelete_jsp extends org.apache.jasper.runtime.Htt
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n<button class=\"btn btn-sm\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmHnd=");
+      out.write("\n<button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmHnd=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("&nmRnd=insertDeleteEntityFfolJson&nmsAct=entityConfirmDelete&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

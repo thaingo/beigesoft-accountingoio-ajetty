@@ -78,7 +78,7 @@ public final class lstEntityFfol_jsp extends org.apache.jasper.runtime.HttpJspBa
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n<button class=\"btn btn-sm\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmHnd=");
+      out.write("\n<button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmHnd=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("&nmRnd=insertDeleteEntityFfolJson&nmsAct=entityEdit&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -89,7 +89,7 @@ public final class lstEntityFfol_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Edit\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</button>\n<button class=\"btn btn-sm\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmHnd=");
+      out.write("</button>\n<button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmHnd=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("&nmRnd=insertDeleteEntityFfolJson&nmsAct=entityConfirmDelete&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

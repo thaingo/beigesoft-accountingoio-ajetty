@@ -52,13 +52,28 @@ SLF4J by QOS.ch:
 MIT License
 http://www.opensource.org/licenses/mit-license.php
 
-CSS/Javascript framework Bootstrap by Twitter, Inc:
+Bouncy Castle Crypto APIs by the Legion of the Bouncy Castle Inc:
+Bouncy Castle License (actually MIT)
+http://www.bouncycastle.org/licence.html
+
+CSS/Javascript framework Bootstrap by Twitter, Inc and the Bootstrap Authors:
 MIT License
 https://github.com/twbs/bootstrap/blob/master/LICENSE
 
 JQuery by JS Foundation and other contributors:
 MIT license
 https://jquery.org/license
+
+JS library Popper by Federico Zivolo and contributors:
+MIT License
+https://github.com/twbs/bootstrap/blob/master/LICENSE
+
+Open Iconic icon fonts by Waybury:
+SIL OPEN FONT LICENSE Version 1.1
+http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web
+Open Iconic to Bootstrap CSS by Waybury:
+MIT License
+https://github.com/twbs/bootstrap/blob/master/LICENSE
 
 DejaVu fonts by Bitstream:
 https://dejavu-fonts.github.io/License.html 

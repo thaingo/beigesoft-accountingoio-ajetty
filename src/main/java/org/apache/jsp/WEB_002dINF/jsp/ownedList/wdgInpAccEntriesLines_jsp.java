@@ -113,7 +113,7 @@ public final class wdgInpAccEntriesLines_jsp extends org.apache.jasper.runtime.H
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ownerIdStr}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ownerVersion}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("');\" class=\"btn btn-sm\">\n    ");
+      out.write("');\" class=\"btn\">\n    ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"New\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n  </button>\n</div>\n");
     } catch (java.lang.Throwable t) {

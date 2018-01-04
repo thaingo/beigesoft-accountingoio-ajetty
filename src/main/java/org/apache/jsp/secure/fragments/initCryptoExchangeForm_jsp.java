@@ -82,7 +82,7 @@ public final class initCryptoExchangeForm_jsp extends org.apache.jasper.runtime.
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${formPref}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("initCryptoExchange\">\n    <table class=\"tbl-fieldset\">\n      <tr>\n        <td>\n          <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"onlyLocalhost\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write(":</label>\n        </td>\n      </tr>\n      <tr>\n        <td>\n          <label>");
+      out.write("</label>\n        </td>\n      </tr>\n      <tr>\n        <td>\n          <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"ksPassw\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n        </td>\n        <td>\n          <div style=\"display: flex;\">\n            <input required type=\"password\" name=\"ksPassw\" value=\"\">\n            <input type=\"hidden\" name=\"urlBack\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${urlBack}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

@@ -127,7 +127,7 @@ public final class lstActEditDelete_jsp extends org.apache.jasper.runtime.HttpJs
         out.write(' ');
         if (_jspx_meth_c_005fset_005f0(_jspx_th_c_005fif_005f0, _jspx_page_context))
           return true;
-        out.write("\n  <a href=\"service/?nmHnd=");
+        out.write("\n  <button onclick=\"window.open('service/?nmHnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmRnd=printEntity&nmsAct=entityPrint&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -137,9 +137,9 @@ public final class lstActEditDelete_jsp extends org.apache.jasper.runtime.HttpJs
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${objectIdName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('=');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entityIdStr}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\" target=\"_blank\" class=\"btn btn-sm\" >");
+        out.write("', '_blank');\" class=\"btn\" >");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Print\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</a>\n  <button class=\"btn btn-sm\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
+        out.write("</button>\n  <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmRnd=editEntityJson&nmsAct=entityEdit&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -154,7 +154,7 @@ public final class lstActEditDelete_jsp extends org.apache.jasper.runtime.HttpJs
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("');\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Edit\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</button>\n  <button class=\"btn btn-sm\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
+        out.write("</button>\n  <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmRnd=confirmDeleteEntityJson&nmsAct=entityConfirmDelete&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

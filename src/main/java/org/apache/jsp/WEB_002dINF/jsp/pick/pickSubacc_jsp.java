@@ -78,7 +78,7 @@ public final class pickSubacc_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n<button class=\"btn btn-sm\" onClick=\"selectSubacc('");
+      out.write("\n\n<button class=\"btn\" onClick=\"selectSubacc('");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.subaccId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("', '");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.subaccType}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

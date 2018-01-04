@@ -88,14 +88,14 @@ public final class wdgListFooterAccount_jsp extends org.apache.jasper.runtime.Ht
       out.write("\n\n<div class=\"pages\">\n  ");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
-      out.write("\n  <button onclick=\"window.open('chartOfAccounts/?nmRnd=chartOfAccounts', '_blank');\" class=\"btn btn-sm\">\n    ");
+      out.write("\n  <button onclick=\"window.open('chartOfAccounts/?nmRnd=chartOfAccounts', '_blank');\" class=\"btn\">\n    ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"chartOfAccounts\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n  </button>\n  <button id=\"listMainNew\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("&nmRnd=editEntityJson&nmsAct=entityCreate&nmEnt=Account&page=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.page}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("');\" class=\"btn btn-sm\">\n    ");
+      out.write("');\" class=\"btn\">\n    ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"New\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n  </button>\n</div>\n");
     } catch (java.lang.Throwable t) {

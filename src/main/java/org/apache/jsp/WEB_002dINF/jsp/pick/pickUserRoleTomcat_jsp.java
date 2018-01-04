@@ -89,7 +89,7 @@ public final class pickUserRoleTomcat_jsp extends org.apache.jasper.runtime.Http
       out.write('\n');
       if (_jspx_meth_c_005fset_005f1(_jspx_page_context))
         return;
-      out.write("\n<button class=\"btn btn-sm\" onClick=\"selectEntity('");
+      out.write("\n<button class=\"btn\" onClick=\"selectEntity('");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cnvFtfs.toString(null, entity.itsId)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("', &quot;");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsUser.itsUser}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

@@ -86,7 +86,7 @@ public final class getDatabaseCopyForm_jsp extends org.apache.jasper.runtime.Htt
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n  <title>Clear current database then get identical copy of another one</title>\n  <link rel=\"stylesheet\" href=\"../static/css/beige.common.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../static/img/favicon.png\">\n</head>\n<body style=\"padding: 20px;\">\n  <a class=\"btn\" href=\"../\">");
+      out.write("\n\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>Clear current database then get identical copy of another one</title>\n  <link rel=\"stylesheet\" href=\"../static/css/beige.common.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../static/img/favicon.png\">\n</head>\n<body style=\"padding: 20px;\">\n  <a class=\"btn\" href=\"../\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"home\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n  ");
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))

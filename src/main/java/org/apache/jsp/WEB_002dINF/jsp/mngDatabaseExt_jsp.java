@@ -86,7 +86,7 @@ public final class mngDatabaseExt_jsp extends org.apache.jasper.runtime.HttpJspB
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n  <link rel=\"shortcut icon\" href=\"../static/img/favicon.png\">\n  <script type=\"text/javascript\" src=\"../static/js/beige.form.js\"></script>\n  <script type=\"text/javascript\" src=\"../static/js/beige.i18n.en.js\"></script>\n  <link rel=\"stylesheet\" href=\"../static/css/beige.common.css\">\n  <title>");
+      out.write("\n\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <link rel=\"shortcut icon\" href=\"../static/img/favicon.png\">\n  <script type=\"text/javascript\" src=\"../static/js/beige.form.js\"></script>\n  <script type=\"text/javascript\" src=\"../static/js/beige.i18n.en.js\"></script>\n  <link rel=\"stylesheet\" href=\"../static/css/beige.common.css\">\n  <title>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"mngDatabase\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</title>\n</head>\n<body>\n  <br>\n  <a class=\"btn\" href=\"../\" style=\"margin: 10px;\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"home\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -217,7 +217,7 @@ public final class mngDatabaseExt_jsp extends org.apache.jasper.runtime.HttpJspB
     // /WEB-INF/jsp/mngDatabaseExt.jsp(21,4) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f2.setVar("urlBack");
     // /WEB-INF/jsp/mngDatabaseExt.jsp(21,4) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mngDatabaseExt.jsp(21,4) '../'",_jsp_getExpressionFactory().createValueExpression("../",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mngDatabaseExt.jsp(21,4) '../mngDatabase/?nmRnd=mngDatabaseExt'",_jsp_getExpressionFactory().createValueExpression("../mngDatabase/?nmRnd=mngDatabaseExt",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/mngDatabaseExt.jsp(21,4) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f2.setScope("request");
     int _jspx_eval_c_005fset_005f2 = _jspx_th_c_005fset_005f2.doStartTag();
@@ -271,7 +271,7 @@ public final class mngDatabaseExt_jsp extends org.apache.jasper.runtime.HttpJspB
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"create_label\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(":</label>\n            </td>\n            <td>\n              <div style=\"display: flex;\">\n                <input name=\"nameDatabase\" value=\"dbmy\">.sqlite\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <label>");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"idDatabase\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write(":</label>\n            </td>\n            <td>\n              <div style=\"display: flex;\">\n                <input type=\"number\" name=\"idDatabase\" value=\"2\">\n              </div>\n            </td>\n          </tr>\n        </table>\n        <div>\n          <input type=\"submit\" onclick=\"confirmSubmit(this, 'Create?'); return false;\"/>\n        </div>\n      </form>\n    </div>\n\n    <div style=\"margin-top: 20px;\">\n      ");
+        out.write(":</label>\n            </td>\n            <td>\n              <div style=\"display: flex;\">\n                <input type=\"number\" name=\"idDatabase\" value=\"2\">\n              </div>\n            </td>\n          </tr>\n        </table>\n        <div style=\"text-align: center;>\n          <input class=\"btn\" type=\"submit\" onclick=\"confirmSubmit(this, 'Create?'); return false;\"/>\n        </div>\n      </form>\n    </div>\n\n    <div style=\"margin-top: 20px;\">\n      ");
         if (_jspx_meth_c_005fif_005f2(_jspx_th_c_005fif_005f1, _jspx_page_context))
           return true;
         out.write("\n    </div>\n    <div>\n      ");

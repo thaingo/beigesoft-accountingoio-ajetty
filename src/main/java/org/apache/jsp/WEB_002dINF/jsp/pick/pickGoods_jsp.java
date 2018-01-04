@@ -78,7 +78,7 @@ public final class pickGoods_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n<button class=\"btn btn-sm\" onClick=\"selectEntity('");
+      out.write("\n\n<button class=\"btn\" onClick=\"selectEntity('");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("', &quot;");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

@@ -93,7 +93,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     return;
   }
 
-      out.write("\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n  <link rel=\"shortcut icon\" href=\"static/img/favicon.png\">\n  <link rel=\"stylesheet\" href=\"static/css/beige.common.css\" />\n  <title>Beige-Accounting</title>\n</head>\n<body>\n\n");
+      out.write("\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <link rel=\"shortcut icon\" href=\"static/img/favicon.png\">\n  <link rel=\"stylesheet\" href=\"static/css/beige.common.css\" />\n  <title>Beige-Accounting</title>\n</head>\n<body>\n\n");
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
       out.write('\n');
@@ -235,7 +235,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_005fif_005f2 = _jspx_th_c_005fif_005f2.doStartTag();
     if (_jspx_eval_c_005fif_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n          <a href=\"mngDatabase/?nmRnd=mngDatabaseExt\" class=\"btn\">");
+        out.write("\n          <a href=\"mngDatabase/?nmRnd=mngDatabaseExt\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"srvI18n\").getMsg(\"Databases\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</a>\n        ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f2.doAfterBody();

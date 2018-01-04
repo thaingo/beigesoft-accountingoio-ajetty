@@ -92,7 +92,7 @@ public final class pickPurchaseInvoiceLine_jsp extends org.apache.jasper.runtime
       out.write('\n');
       if (_jspx_meth_c_005fif_005f1(_jspx_page_context))
         return;
-      out.write("\n<button class=\"btn btn-sm\" onClick=\"selectEntity('");
+      out.write("\n<button class=\"btn\" onClick=\"selectEntity('");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("', '");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${docLineAppr}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

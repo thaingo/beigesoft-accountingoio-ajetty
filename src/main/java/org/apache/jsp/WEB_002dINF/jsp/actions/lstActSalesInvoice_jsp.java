@@ -89,7 +89,7 @@ public final class lstActSalesInvoice_jsp extends org.apache.jasper.runtime.Http
       out.write('\n');
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
-      out.write("\n<a href=\"reportPdf/?nmHnd=hndlEntityFileReportReq&reporterNm=InvoiceReportPdf&nmEnt=");
+      out.write("\n<button onclick=\"window.open('reportPdf/?nmHnd=hndlEntityFileReportReq&reporterNm=InvoiceReportPdf&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('&');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -97,12 +97,12 @@ public final class lstActSalesInvoice_jsp extends org.apache.jasper.runtime.Http
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${objectIdName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('=');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entityIdStr}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" target=\"_blank\" class=\"btn btn-sm\" >");
+      out.write("','_blank');\" class=\"btn\" >");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Print\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n");
+      out.write("</button>\n");
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
         return;
-      out.write("\n<button class=\"btn btn-sm\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
+      out.write("\n<button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("&nmRnd=editEntityJson&nmsAct=entityCopy&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -180,7 +180,7 @@ public final class lstActSalesInvoice_jsp extends org.apache.jasper.runtime.Http
     int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n  <a href=\"service/?nmHnd=");
+        out.write("\n  <button onclick=\"window.open('service/?nmHnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmRnd=printEntity&nmsAct=entityPrint&actionAdd=full&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -190,9 +190,9 @@ public final class lstActSalesInvoice_jsp extends org.apache.jasper.runtime.Http
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${objectIdName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('=');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entityIdStr}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\" target=\"_blank\" class=\"btn btn-sm\" >");
+        out.write("', '_blank');\" class=\"btn\" >");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"PrintFull\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</a>\n");
+        out.write("</button>\n");
         int evalDoAfterBody = _jspx_th_c_005fif_005f0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -219,7 +219,7 @@ public final class lstActSalesInvoice_jsp extends org.apache.jasper.runtime.Http
     int _jspx_eval_c_005fif_005f1 = _jspx_th_c_005fif_005f1.doStartTag();
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n  <button class=\"btn btn-sm\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
+        out.write("\n  <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmRnd=editEntityJson&nmsAct=entityEdit&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -261,7 +261,7 @@ public final class lstActSalesInvoice_jsp extends org.apache.jasper.runtime.Http
     int _jspx_eval_c_005fif_005f2 = _jspx_th_c_005fif_005f2.doStartTag();
     if (_jspx_eval_c_005fif_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n  <button class=\"btn btn-sm\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
+        out.write("\n  <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmRnd=confirmDeleteEntityJson&nmsAct=entityConfirmDelete&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -303,7 +303,7 @@ public final class lstActSalesInvoice_jsp extends org.apache.jasper.runtime.Http
     int _jspx_eval_c_005fif_005f3 = _jspx_th_c_005fif_005f3.doStartTag();
     if (_jspx_eval_c_005fif_005f3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n  <button class=\"btn btn-sm\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
+        out.write("\n  <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmRnd=reverseDocJson&nmsAct=entityReverse&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

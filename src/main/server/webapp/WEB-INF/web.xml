@@ -552,11 +552,6 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mngDatabase_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mngDatabase_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.printEntity_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.printEntity_jsp</servlet-class>
     </servlet>
@@ -2554,11 +2549,6 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.assignGoodsToCatalogForm_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/assignGoodsToCatalogForm.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mngDatabase_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mngDatabase.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

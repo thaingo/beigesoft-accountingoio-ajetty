@@ -191,7 +191,7 @@ public final class picker_jsp extends org.apache.jasper.runtime.HttpJspBase
       do {
         out.write("\n    <button onclick=\"openDlg('");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${prefixFilterOrderForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("FltOrdDlg');\" class=\"btn btn-sm\">");
+        out.write("FltOrdDlg');\" class=\"btn\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"filterOrder\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</button>\n  ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f0.doAfterBody();

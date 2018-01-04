@@ -524,7 +524,7 @@ public final class listAccEntries_jsp extends org.apache.jasper.runtime.HttpJspB
             return true;
           out.write("\n    <tr>\n      ");
           org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}forList/wdgToRowDetail.jsp", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false), out, false);
-          out.write("\n      <td class=\"column-actions\">\n        <button class=\"btn btn-sm\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
+          out.write("\n      <td class=\"column-actions\">\n        <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("&nmRnd=editAccEntryJson&nmsAct=entityEdit&nmEnt=AccountingEntry&AccountingEntry.itsId=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
