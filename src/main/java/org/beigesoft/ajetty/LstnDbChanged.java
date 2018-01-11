@@ -12,6 +12,9 @@ package org.beigesoft.ajetty;
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
  */
 
+import java.io.File;
+import java.security.KeyStore;
+
 import org.eclipse.jetty.security.DataBaseLoginService;
 
 import org.beigesoft.delegate.IDelegateSimpleExc;
@@ -19,6 +22,7 @@ import org.beigesoft.service.ISrvDatabase;
 import org.beigesoft.web.model.FactoryAndServlet;
 import org.beigesoft.web.factory.AFactoryAppBeans;
 import org.beigesoft.web.service.SrvAddTheFirstUser;
+import org.beigesoft.web.service.CryptoHelper;
 
 /**
  * <p>Re-initializes external context after database
@@ -64,6 +68,23 @@ public class LstnDbChanged<RS> implements IDelegateSimpleExc {
         .getSrvGetUserCredentials();
       srvCr.setSrvDatabase(srvDb);
     }
+    //crypto init:
+    CryptoHelper ch = (CryptoHelper) factoryAppBeans.lazyGet("ICryptoHelper");
+    File webAppPath = new File(this.factoryAndServlet.getHttpServlet().
+      getServletContext().getRealPath(""));
+    ch.setKsDirPath(webAppPath.getParent() + File.separator + "ks");
+    ch.setPublicKeyDir(webAppPath.getParent() + File.separator + "pub-exch");
+    KeyStore ks = (KeyStore) this.factoryAndServlet.getHttpServlet()
+      .getServletContext().getAttribute("ajettyKeystore");
+    ch.setKeyStore(ks);
+    String passw = (String) this.factoryAndServlet.getHttpServlet()
+      .getServletContext().getAttribute("ksPassword");
+    ch.setKsPassword(passw.toCharArray());
+    Integer ajettyIn = (Integer) this.factoryAndServlet.getHttpServlet()
+      .getServletContext().getAttribute("ajettyIn");
+    ch.setAjettyIn(ajettyIn);
+    String webAppFor = this.factoryAndServlet.getHttpServlet()
+      .getServletContext().getInitParameter("webAppFor");
   }
 
   //Simple getters and setters:

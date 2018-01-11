@@ -5,13 +5,13 @@
  *       the last modified time of the source file after
  *       generation to assist with modification tracking.
  */
-package org.apache.jsp.secure.fragments;
+package org.apache.jsp;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class loginTmpl_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class loginBan_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final javax.servlet.jsp.JspFactory _jspxFactory =
@@ -76,11 +76,9 @@ public final class loginTmpl_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n<!DOCTYPE html>\n<html>\n<head>    \n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>Beige WEB login</title>\n  <link rel=\"stylesheet\" href=\"../static/css/beige.common.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../static/img/favicon.png\">\n</head>\n<body>\n  <div class=\"alert-20\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${loginErrorJsp}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</div>\n  \n  <div class=\"form-std form-33-33\">\n    <div class=\"dialog-title\">\n      Authorization\n    </div>\n    <form id=\"formLogin\" action=\"");
-      out.print( response.encodeURL("j_security_check") );
-      out.write("\" method=\"post\">\n      <label>User</label>\n      <input type=\"text\" name=\"j_username\"/>\n      <label>Password</label>\n      <input type=\"password\" name=\"j_password\"/>\n      <div class=\"form-actions\">\n        <input type=\"submit\" value=\"Login\"/>\n        <a href=\"../\">Close</a>\n      </div>\n    </form>\n  </div>\n</body>\n</html>\n\n");
+      out.write("\n<!DOCTYPE html>\n<html>\n<head>    \n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>Beige WEB login</title>\n  <link rel=\"stylesheet\" href=\"../static/css/beige.common.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../static/img/favicon.png\">\n</head>\n<body>\n\n  <div class=\"alert-20\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${loginBanJsp}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</div>\n  \n</body>\n</html>\n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
         out = _jspx_out;

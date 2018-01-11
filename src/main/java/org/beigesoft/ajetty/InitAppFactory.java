@@ -13,6 +13,7 @@ package org.beigesoft.ajetty;
  */
 
 import java.io.File;
+import java.security.KeyStore;
 
 import org.eclipse.jetty.security.DataBaseLoginService;
 
@@ -22,6 +23,7 @@ import org.beigesoft.orm.service.ASrvOrm;
 import org.beigesoft.web.model.FactoryAndServlet;
 import org.beigesoft.web.service.SrvAddTheFirstUser;
 import org.beigesoft.web.factory.AFactoryAppBeans;
+import org.beigesoft.web.service.CryptoHelper;
 
 /**
  * <p>
@@ -44,8 +46,9 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
     @SuppressWarnings("unchecked")
     AFactoryAppBeans<RS> factoryAppBeans =
       (AFactoryAppBeans<RS>) pFactoryAndServlet.getFactoryAppBeans();
-    factoryAppBeans.setWebAppPath(pFactoryAndServlet.getHttpServlet()
+    File webAppPath = new File(pFactoryAndServlet.getHttpServlet()
       .getServletContext().getRealPath(""));
+    factoryAppBeans.setWebAppPath(webAppPath.getPath());
     String isShowDebugMessagesStr = pFactoryAndServlet.getHttpServlet()
       .getInitParameter("isShowDebugMessages");
     factoryAppBeans.setIsShowDebugMessages(Boolean
@@ -105,5 +108,18 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
       srvCr.setSrvDatabase(srvDb);
       srvDbl.setSrvGetUserCredentials(srvCr);
     }
+    //crypto init:
+    CryptoHelper ch = (CryptoHelper) factoryAppBeans.lazyGet("ICryptoHelper");
+    ch.setKsDirPath(webAppPath.getParent() + File.separator + "ks");
+    ch.setPublicKeyDir(webAppPath.getParent() + File.separator + "pub-exch");
+    KeyStore ks = (KeyStore) pFactoryAndServlet.getHttpServlet()
+      .getServletContext().getAttribute("ajettyKeystore");
+    ch.setKeyStore(ks);
+    String passw = (String) pFactoryAndServlet.getHttpServlet()
+      .getServletContext().getAttribute("ksPassword");
+    ch.setKsPassword(passw.toCharArray());
+    Integer ajettyIn = (Integer) pFactoryAndServlet.getHttpServlet()
+      .getServletContext().getAttribute("ajettyIn");
+    ch.setAjettyIn(ajettyIn);
   }
 }

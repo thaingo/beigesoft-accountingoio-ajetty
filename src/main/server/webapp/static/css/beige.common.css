@@ -120,7 +120,7 @@ textarea {
 
 .alert-20 {
   position: relative;
-  top: 15%;
+  top: 10rem;
   text-align: center;
   color: red;
   font-size: larger;
@@ -371,6 +371,11 @@ tr:hover {
   padding: 1.2rem;
   font-size: large;
   background-color: white;
+}
+
+.pubKeyStr {
+  word-wrap:break-word;
+  margin: 1.5rem;
 }
 
 @media only screen and (max-width: 768px) {

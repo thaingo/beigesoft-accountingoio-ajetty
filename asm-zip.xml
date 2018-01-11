@@ -7,14 +7,14 @@ xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assemb
   </formats>
   <files>
     <file>
-      <source>target/${project.artifactId}-jar-with-dependencies.jar</source>
-      <outputDirectory>/</outputDirectory>
+      <source>target${file.separator}${project.artifactId}-jar-with-dependencies.jar</source>
+      <outputDirectory>${file.separator}</outputDirectory>
     </file>
   </files>
   <fileSets>
     <fileSet>
-      <directory>src/main/server</directory>
-      <outputDirectory>/</outputDirectory>
+      <directory>src${file.separator}main${file.separator}server</directory>
+      <outputDirectory>${file.separator}</outputDirectory>
     </fileSet>
   </fileSets>
 </assembly>

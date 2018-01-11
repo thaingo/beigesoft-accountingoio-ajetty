@@ -144,14 +144,14 @@
     <url-pattern>/secure/sendEntities/*</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>initCryptoExchange</servlet-name>
+    <servlet-name>loginError</servlet-name>
     <servlet-class>
-      org.beigesoft.web.servlet.WInitCryptoExchange
+      org.beigesoft.web.servlet.WLoginError
     </servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>initCryptoExchange</servlet-name>
-    <url-pattern>/secure/initCryptoExchange/*</url-pattern>
+    <servlet-name>loginError</servlet-name>
+    <url-pattern>/secure/loginError/*</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>replicator</servlet-name>
@@ -249,6 +249,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.error_jsp</servlet-name>
         <servlet-class>org.apache.jsp.error_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.loginBan_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.loginBan_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2197,11 +2202,6 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.secure.loginError_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.secure.loginError_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.secure.main_jsp</servlet-name>
         <servlet-class>org.apache.jsp.secure.main_jsp</servlet-class>
     </servlet>
@@ -2226,16 +2226,6 @@ description, distributable, and context-param elements.
         <servlet-class>org.apache.jsp.secure.getDatabaseCopyForm_jsp</servlet-class>
     </servlet>
 
-    <servlet>
-        <servlet-name>org.apache.jsp.secure.fragments.loginTmpl_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.secure.fragments.loginTmpl_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.secure.fragments.initCryptoExchangeForm_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.secure.fragments.initCryptoExchangeForm_jsp</servlet-class>
-    </servlet>
-
     <servlet-mapping>
         <servlet-name>org.apache.jsp.addFirstUser_jsp</servlet-name>
         <url-pattern>/addFirstUser.jsp</url-pattern>
@@ -2249,6 +2239,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.error_jsp</servlet-name>
         <url-pattern>/error.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.loginBan_jsp</servlet-name>
+        <url-pattern>/loginBan.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4197,11 +4192,6 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.secure.loginError_jsp</servlet-name>
-        <url-pattern>/secure/loginError.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.secure.main_jsp</servlet-name>
         <url-pattern>/secure/main.jsp</url-pattern>
     </servlet-mapping>
@@ -4224,16 +4214,6 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.secure.getDatabaseCopyForm_jsp</servlet-name>
         <url-pattern>/secure/getDatabaseCopyForm.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.secure.fragments.loginTmpl_jsp</servlet-name>
-        <url-pattern>/secure/fragments/loginTmpl.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.secure.fragments.initCryptoExchangeForm_jsp</servlet-name>
-        <url-pattern>/secure/fragments/initCryptoExchangeForm.jsp</url-pattern>
     </servlet-mapping>
 
 <!--
@@ -4303,14 +4283,14 @@ env-entry, and ejb-ref elements should follow this fragment.
       <url-pattern></url-pattern>
   </servlet-mapping>
   <session-config>
-    <session-timeout>30</session-timeout>
+    <session-timeout>15</session-timeout>
   </session-config>
   <login-config>
     <auth-method>FORM</auth-method>
     <realm-name>JDBCRealm</realm-name>
     <form-login-config>
       <form-login-page>/secure/login.jsp</form-login-page>
-      <form-error-page>/secure/loginError.jsp</form-error-page>
+      <form-error-page>/secure/loginError</form-error-page>
     </form-login-config>
   </login-config>
   <security-role>

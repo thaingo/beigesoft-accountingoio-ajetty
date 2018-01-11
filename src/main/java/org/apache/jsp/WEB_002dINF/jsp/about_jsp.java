@@ -96,7 +96,7 @@ public final class about_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"appVersion\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n        </td>\n        <td>\n          ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${appVersion}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\n        </td>\n      </tr>\n      <tr>\n        <td><a href=\"http://www.beigesoft.org\" target=\"_blank\">Beigesoft ™</a></td>\n        <td><a href=\"https://sites.google.com/site/beigesoftware\" target=\"_blank\">Other domain Beigesoft ™</a></td>\n      </tr>\n    </table>\n    <div class=\"form-actions\">\n      <button type=\"button\" class=\"btn\" onclick=\"closeDlg('infoDlg');\">");
+      out.write("\n        </td>\n      </tr>\n      <tr>\n        <td><a href=\"https://sites.google.com/site/beigesoftware\" target=\"_blank\">Beigesoft ™ https://beigesoft.org</a></td>\n      </tr>\n    </table>\n    <div class=\"form-actions\">\n      <button type=\"button\" class=\"btn\" onclick=\"closeDlg('infoDlg');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Close\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</button>\n    </div>\n  </div>\n</dialog>\n");
     } catch (java.lang.Throwable t) {

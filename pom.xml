@@ -10,7 +10,7 @@
   <description>Beigesoft ™ Accountion All In One WEB application (included Beigesoft Web-Store) on embedded A-Jetty.
     Web-Store is included for study and tests purposes and you are also able to make full DB copy from cloud version.
     Web-Store is draft yet.</description>
-  <url>http://www.beigesoft.org</url>
+  <url>https://sites.google.com/site/beigesoftware</url>
   <inceptionYear>2017</inceptionYear>
 
   <properties>
@@ -38,35 +38,6 @@
           </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jarsigner-plugin</artifactId>
-            <version>1.4</version>
-            <executions>
-              <execution>
-                <id>signing</id>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-                <phase>package</phase>
-                <inherited>true</inherited>
-                <configuration>
-                  <archiveDirectory />
-                  <includes>
-                    <include>target/*.jar</include>
-                    <include>*.properties</include>
-                  </includes>
-                  <storepass>${signpass}</storepass>
-                  <keypass>${signpass}</keypass>
-                  <alias>bsf-key</alias>
-                  <arguments>
-                    <argument>-sigalg</argument><argument>MD5withRSA</argument>
-                    <argument>-digestalg</argument><argument>SHA1</argument>
-                  </arguments>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
             <version>2.10.2</version>
             <executions>
@@ -83,6 +54,78 @@
           </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <version>2.4</version>
+            <executions>
+              <execution>
+                <id>jar-with-dependencies</id>
+                <configuration>
+                  <archive>
+                    <manifest>
+                      <mainClass>org.beigesoft.ajetty.BootStrapEmbeddedHttpsSwing</mainClass>
+                    </manifest>
+                  </archive>
+                  <descriptorRefs>
+                    <descriptorRef>jar-with-dependencies</descriptorRef>
+                  </descriptorRefs>
+                </configuration>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>tar.bz2</id>
+                <configuration>
+                  <descriptors>
+                    <descriptor>assembly.xml</descriptor>
+                  </descriptors>
+                </configuration>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>make-zip</id>
+                <configuration>
+                  <descriptors>
+                    <descriptor>asm-zip.xml</descriptor>
+                  </descriptors>
+                </configuration>
+                <phase>verify</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jarsigner-plugin</artifactId>
+            <version>1.4</version>
+            <executions>
+              <execution>
+                <id>signing</id>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+                <phase>package</phase>
+                <inherited>true</inherited>
+                <configuration>
+                  <archiveDirectory />
+                  <includes>
+                    <include>target${file.separator}*.jar</include>
+                  </includes>
+                  <storepass>${signpass}</storepass>
+                  <keypass>${signpass}</keypass>
+                  <alias>${signalias}</alias>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
             <version>1.6</version>
             <executions>
@@ -93,8 +136,8 @@
                   <goal>sign</goal>
                 </goals>
                 <configuration>
-                  <keyname>48E407CA</keyname>
-                  <passphraseServerId>48E407CA</passphraseServerId>
+                  <keyname>${gpgkeyname}</keyname>
+                  <passphraseServerId>${gpgkeyname}</passphraseServerId>
                 </configuration>
               </execution>
             </executions>
@@ -113,7 +156,7 @@
             <executions>
               <execution>
               <id>checkstyle</id>
-              <phase>verify</phase>
+              <phase>package</phase>
               <goals>
                 <goal>check</goal>
               </goals>
@@ -188,61 +231,13 @@
     <dependency>
       <groupId>org.beigesoft</groupId>
       <artifactId>beige-logging-slf4j</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
   <build>
     <finalName>${project.artifactId}</finalName>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <version>2.4</version>
-        <configuration>
-          <archive>
-            <manifest>
-              <mainClass>org.beigesoft.ajetty.BootStrapEmbeddedHttpsSwing</mainClass>
-            </manifest>
-          </archive>
-          <descriptorRefs>
-            <descriptorRef>jar-with-dependencies</descriptorRef>
-          </descriptorRefs>
-        </configuration>
-        <executions>
-          <execution>
-            <id>jar-with-dependencies</id>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>make-zip</id>
-            <configuration>
-              <descriptors>
-                <descriptor>asm-zip.xml</descriptor>
-              </descriptors>
-            </configuration>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>tar.bz2</id>
-            <configuration>
-              <descriptors>
-                <descriptor>assembly.xml</descriptor>
-              </descriptors>
-            </configuration>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
