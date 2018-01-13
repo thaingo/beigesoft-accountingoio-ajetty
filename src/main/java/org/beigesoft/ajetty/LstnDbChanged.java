@@ -83,8 +83,6 @@ public class LstnDbChanged<RS> implements IDelegateSimpleExc {
     Integer ajettyIn = (Integer) this.factoryAndServlet.getHttpServlet()
       .getServletContext().getAttribute("ajettyIn");
     ch.setAjettyIn(ajettyIn);
-    String webAppFor = this.factoryAndServlet.getHttpServlet()
-      .getServletContext().getInitParameter("webAppFor");
   }
 
   //Simple getters and setters:
