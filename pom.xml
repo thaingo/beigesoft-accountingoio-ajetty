@@ -62,7 +62,7 @@
                 <configuration>
                   <archive>
                     <manifest>
-                      <mainClass>org.beigesoft.ajetty.BootStrapEmbeddedHttpsSwing</mainClass>
+                      <mainClass>org.beigesoft.ajetty.BootStrapEmbeddedMain</mainClass>
                     </manifest>
                   </archive>
                   <descriptorRefs>

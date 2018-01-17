@@ -110,8 +110,6 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
     }
     //crypto init:
     CryptoHelper ch = (CryptoHelper) factoryAppBeans.lazyGet("ICryptoHelper");
-    ch.setKsDirPath(webAppPath.getParent() + File.separator + "ks");
-    ch.setPublicKeyDir(webAppPath.getParent() + File.separator + "pub-exch");
     KeyStore ks = (KeyStore) pFactoryAndServlet.getHttpServlet()
       .getServletContext().getAttribute("ajettyKeystore");
     ch.setKeyStore(ks);

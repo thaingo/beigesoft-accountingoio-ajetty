@@ -12,7 +12,6 @@ package org.beigesoft.ajetty;
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
  */
 
-import java.io.File;
 import java.security.KeyStore;
 
 import org.eclipse.jetty.security.DataBaseLoginService;
@@ -70,10 +69,6 @@ public class LstnDbChanged<RS> implements IDelegateSimpleExc {
     }
     //crypto init:
     CryptoHelper ch = (CryptoHelper) factoryAppBeans.lazyGet("ICryptoHelper");
-    File webAppPath = new File(this.factoryAndServlet.getHttpServlet().
-      getServletContext().getRealPath(""));
-    ch.setKsDirPath(webAppPath.getParent() + File.separator + "ks");
-    ch.setPublicKeyDir(webAppPath.getParent() + File.separator + "pub-exch");
     KeyStore ks = (KeyStore) this.factoryAndServlet.getHttpServlet()
       .getServletContext().getAttribute("ajettyKeystore");
     ch.setKeyStore(ks);
