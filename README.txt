@@ -5,9 +5,14 @@ This software requires:
 * Java - JRE7+.
 * Google Chrome, Opera, or Chromium browser (html5-dialog ready).
 
-Since 1.1.5 version Beige-Accounting is always in secure enabled mode (protected from scams). It requires user authentication with strong password. It uses encryption for HTTPS and file exchange - modern algorithms asymmetric RSA 2048bit key size and symmetric AES 256bit size.
-In *nix OS you are able to create "accountant" user, then under your regular account (e.g. Bob on Gnome desktop) open terminal and login as accountant - "su -l accountant" then install and use beige-accounting. Change permissions to database (and other files) to "no one can read it", start beige-accounting under user "accounting" from command line.
-As a result an application (that running under your regular account) that affected by scamware can't reach your accounting data, e.g. if your browser has been allowing scamware script in HTML page to read your file system then it can't read "accountant" files cause browser has been running under your account e.g. "Bob", not under "accountant".
+Since 1.1.5 version Beige-Accounting is always in secure enabled mode (protected from scams).
+It requires user authentication with strong password.
+It uses encryption for HTTPS and file exchange - modern algorithms asymmetric RSA 2048bit key size and symmetric AES 256bit size.
+In *nix OS you are able to create "accountant" user, then under your regular account (e.g. Bob on Gnome desktop)
+open terminal and login as accountant - "su -l accountant" then install and use beige-accounting.
+start beige-accounting under user "accounting" from command line with command "java -jar beigesoft-accountingoio-ajetty-jar-with-dependencies.jar cli" - cli means command line interface.
+As a result an application (that running under your regular account) that affected by scamware can't reach your
+accounting data, e.g. if your browser has been allowing scamware script in HTML page to read your file system then it can't read "accountant" files cause browser has been running under your account e.g. "Bob", not under "accountant".
 
 To start application:
 1. unpack ZIP.
@@ -15,9 +20,14 @@ To start application:
   Do it with beigesoft-accountingoio-ajetty-jar-with-dependencies.jar.
   You also can launch "JAR" file from command prompt (power shell, terminal) with command:
   "java -jar beigesoft-accountingoio-ajetty-jar-with-dependencies.jar"
-3. Application menu to start/stop server will be appeared.
-4. Press "Start" button, then wait while server has been started
-  (for the 1-st time it may takes up to 1 minute to create database),
+3. Application menu to start/stop server will be appeared. You should enter strong (see below) password to start Beige-Accounting.
+4. Press "Start" button, then wait while server has been started (for the 1-st time it may takes up to 1 minute to create database).
+  If you got error, then see starter.log file in application folder. If it says:
+  ...org.bouncycastle.operator.OperatorCreationException: unable to create OutputEncryptor: Illegal key size or default parameters...
+  then you should install "Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files for Java 8" into
+  folder [JAVA_HOME]/lib/security. For MS Windows you can find these files
+  in folder "C:\Program Files (x86)\Java\jre[version#8]\lib\security\policy\unlimited", otherwise download these from Oracle site.
+  Encryption with strong keys (long size) protects you (your information) from scams, so any law must protect you too.
 5. A-Jetty CA certificate ajetty-ca.pem will be at the application folder. You have to install it
   as trusted Certificate Authority in the browser.
   Certificate Authorities that aren't signed by global trusted CA are often used to create private (non-public) intranets, using digital signatures inside organization and its partners.
