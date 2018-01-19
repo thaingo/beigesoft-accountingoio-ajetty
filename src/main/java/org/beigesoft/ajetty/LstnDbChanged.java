@@ -49,6 +49,9 @@ public class LstnDbChanged<RS> implements IDelegateSimpleExc {
       (AFactoryAppBeans<RS>) this.factoryAndServlet.getFactoryAppBeans();
     this.factoryAndServlet.getHttpServlet().getServletContext()
       .setAttribute("srvI18n", factoryAppBeans.lazyGet("ISrvI18n"));
+    this.factoryAndServlet.getHttpServlet().getServletContext()
+      .setAttribute("sessionTracker",
+        factoryAppBeans.lazyGet("ISessionTracker"));
     factoryAppBeans.lazyGet("ISrvOrm");
     ISrvDatabase<RS> srvDb = (ISrvDatabase<RS>)
       factoryAppBeans.lazyGet("ISrvDatabase");

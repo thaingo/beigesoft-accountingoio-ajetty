@@ -91,6 +91,9 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
     factoryAppBeans.setDatabasePassword(databasePassword);
     pFactoryAndServlet.getHttpServlet().getServletContext()
       .setAttribute("srvI18n", factoryAppBeans.lazyGet("ISrvI18n"));
+    pFactoryAndServlet.getHttpServlet().getServletContext()
+      .setAttribute("sessionTracker",
+        factoryAppBeans.lazyGet("ISessionTracker"));
     //to create/initialize database if need:
     factoryAppBeans.lazyGet("ISrvOrm");
     @SuppressWarnings("unchecked")

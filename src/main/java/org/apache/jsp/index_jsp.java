@@ -208,7 +208,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"srvI18n\").getMsg(\"SoftwareManagement\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</a>\n        <a href=\"servicePublic?nmHnd=hndTrdTrnsReq&nmRnd=webstore&nmPrc=PrcWebstorePage\" target=\"_blank\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"srvI18n\").getMsg(\"Webstore\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</a>\n      </div>\n    </div>\n    <div class=\"nav-right\">\n      <a href=\"http://www.beigesoft.org/\" target=\"_blank\">Beigesoft ™</a>\n    </div>\n  </div>  \n\n");
+        out.write("</a>\n      </div>\n    </div>\n    <div class=\"nav-right\">\n      <a href=\"https://sites.google.com/site/beigesoftware\" target=\"_blank\">Beigesoft ™</a>\n    </div>\n  </div>  \n\n");
         int evalDoAfterBody = _jspx_th_c_005fif_005f1.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
