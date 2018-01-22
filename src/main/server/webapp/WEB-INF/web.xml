@@ -33,7 +33,7 @@
     <load-on-startup>1</load-on-startup>
     <init-param>
       <param-name>factoryAppBeansClass</param-name>
-      <param-value>org.beigesoft.accounting.factory.FactoryAccAppBeansSqlite</param-value>
+      <param-value>org.beigesoft.ajetty.FactoryAccAppBeansSqlite</param-value>
     </init-param>
     <init-param>
       <param-name>initFactoryClass</param-name>
@@ -176,7 +176,7 @@
   <servlet>
     <servlet-name>mngDatabase</servlet-name>
     <servlet-class>
-      org.beigesoft.web.servlet.WMngDatabaseExt
+      org.beigesoft.ajetty.WMngDatabaseExt
     </servlet-class>
     <init-param>
       <param-name>dirJsp</param-name>

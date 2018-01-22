@@ -23,7 +23,6 @@ import org.beigesoft.orm.service.ASrvOrm;
 import org.beigesoft.web.model.FactoryAndServlet;
 import org.beigesoft.web.service.SrvAddTheFirstUser;
 import org.beigesoft.web.factory.AFactoryAppBeans;
-import org.beigesoft.web.service.CryptoHelper;
 
 /**
  * <p>

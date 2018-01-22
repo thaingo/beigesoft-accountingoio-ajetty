@@ -22,12 +22,20 @@ To start application:
   "java -jar beigesoft-accountingoio-ajetty-jar-with-dependencies.jar"
 3. Application menu to start/stop server will be appeared. You should enter strong (see below) password to start Beige-Accounting.
 4. Press "Start" button, then wait while server has been started (for the 1-st time it may takes up to 1 minute to create database).
-  If you got error, then see starter.log file in application folder. If it says:
-  ...org.bouncycastle.operator.OperatorCreationException: unable to create OutputEncryptor: Illegal key size or default parameters...
-  then you should install "Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files for Java 8" into
-  folder [JAVA_HOME]/lib/security. For MS Windows you can find these files
-  in folder "C:\Program Files (x86)\Java\jre[version#8]\lib\security\policy\unlimited", otherwise download these from Oracle site.
-  Encryption with strong keys (long size) protects you (your information) from scams, so any law must protect you too.
+  * If you got error, then see starter.log file in application folder. If it's saying:
+    a) ...provider BC... then you should install Bouncy Castle crypto-provider in static way:
+    download bcprov-jdk15on-1.59.jar from https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.59/
+    and bcpkix-jdk15on-1.59.jar from https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.59/
+    then put them into [java-home]/lib/ext e.g. "C:\Program Files (x86)\Java\jre[version#8]\lib\ext"
+    Then add entry "security.provider.[next_number]=org.bouncycastle.jce.provider.BouncyCastleProvider"
+    into [JAVA_HOME]/lib/security/java.security
+    On MS Windows copy java.security to your documents folder, edit it then copy back into "C:\Program Files (x86)\Java\jre[version#8]\lib\security"
+    b)...org.bouncycastle.operator.OperatorCreationException: unable to create OutputEncryptor: Illegal key size or default parameters...
+    then you should install "Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files for Java 8" into
+    folder [JAVA_HOME]/lib/security. For MS Windows you can find these files
+    in folder "C:\Program Files (x86)\Java\jre[version#8]\lib\security\policy\unlimited",
+    otherwise download these from Oracle site.
+    Encryption with strong keys (long size) protects you (your information) from scams, so any law must protect you too.
 5. A-Jetty CA certificate ajetty-ca.pem will be at the application folder. You have to install it
   as trusted Certificate Authority in the browser.
   Certificate Authorities that aren't signed by global trusted CA are often used to create private (non-public) intranets, using digital signatures inside organization and its partners.
@@ -40,10 +48,12 @@ To start application:
   c. add several digits, e.g. result is "NraccooTeaEston165" or "165NraccooTeaEston" or "165NraccooTeaEston165"...
 8. To make second (third ...) local beige-accounting e.g. for using web-services to import data from
   tax accounting to market one (at the same computer) you need copy folder "ks" with keystore into second (3-d...)
-  and register A-Jetty CA certificate ajetty-ca.pem in the Java. In MS Windows there is GUI interface to do it.
-  For other OS e.g. Linux you can use command line tool:
+  and register A-Jetty CA certificate ajetty-ca.pem in the Java. You can do it by using command line tool "keytool",
+  on *nix OS run in terminal:
   keytool -import -trustcacerts -alias ajettyca -file "ajetty-ca.pem" -keystore /usr/lib/jvm/java-1.8.0-openjdk/jre/lib/security/cacerts
   It requires ROOT permission, so do not care about keystore password (default is changeit).
+  on MS Windows open Power Shell as ADMIN in beige-accounting folder and run:
+  & "C:\Program Files (x86)\Java\jre[version#8]\bin\keytool.exe" -import -trustcacerts -alias ajettyca -file "ajetty-ca.pem" -keystore "C:\Program Files (x86)\Java\jre[version#8]\lib\security\cacerts"
 
 license:
 

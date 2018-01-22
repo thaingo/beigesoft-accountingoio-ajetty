@@ -119,10 +119,10 @@ public final class mngDatabaseExt_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"create_label\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n          </td>\n          <td>\n            <div style=\"display: flex;\">\n              <input name=\"nameDatabase\" value=\"dbmy\">.sqlite\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"idDatabase\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write(":</label>\n          </td>\n          <td>\n            <div style=\"display: flex;\">\n              <input type=\"number\" name=\"idDatabase\" value=\"2\">\n            </div>\n          </td>\n        </tr>\n      </table>\n      <div style=\"text-align: center;\">\n        <input class=\"btn\" type=\"submit\" onclick=\"confirmSubmit(this, 'Create?'); return false;\"/>\n      </div>\n    </form>\n  </div>\n\n  <div style=\"margin-top: 1rem;\">\n    ");
+      out.write(":</label>\n          </td>\n          <td>\n            <div style=\"display: flex;\">\n              <input type=\"number\" name=\"idDatabase\" value=\"2\">\n            </div>\n          </td>\n        </tr>\n      </table>\n      <div style=\"text-align: center;\">\n        <input class=\"btn\" type=\"submit\" onclick=\"confirmSubmit(this, 'Create?'); return false;\"/>\n      </div>\n    </form>\n  </div>\n\n  <div style=\"margin: 1rem;\">\n    ");
       if (_jspx_meth_c_005fif_005f3(_jspx_page_context))
         return;
-      out.write("\n  </div>\n  <div>\n    ");
+      out.write("\n  </div>\n  <div style=\"margin: 1rem;\">\n    ");
       if (_jspx_meth_c_005fif_005f4(_jspx_page_context))
         return;
       out.write("\n  </div>\n\n  <dialog id=\"dlgConfirm\" class=\"dlg dlg-alert\">\n      <div class=\"confirm\">\n        <div class=\"dialog-title confirm-title\">\n          Conformation.\n          <button onclick=\"document.getElementById('dlgConfirm').close();\" class=\"btn-close btn-confirm\">x</button>\n        </div>\n        <div id=\"confirmPlace\" class=\"msg-place\">\n        </div>\n        <div class=\"dlg-actions\">\n          <button id=\"confirmYes\" class=\"btn btn-act btn-confirm\">");
@@ -349,7 +349,7 @@ public final class mngDatabaseExt_jsp extends org.apache.jasper.runtime.HttpJspB
       do {
         out.write("\n      ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"ourPublicKey\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write(":\n      <div class=\"pubKeyStr\">\n        ");
+        out.write(":\n      <br>\n      <div class=\"pubKeyStr\">\n        ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ourPublicKeyStr}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\n      </div>\n    ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f3.doAfterBody();
@@ -373,14 +373,14 @@ public final class mngDatabaseExt_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f4 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f4.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f4.setParent(null);
-    // /WEB-INF/jsp/mngDatabaseExt.jsp(117,4) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/mngDatabaseExt.jsp(118,4) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f4.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty foreignPublicKeyStr}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f4 = _jspx_th_c_005fif_005f4.doStartTag();
     if (_jspx_eval_c_005fif_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n      ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"foreignPublicKey\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write(":\n      <div class=\"pubKeyStr\">\n        ");
+        out.write(":\n      <br>\n      <div class=\"pubKeyStr\">\n        ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${foreignPublicKeyStr}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\n      </div>\n    ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f4.doAfterBody();

@@ -48,10 +48,12 @@ To start application:
   c. add several digits, e.g. result is "NraccooTeaEston165" or "165NraccooTeaEston" or "165NraccooTeaEston165"...
 8. To make second (third ...) local beige-accounting e.g. for using web-services to import data from
   tax accounting to market one (at the same computer) you need copy folder "ks" with keystore into second (3-d...)
-  and register A-Jetty CA certificate ajetty-ca.pem in the Java. In MS Windows there is GUI interface to do it.
-  For other OS e.g. Linux you can use command line tool:
+  and register A-Jetty CA certificate ajetty-ca.pem in the Java. You can do it by using command line tool "keytool",
+  on *nix OS run in terminal:
   keytool -import -trustcacerts -alias ajettyca -file "ajetty-ca.pem" -keystore /usr/lib/jvm/java-1.8.0-openjdk/jre/lib/security/cacerts
   It requires ROOT permission, so do not care about keystore password (default is changeit).
+  on MS Windows open Power Shell as ADMIN in beige-accounting folder and run:
+  & "C:\Program Files (x86)\Java\jre[version#8]\bin\keytool.exe" -import -trustcacerts -alias ajettyca -file "ajetty-ca.pem" -keystore "C:\Program Files (x86)\Java\jre[version#8]\lib\security\cacerts"
 
 license:
 
