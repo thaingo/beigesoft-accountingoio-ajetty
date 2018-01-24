@@ -5,13 +5,13 @@
  *       the last modified time of the source file after
  *       generation to assist with modification tracking.
  */
-package org.apache.jsp.WEB_002dINF.jsp.mobile.inputs;
+package org.apache.jsp.WEB_002dINF.jsp.pick;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class inputPurchaseItemKnownCost_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class pickInvItemCost_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final javax.servlet.jsp.JspFactory _jspxFactory =
@@ -85,50 +85,40 @@ public final class inputPurchaseItemKnownCost_jsp extends org.apache.jasper.runt
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n<tr>\n  <td>\n    <label for=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write('.');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fieldName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("AppearanceVisible\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(fieldName)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</label>\n  </td>\n</tr>\n<tr>\n  <td>\n    <div class=\"input-line\">\n      ");
+      out.write('\n');
+      out.write('\n');
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
-      out.write("\n      ");
+      out.write('\n');
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
         return;
-      out.write("\n      <input class=\"picked-appearence\" id=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fieldName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("AppearanceVisible\" disabled=\"disabled\" type=\"text\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity[fieldName].itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" onchange=\"inputHasBeenChanged(this);\">\n      <input id=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fieldName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("Id\" ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${required}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write(" type=\"hidden\" name=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write('.');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fieldName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity[fieldName].itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\">\n      <button type=\"button\" class=\"btn\" onclick=\"openEntityPicker('");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvOrm.tablesMap[entity.getClass().simpleName].fieldsMap[fieldName].foreignEntity}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("\n<button class=\"btn\" onClick=\"selectEntity('");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("', &quot;");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("&quot;, '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlace}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmEnt}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("'); setCostUom(");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${knc}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write(',');
+      out.write(' ');
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.defUnitOfMeasure.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write(", &quot;");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.defUnitOfMeasure.itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("&quot;, '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlace}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmEnt}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('\'');
       out.write(',');
-      out.write('\'');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("', '");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fieldName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("','&nmHnd=");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("&fltordPitsTypeOpr=in&fltordPitsTypeValId=1,2&fltordPitsTypeValAppearance=Merchandise or stock in trade,Raw materials&fltordPknownCostOpr1=isnotnull&fltordPforcedFor=knownCost,itsType&wdgPick=pickInvItemCost&mobile=");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("');\">...</button>\n      <button type=\"button\" class=\"btn\" onclick=\"clearSelectedEntity('");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fieldName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("');\">X</button>\n    </div>\n  </td>\n</tr>\n");
+      out.write(' ');
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${accSettings.costPrecision}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write(',');
+      out.write(' ');
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${accSettings.costPrecision}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write(");\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Pick\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</button>\n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
         out = _jspx_out;
@@ -156,10 +146,10 @@ public final class inputPurchaseItemKnownCost_jsp extends org.apache.jasper.runt
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f0.setParent(null);
-    // /WEB-INF/jsp/mobile/inputs/inputPurchaseItemKnownCost.jsp(11,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setVar("required");
-    // /WEB-INF/jsp/mobile/inputs/inputPurchaseItemKnownCost.jsp(11,6) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inputPurchaseItemKnownCost.jsp(11,6) ''",_jsp_getExpressionFactory().createValueExpression("",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/pick/pickInvItemCost.jsp(3,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setVar("knc");
+    // /WEB-INF/jsp/pick/pickInvItemCost.jsp(3,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/pick/pickInvItemCost.jsp(3,0) '${entity.knownCost}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${entity.knownCost}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
     if (_jspx_th_c_005fset_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f0);
@@ -177,15 +167,17 @@ public final class inputPurchaseItemKnownCost_jsp extends org.apache.jasper.runt
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f0.setParent(null);
-    // /WEB-INF/jsp/mobile/inputs/inputPurchaseItemKnownCost.jsp(12,6) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvOrm.tablesMap[entity.getClass().simpleName].fieldsMap[fieldName].definition.contains('not null')}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    // /WEB-INF/jsp/pick/pickInvItemCost.jsp(4,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty entity.knownCost}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n        ");
+        out.write('\n');
+        out.write(' ');
+        out.write(' ');
         if (_jspx_meth_c_005fset_005f1(_jspx_th_c_005fif_005f0, _jspx_page_context))
           return true;
-        out.write("\n      ");
+        out.write('\n');
         int evalDoAfterBody = _jspx_th_c_005fif_005f0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -207,10 +199,10 @@ public final class inputPurchaseItemKnownCost_jsp extends org.apache.jasper.runt
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f1 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f0);
-    // /WEB-INF/jsp/mobile/inputs/inputPurchaseItemKnownCost.jsp(13,8) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f1.setVar("required");
-    // /WEB-INF/jsp/mobile/inputs/inputPurchaseItemKnownCost.jsp(13,8) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inputPurchaseItemKnownCost.jsp(13,8) 'required'",_jsp_getExpressionFactory().createValueExpression("required",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/pick/pickInvItemCost.jsp(5,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f1.setVar("knc");
+    // /WEB-INF/jsp/pick/pickInvItemCost.jsp(5,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/pick/pickInvItemCost.jsp(5,2) 'null'",_jsp_getExpressionFactory().createValueExpression("null",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f1 = _jspx_th_c_005fset_005f1.doStartTag();
     if (_jspx_th_c_005fset_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f1);
