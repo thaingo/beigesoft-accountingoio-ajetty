@@ -90,7 +90,7 @@ public final class mngSoftware_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</a>\n\n  ");
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
         return;
-      out.write("\n\n  <div class=\"form-std form-33-33\"  style=\"top: initial;\">\n    <div class=\"dialog-title\">\n      ");
+      out.write("\n\n  <div class=\"form-std form-70-33\">\n    <div class=\"dialog-title\">\n      ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"mngSoftware\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n    </div>\n    <form method=\"post\">\n      <input type=\"hidden\" name=\"nmRnd\" value=\"mngSoftware\">\n      <table class=\"tbl-fieldset\">\n        <tr>\n          <td>\n            <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"isShowDebugMessages\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
