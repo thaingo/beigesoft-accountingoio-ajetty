@@ -8,11 +8,11 @@ This software requires:
 Since 1.1.5 version Beige-Accounting is always in secure enabled mode (protected from scams).
 It requires user authentication with strong password.
 It uses encryption for HTTPS and file exchange - modern algorithms asymmetric RSA 2048bit key size and symmetric AES 256bit size.
-In *nix OS you are able to create "accountant" user, then under your regular account (e.g. Bob on Gnome desktop)
+In *nix OS you are able to create "accountant" user, then under your regular account (e.g. Bob)
 open terminal and login as accountant - "su -l accountant" then install and use beige-accounting.
 start beige-accounting under user "accounting" from command line with command "java -jar beigesoft-accountingoio-ajetty-jar-with-dependencies.jar cli" - cli means command line interface.
-As a result an application (that running under your regular account) that affected by scamware can't reach your
-accounting data, e.g. if your browser has been allowing scamware script in HTML page to read your file system then it can't read "accountant" files cause browser has been running under your account e.g. "Bob", not under "accountant".
+As a result an application (that is running under your regular account) that is affected by scamware can't access your
+accounting data, e.g. if your browser has been allowing scamware script in HTML page to read your file system then it can't read "accountant" files cause browser is running under your account e.g. "Bob", not under "accountant".
 
 To start application:
 1. unpack ZIP.
@@ -54,6 +54,8 @@ To start application:
   It requires ROOT permission, so do not care about keystore password (default is changeit).
   on MS Windows open Power Shell as ADMIN in beige-accounting folder and run:
   & "C:\Program Files (x86)\Java\jre[version#8]\bin\keytool.exe" -import -trustcacerts -alias ajettyca -file "ajetty-ca.pem" -keystore "C:\Program Files (x86)\Java\jre[version#8]\lib\security\cacerts"
+
+See https://sites.google.com/site/beigesoftware/bobspizza for details.
 
 license:
 
