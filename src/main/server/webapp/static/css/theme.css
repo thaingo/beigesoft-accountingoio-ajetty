@@ -16,7 +16,10 @@ main {
 }
 
 .navbar {
-  padding: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .navbar-brand-img {
@@ -41,6 +44,9 @@ main {
 @media only screen and (max-width: 768px) {
   .cat-name {
     margin-top: 3rem;
+  }
+  .navbar {
+    padding: 0.3rem;
   }
   main {
     padding: 1rem;
