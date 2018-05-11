@@ -5,13 +5,13 @@
  *       the last modified time of the source file after
  *       generation to assist with modification tracking.
  */
-package org.apache.jsp.WEB_002dINF.jsp.inputs;
+package org.apache.jsp.WEB_002dINF.jsp;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class inpGoodsSpecFileEdit_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class webstoreEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final javax.servlet.jsp.JspFactory _jspxFactory =
@@ -58,7 +58,6 @@ public final class inpGoodsSpecFileEdit_jsp extends org.apache.jasper.runtime.Ht
         throws java.io.IOException, javax.servlet.ServletException {
 
     final javax.servlet.jsp.PageContext pageContext;
-    javax.servlet.http.HttpSession session = null;
     final javax.servlet.ServletContext application;
     final javax.servlet.ServletConfig config;
     javax.servlet.jsp.JspWriter out = null;
@@ -70,27 +69,14 @@ public final class inpGoodsSpecFileEdit_jsp extends org.apache.jasper.runtime.Ht
     try {
       response.setContentType("text/html;charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
-      			null, true, 8192, true);
+      			null, false, 8192, true);
       _jspx_page_context = pageContext;
       application = pageContext.getServletContext();
       config = pageContext.getServletConfig();
-      session = pageContext.getSession();
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n<tr>\n  <td>\n    <label for=\"GoodsSpecific.stringValue1\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"alreadyLoadedUrl\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</label>\n  </td>\n  <td>\n    <div class=\"input-line\">\n      <input id=\"GoodsSpecific.stringValue1\" name=\"GoodsSpecific.stringValue1\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.stringValue1}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" onchange=\"inputHasBeenChanged(this);\"/> \n    </div>\n  </td>\n</tr>\n<tr>\n  <td>\n    <label for=\"GoodsSpecific.stringValue3\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"item_description\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</label>\n  </td>\n  <td>\n    <div class=\"input-line\">\n      <input id=\"GoodsSpecific.stringValue3\" name=\"GoodsSpecific.stringValue3\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.stringValue3}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" onchange=\"inputHasBeenChanged(this);\"/> \n    </div>\n  </td>\n</tr>\n<tr>\n  <td>\n    <label for=\"GoodsSpecific.stringValue4\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"group_description\")}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</label>\n  </td>\n  <td>\n    <div class=\"input-line\">\n      <input id=\"GoodsSpecific.stringValue4\" name=\"GoodsSpecific.stringValue4\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.stringValue4}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" onchange=\"inputHasBeenChanged(this);\"/> \n    </div>\n  </td>\n</tr>\n");
+      out.write("\n\n\n    </main>\n\n    <button id=\"toTop\">^</button>\n\n    <script>\n      $(window).scroll(function() { if ($(this).scrollTop() > 200) { $(\"#toTop\").fadeIn(); } else { $(\"#toTop\").fadeOut(); } });\n      $(\"#toTop\").click(function() { $(\"html, body\").animate({scrollTop: 0}, 1000); });\n    </script>\n\n  </body>\n</html>\n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
         out = _jspx_out;
