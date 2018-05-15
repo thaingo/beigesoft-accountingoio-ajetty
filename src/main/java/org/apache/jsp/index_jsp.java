@@ -93,7 +93,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     return;
   }
 
-      out.write("\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <link rel=\"shortcut icon\" href=\"static/img/favicon.png\">\n  <link rel=\"stylesheet\" href=\"static/css/beige.common.css\" />\n  <title>Beige-Accounting</title>\n</head>\n<body>\n\n");
+      out.write("\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <link rel=\"shortcut icon\" href=\"static/img/favicon.png\">\n  <link rel=\"stylesheet\" href=\"static/css/beige.common.css\" />\n  <title>Beigesoft ™ Accounting</title>\n</head>\n<body>\n\n");
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
       out.write('\n');
