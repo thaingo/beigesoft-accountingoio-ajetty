@@ -12,6 +12,8 @@ package org.beigesoft.ajetty;
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
  */
 
+import java.util.List;
+import java.util.ArrayList;
 import java.io.File;
 import java.security.KeyStore;
 
@@ -78,6 +80,14 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
       jdbcUrl = jdbcUrl.replace(ASrvOrm.WORD_CURRENT_PARENT_DIR,
         fcd.getParent() + File.separator);
     }
+    String langCountriesStr = pFactoryAndServlet.getHttpServlet()
+      .getInitParameter("langCountries");
+    List<String> lngCntLst = new ArrayList<String>();
+    for (String str : langCountriesStr.split(",")) {
+      lngCntLst.add(str);
+    }
+    String[] lngCntArr = new String[lngCntLst.size()];
+    factoryAppBeans.lazyGetSrvI18n().add(lngCntLst.toArray(lngCntArr));
     LstnDbChanged<RS> lstnDbChanged = new LstnDbChanged<RS>();
     lstnDbChanged.setFactoryAndServlet(pFactoryAndServlet);
     factoryAppBeans.getListenersDbChanged().add(lstnDbChanged);
