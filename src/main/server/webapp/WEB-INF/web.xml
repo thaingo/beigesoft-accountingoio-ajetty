@@ -86,6 +86,48 @@
     <url-pattern>/servicePublic/*</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>jspPublic</servlet-name>
+    <servlet-class>
+      org.beigesoft.web.servlet.WJspPublic
+    </servlet-class>
+    <init-param>
+      <param-name>dirJsp</param-name>
+      <param-value>/WEB-INF/jsp/</param-value>
+    </init-param>
+    <multipart-config>
+      <max-file-size>10000</max-file-size>
+      <max-request-size>10000</max-request-size>
+      <file-size-threshold>10000</file-size-threshold>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jspPublic</servlet-name>
+    <url-pattern>/jspPublic/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>jspPublic</servlet-name>
+    <url-pattern></url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>jspd</servlet-name>
+    <servlet-class>
+      org.beigesoft.web.servlet.WJsp
+    </servlet-class>
+    <init-param>
+      <param-name>dirJsp</param-name>
+      <param-value>/WEB-INF/jsp/</param-value>
+    </init-param>
+    <multipart-config>
+      <max-file-size>10000</max-file-size>
+      <max-request-size>10000</max-request-size>
+      <file-size-threshold>10000</file-size-threshold>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jspd</servlet-name>
+    <url-pattern>/secure/jspd/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>reportPdf</servlet-name>
     <servlet-class>
       org.beigesoft.web.servlet.WReportPdf
@@ -4411,10 +4453,6 @@ env-entry, and ejb-ref elements should follow this fragment.
   <servlet-mapping>
     <servlet-name>chartOfAccounts</servlet-name>
     <url-pattern>/secure/chartOfAccounts/*</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-      <servlet-name>org.apache.jsp.index_jsp</servlet-name>
-      <url-pattern></url-pattern>
   </servlet-mapping>
   <session-config>
     <session-timeout>15</session-timeout>

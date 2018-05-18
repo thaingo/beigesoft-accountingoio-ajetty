@@ -25,6 +25,8 @@ import org.beigesoft.log.ILogger;
 import org.beigesoft.exception.ExceptionWithCode;
 import org.beigesoft.service.ISrvI18n;
 import org.beigesoft.factory.IFactoryAppBeans;
+import org.beigesoft.handler.IHandlerRequest;
+import org.beigesoft.web.model.HttpRequestData;
 import org.beigesoft.web.service.UtlJsp;
 import org.beigesoft.web.service.IMngDatabaseExt;
 
@@ -67,6 +69,10 @@ public class WMngDatabaseExt extends HttpServlet {
     try {
       factoryAppBeans = (IFactoryAppBeans) getServletContext()
           .getAttribute("IFactoryAppBeans");
+      HttpRequestData requestData = new HttpRequestData(pReq, pResp);
+      IHandlerRequest hndlI18nRequest = (IHandlerRequest)
+        factoryAppBeans.lazyGet("hndlI18nRequest");
+      hndlI18nRequest.handle(requestData);
       IMngDatabaseExt mngDatabase = (IMngDatabaseExt) factoryAppBeans
         .lazyGet("IMngDatabaseExt");
       ICryptoHelper ch = (ICryptoHelper) factoryAppBeans.
