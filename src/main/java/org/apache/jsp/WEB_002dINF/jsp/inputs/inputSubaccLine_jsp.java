@@ -79,7 +79,7 @@ public final class inputSubaccLine_jsp extends org.apache.jasper.runtime.HttpJsp
       _jspx_out = out;
 
       out.write("\n\n<tr>\n  <td>\n    <label for=\"SubaccountLinesubaccNameAppearanceVisible\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg('subaccount')}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"subaccount\", lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</label>\n  </td>\n  <td>\n    <div class=\"input-line\">\n      <input class=\"picked-appearence\" id=\"SubaccountLinesubaccNameAppearanceVisible\" disabled type=\"text\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.subaccName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\" onchange=\"inputHasBeenChanged(this);\">\n      <input id=\"SubaccountLinesubaccNameAppearance\" type=\"hidden\" required name=\"SubaccountLine.subaccName\" value=\"");

@@ -12,6 +12,8 @@ package org.beigesoft.ajetty;
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
  */
 
+import java.util.List;
+import java.util.ArrayList;
 import java.security.KeyStore;
 
 import org.eclipse.jetty.security.DataBaseLoginService;
@@ -48,6 +50,14 @@ public class LstnDbChanged<RS> implements IDelegateSimpleExc {
       (AFactoryAppBeans<RS>) this.factoryAndServlet.getFactoryAppBeans();
     this.factoryAndServlet.getHttpServlet().getServletContext()
       .setAttribute("srvI18n", factoryAppBeans.lazyGet("ISrvI18n"));
+    String langCountriesStr = this.factoryAndServlet.getHttpServlet()
+      .getInitParameter("langCountries");
+    List<String> lngCntLst = new ArrayList<String>();
+    for (String str : langCountriesStr.split(",")) {
+      lngCntLst.add(str);
+    }
+    String[] lngCntArr = new String[lngCntLst.size()];
+    factoryAppBeans.lazyGetSrvI18n().add(lngCntLst.toArray(lngCntArr));
     this.factoryAndServlet.getHttpServlet().getServletContext()
       .setAttribute("sessionTracker",
         factoryAppBeans.lazyGet("ISessionTracker"));

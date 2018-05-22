@@ -116,7 +116,7 @@ public final class webstoreGoods_jsp extends org.apache.jasper.runtime.HttpJspBa
       if (_jspx_meth_c_005fif_005f12(_jspx_page_context))
         return;
       out.write("\n</div>\n\n<div class=\"py-3 bg-light\">\n  <div class=\"text-center text-muted\">\n    <h4>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg('item_specifics')}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"item_specifics\", lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</h4>\n  </div>\n  <div class=\"specifics\">\n    <div class=\"row\">\n      ");
       if (_jspx_meth_c_005fforEach_005f1(_jspx_page_context))
         return;
@@ -596,7 +596,7 @@ public final class webstoreGoods_jsp extends org.apache.jasper.runtime.HttpJspBa
     if (_jspx_eval_c_005fif_005f12 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n    <button type=\"button\" class=\"btn btn-primary\" onclick=\"$('#cartMdl').modal('toggle');\">");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg('open_cart')}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"open_cart\", lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(" <span class=\"badge badge-secondary\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${shoppingCart.totalItems}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</span></button>\n  ");
