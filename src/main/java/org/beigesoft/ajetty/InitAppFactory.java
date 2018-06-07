@@ -25,6 +25,8 @@ import org.beigesoft.orm.service.ASrvOrm;
 import org.beigesoft.web.model.FactoryAndServlet;
 import org.beigesoft.web.service.SrvAddTheFirstUser;
 import org.beigesoft.web.factory.AFactoryAppBeans;
+import org.beigesoft.accounting.service.ISrvAccSettings;
+import org.beigesoft.accounting.service.HndlAccVarsRequest;
 
 /**
  * <p>
@@ -103,6 +105,14 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
     pFactoryAndServlet.getHttpServlet().getServletContext()
       .setAttribute("sessionTracker",
         factoryAppBeans.lazyGet("ISessionTracker"));
+    HndlAccVarsRequest<RS> hndlAccVarsRequest = new HndlAccVarsRequest<RS>();
+    hndlAccVarsRequest.setLogger(factoryAppBeans.lazyGetLogger());
+    hndlAccVarsRequest.setSrvDatabase(factoryAppBeans.lazyGetSrvDatabase());
+    hndlAccVarsRequest.setSrvOrm(factoryAppBeans.lazyGetSrvOrm());
+    hndlAccVarsRequest.setSrvAccSettings((ISrvAccSettings) factoryAppBeans
+      .lazyGet("ISrvAccSettings"));
+    factoryAppBeans.lazyGetHndlI18nRequest()
+      .setAdditionalI18nReqHndl(hndlAccVarsRequest);
     //to create/initialize database if need:
     factoryAppBeans.lazyGet("ISrvOrm");
     @SuppressWarnings("unchecked")

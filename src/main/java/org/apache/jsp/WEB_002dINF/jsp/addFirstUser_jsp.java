@@ -81,20 +81,20 @@ public final class addFirstUser_jsp extends org.apache.jasper.runtime.HttpJspBas
       _jspx_out = out;
 
       out.write("\n\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <link rel=\"shortcut icon\" href=\"static/img/favicon.png\">\n  <link rel=\"stylesheet\" href=\"static/css/beige.common.css\" />\n  <title>Beigesoft ™ Accounting All In One</title>\n</head>\n<body>\n\n<div style=\"padding: 20px;\">\n  ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"add_first_user_rules\", lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"add_first_user_rules\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('\n');
       out.write(' ');
       out.write(' ');
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
         return;
       out.write("\n</div>\n\n<div class=\"form-std form-70-33\"  style=\"top: initial;\">\n  <div class=\"dialog-title\">\n    ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"add_first_user\", lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"add_first_user\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n  </div>\n  <form method=\"post\" action=\"addFirstUser\">\n    <table class=\"tbl-fieldset\">\n      <tr>\n        <td>\n          <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"user_name\", lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"user_name\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n        </td>\n        <td>\n          <div style=\"display: flex;\">\n            <input required name=\"userName\" value=\"\">\n          </div>\n        </td>\n      </tr>\n      <tr>\n        <td>\n          <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"user_pass\", lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"user_pass\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n        </td>\n        <td>\n          <div style=\"display: flex;\">\n            <input type=\"password\" required name=\"userPass\" value=\"\">\n          </div>\n        </td>\n      </tr>\n      <tr>\n        <td>\n          <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"user_pass_rep\", lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"user_pass_rep\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n        </td>\n        <td>\n          <div style=\"display: flex;\">\n            <input type=\"password\" required name=\"userPassRep\" value=\"\">\n          </div>\n        </td>\n      </tr>\n    </table>\n    <div>\n      <input type=\"submit\"/>\n    </div>\n  </form>\n</div>\n\n</body>\n</html>\n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
@@ -129,7 +129,7 @@ public final class addFirstUser_jsp extends org.apache.jasper.runtime.HttpJspBas
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n    <b style=\"color: red;\">");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(passwErrMsg), lang}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(passwErrMsg, reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</b>\n  ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

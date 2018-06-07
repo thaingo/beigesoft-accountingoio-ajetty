@@ -76,8 +76,11 @@ public final class SpecificsFilterInteger_jsp extends org.apache.jasper.runtime.
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\n\n<c:set var=\"inputAdd\" value=\"class='form-control autoNum0' data-a-sep='");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.dgseparatorv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("' data-a-dec='");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.dseparatorv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("'\" scope=\"request\"/>\n");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "SpecificsFilterNumber.jsp", out, false);
       out.write('\n');
     } catch (java.lang.Throwable t) {

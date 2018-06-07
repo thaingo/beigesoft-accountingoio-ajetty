@@ -14,6 +14,7 @@ package org.beigesoft.ajetty;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.HashMap;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -69,10 +70,12 @@ public class WMngDatabaseExt extends HttpServlet {
     try {
       factoryAppBeans = (IFactoryAppBeans) getServletContext()
           .getAttribute("IFactoryAppBeans");
+      HashMap<String, Object> reqVars = new HashMap<String, Object>();
       HttpRequestData requestData = new HttpRequestData(pReq, pResp);
+      requestData.setAttribute("reqVars", reqVars);
       IHandlerRequest hndlI18nRequest = (IHandlerRequest)
         factoryAppBeans.lazyGet("hndlI18nRequest");
-      hndlI18nRequest.handle(requestData);
+      hndlI18nRequest.handle(reqVars, requestData);
       IMngDatabaseExt mngDatabase = (IMngDatabaseExt) factoryAppBeans
         .lazyGet("IMngDatabaseExt");
       ICryptoHelper ch = (ICryptoHelper) factoryAppBeans.

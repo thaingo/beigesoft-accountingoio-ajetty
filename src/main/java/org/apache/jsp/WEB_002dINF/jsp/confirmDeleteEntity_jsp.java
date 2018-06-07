@@ -94,9 +94,9 @@ public final class confirmDeleteEntity_jsp extends org.apache.jasper.runtime.Htt
       out.write("\n\n<dialog id=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlaceForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("DeleteDlg\" class=\"dlg\">\n  <div class=\"form-std\">\n    <div class=\"dialog-title\">\n      ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Delete\", lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Delete\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(' ');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(param.nmEnt, lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(param.nmEnt, reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n      <button onclick=\"closeDlgCareful('");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlaceForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("Delete')\" class=\"btn-close\">x</button>\n    </div>\n    <form id=\"");
@@ -122,7 +122,7 @@ public final class confirmDeleteEntity_jsp extends org.apache.jasper.runtime.Htt
       if (_jspx_meth_c_005fforEach_005f2(_jspx_page_context))
         return;
       out.write("\n      ");
-      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("forForm/${mngUvds.classesSettings.get(entity.getClass()).get('wdgFormActionsDelete', lang)}.jsp", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false), out, false);
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("forForm/${mngUvds.classesSettings.get(entity.getClass()).get('wdgFormActionsDelete')}.jsp", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false), out, false);
       out.write("\n    </form>\n  </div>\n</dialog>\n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
@@ -221,7 +221,7 @@ public final class confirmDeleteEntity_jsp extends org.apache.jasper.runtime.Htt
     _jspx_th_c_005fif_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
     // /WEB-INF/jsp/confirmDeleteEntity.jsp(21,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f1.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${par.key.startsWith('fltordM') || par.key.startsWith('fly', lang)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f1.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${par.key.startsWith('fltordM') || par.key.startsWith('fly')}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f1 = _jspx_th_c_005fif_005f1.doStartTag();
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -280,7 +280,7 @@ public final class confirmDeleteEntity_jsp extends org.apache.jasper.runtime.Htt
     // /WEB-INF/jsp/confirmDeleteEntity.jsp(27,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setVar("entry");
     // /WEB-INF/jsp/confirmDeleteEntity.jsp(27,6) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/confirmDeleteEntity.jsp(27,6) '${mngUvds.makeFldPropLst(entity.getClass(), 'orderShowForm', lang)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${mngUvds.makeFldPropLst(entity.getClass(), 'orderShowForm', lang)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/confirmDeleteEntity.jsp(27,6) '${mngUvds.makeFldPropLst(entity.getClass(), 'orderShowForm')}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${mngUvds.makeFldPropLst(entity.getClass(), 'orderShowForm')}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f1 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f1 = _jspx_th_c_005fforEach_005f1.doStartTag();
@@ -320,7 +320,7 @@ public final class confirmDeleteEntity_jsp extends org.apache.jasper.runtime.Htt
     _jspx_th_c_005fif_005f2.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f1);
     // /WEB-INF/jsp/confirmDeleteEntity.jsp(28,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f2.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty entry.value.get('wdgDeleteForm', lang)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f2.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty entry.value.get('wdgDeleteForm')}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f2 = _jspx_th_c_005fif_005f2.doStartTag();
     if (_jspx_eval_c_005fif_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -328,7 +328,7 @@ public final class confirmDeleteEntity_jsp extends org.apache.jasper.runtime.Htt
         if (_jspx_meth_c_005fset_005f1(_jspx_th_c_005fif_005f2, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f1))
           return true;
         out.write("\n          ");
-        org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("inputs/${entry.value.get('wdgDeleteForm', lang)}.jsp", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false), out, false);
+        org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("inputs/${entry.value.get('wdgDeleteForm')}.jsp", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false), out, false);
         out.write("\n        ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f2.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -392,7 +392,7 @@ public final class confirmDeleteEntity_jsp extends org.apache.jasper.runtime.Htt
           if (_jspx_meth_c_005fset_005f3(_jspx_th_c_005fforEach_005f2, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f2))
             return true;
           out.write("\n        <div class=\"title-list\"> ");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(nameEnts, lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(nameEnts, reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write(" </div>\n        <table>\n          <tr>\n            ");
           if (_jspx_meth_c_005fforEach_005f3(_jspx_th_c_005fforEach_005f2, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f2))
             return true;
@@ -430,7 +430,7 @@ public final class confirmDeleteEntity_jsp extends org.apache.jasper.runtime.Htt
     // /WEB-INF/jsp/confirmDeleteEntity.jsp(35,8) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f2.setVar("fieldsForList");
     // /WEB-INF/jsp/confirmDeleteEntity.jsp(35,8) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/confirmDeleteEntity.jsp(35,8) '${mngUvds.makeFldPropLst(ownedListsMapEntry.key, 'orderShowList', lang)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${mngUvds.makeFldPropLst(ownedListsMapEntry.key, 'orderShowList', lang)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/confirmDeleteEntity.jsp(35,8) '${mngUvds.makeFldPropLst(ownedListsMapEntry.key, 'orderShowList')}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${mngUvds.makeFldPropLst(ownedListsMapEntry.key, 'orderShowList')}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/confirmDeleteEntity.jsp(35,8) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f2.setScope("request");
     int _jspx_eval_c_005fset_005f2 = _jspx_th_c_005fset_005f2.doStartTag();
@@ -481,7 +481,7 @@ public final class confirmDeleteEntity_jsp extends org.apache.jasper.runtime.Htt
       if (_jspx_eval_c_005fforEach_005f3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\n              <th>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(entryFld.key, lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(entryFld.key, reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</th>\n            ");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f3.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

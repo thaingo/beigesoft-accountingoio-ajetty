@@ -91,7 +91,7 @@ public final class inputEnumReadOnly_jsp extends org.apache.jasper.runtime.HttpJ
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fieldName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('"');
       out.write('>');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(fieldName, lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(fieldName, reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</label>\n  </td>\n  <td>\n    <div class=\"input-line\">\n      ");
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
@@ -188,7 +188,7 @@ public final class inputEnumReadOnly_jsp extends org.apache.jasper.runtime.HttpJ
     // /WEB-INF/jsp/inputs/inputEnumReadOnly.jsp(11,8) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f1.setVar("valVisible");
     // /WEB-INF/jsp/inputs/inputEnumReadOnly.jsp(11,8) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inputEnumReadOnly.jsp(11,8) '${srvI18n.getMsg(entity[fieldName], lang)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${srvI18n.getMsg(entity[fieldName], lang)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inputEnumReadOnly.jsp(11,8) '${srvI18n.getMsg(entity[fieldName], reqVars.lang)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${srvI18n.getMsg(entity[fieldName], reqVars.lang)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f1 = _jspx_th_c_005fset_005f1.doStartTag();
     if (_jspx_th_c_005fset_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f1);

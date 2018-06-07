@@ -23,6 +23,8 @@ import org.beigesoft.service.ISrvDatabase;
 import org.beigesoft.web.model.FactoryAndServlet;
 import org.beigesoft.web.factory.AFactoryAppBeans;
 import org.beigesoft.web.service.SrvAddTheFirstUser;
+import org.beigesoft.accounting.service.ISrvAccSettings;
+import org.beigesoft.accounting.service.HndlAccVarsRequest;
 
 /**
  * <p>Re-initializes external context after database
@@ -61,6 +63,14 @@ public class LstnDbChanged<RS> implements IDelegateSimpleExc {
     this.factoryAndServlet.getHttpServlet().getServletContext()
       .setAttribute("sessionTracker",
         factoryAppBeans.lazyGet("ISessionTracker"));
+    HndlAccVarsRequest<RS> hndlAccVarsRequest = new HndlAccVarsRequest<RS>();
+    hndlAccVarsRequest.setLogger(factoryAppBeans.lazyGetLogger());
+    hndlAccVarsRequest.setSrvDatabase(factoryAppBeans.lazyGetSrvDatabase());
+    hndlAccVarsRequest.setSrvOrm(factoryAppBeans.lazyGetSrvOrm());
+    hndlAccVarsRequest.setSrvAccSettings((ISrvAccSettings) factoryAppBeans
+      .lazyGet("ISrvAccSettings"));
+    factoryAppBeans.lazyGetHndlI18nRequest()
+      .setAdditionalI18nReqHndl(hndlAccVarsRequest);
     factoryAppBeans.lazyGet("ISrvOrm");
     ISrvDatabase<RS> srvDb = (ISrvDatabase<RS>)
       factoryAppBeans.lazyGet("ISrvDatabase");
