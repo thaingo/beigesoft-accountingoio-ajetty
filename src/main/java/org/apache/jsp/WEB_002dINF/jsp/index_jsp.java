@@ -86,7 +86,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Standard\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n      <a href=\"secure/jspd?nmRnd=mainMobile\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Mobile\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n      <a href=\"privacypolicy.html\" target=\"_blank\"> Beigesoft™ Accounting Privacy Policy</a>\n    </div>\n  </div>\n  <div class=\"dropdown\">\n    <a href=\"#\" class=\"dropdown-btn\">");
+      out.write("</a>\n      <a href=\"privacypolicy.html\" target=\"_blank\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"privacy_policy\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n    </div>\n  </div>\n  <div class=\"dropdown\">\n    <a href=\"#\" class=\"dropdown-btn\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Admin\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n    <div class=\"dropdown-content\">\n      <a href=\"secure/jspd?nmRnd=getDatabaseCopyForm\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"ImportDatabase\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

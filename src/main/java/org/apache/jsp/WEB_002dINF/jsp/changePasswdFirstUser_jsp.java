@@ -80,7 +80,7 @@ public final class changePasswdFirstUser_jsp extends org.apache.jasper.runtime.H
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>Clear current database then get identical copy of another one</title>\n  <link rel=\"stylesheet\" href=\"../static/css/beige.common.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../static/img/favicon.png\">\n</head>\n<body style=\"padding: 20px;\">\n<br>\n<a class=\"btn\" href=\"../\" style=\"margin: 1rem;\">");
+      out.write("\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <link rel=\"stylesheet\" href=\"../static/css/beige.common.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../static/img/favicon.png\">\n  <title>Beigesoft ™ Accounting All In One</title>\n</head>\n<body style=\"padding: 20px;\">\n<br>\n<a class=\"btn\" href=\"../\" style=\"margin: 1rem;\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"home\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n\n<div style=\"padding: 20px;\">\n  ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"add_first_user_rules\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
