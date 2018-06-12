@@ -129,6 +129,10 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
       SrvGetUserCredentials<RS> srvCr = new SrvGetUserCredentials<RS>();
       srvCr.setSrvDatabase(srvDb);
       srvDbl.setSrvGetUserCredentials(srvCr);
+      LstnUserPswdChanged lstnUserPswdChanged = new LstnUserPswdChanged();
+      lstnUserPswdChanged.setDbLoginService(srvDbl);
+      pFactoryAndServlet.getHttpServlet().getServletContext()
+        .setAttribute("ILstnUserPswdChanged", lstnUserPswdChanged);
     }
     //crypto init:
     CryptoHelper ch = (CryptoHelper) factoryAppBeans.lazyGet("ICryptoHelper");

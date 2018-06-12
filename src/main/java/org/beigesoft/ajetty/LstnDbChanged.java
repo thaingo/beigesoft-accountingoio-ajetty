@@ -88,6 +88,11 @@ public class LstnDbChanged<RS> implements IDelegateSimpleExc {
       SrvGetUserCredentials<RS> srvCr = (SrvGetUserCredentials<RS>) srvDbl
         .getSrvGetUserCredentials();
       srvCr.setSrvDatabase(srvDb);
+      srvDbl.getUsers().clear();
+      LstnUserPswdChanged lstnUserPswdChanged = new LstnUserPswdChanged();
+      lstnUserPswdChanged.setDbLoginService(srvDbl);
+      this.factoryAndServlet.getHttpServlet().getServletContext()
+        .setAttribute("ILstnUserPswdChanged", lstnUserPswdChanged);
     }
     //crypto init:
     CryptoHelper ch = (CryptoHelper) factoryAppBeans.lazyGet("ICryptoHelper");
