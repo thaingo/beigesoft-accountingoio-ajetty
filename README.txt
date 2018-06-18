@@ -44,7 +44,7 @@ To start application:
 7. Empty database requires to add the first (only) user with strong password.
   To make strong and ease to remember password use method similar to this:
   a. use at least 3 words, e.g. raccoon eat stone
-  b. change these words with a rule e.g. "last letter to thirst position upper case" e.g. Nraccoo Tea Eston
+  b. change these words with a rule e.g. "last letter to first position upper case" e.g. Nraccoo Tea Eston
   c. add several digits, e.g. result is "NraccooTeaEston165" or "165NraccooTeaEston" or "165NraccooTeaEston165"...
 8. To make second (third ...) local beige-accounting e.g. for using web-services to import data from
   tax accounting to market one (at the same computer) you need copy folder "ks" with keystore into second (3-d...)
