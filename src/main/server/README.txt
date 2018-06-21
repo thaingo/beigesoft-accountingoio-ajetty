@@ -1,9 +1,41 @@
 beigesoft-accountingoio-ajetty-bin.zip is standalone JEE web application performed by embedded A-Jetty.
 
+Beigesoft™ Accounting for MS Windows/Mac/*Nix beigesoft-accountingoio-ajetty.bin.zip
+you can find in central Maven repository https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.beigesoft%22
+or https://repo1.maven.org/maven2/org/beigesoft/beigesoft-accountingoio-ajetty/
+
 This software requires:
 
 * Java - JRE7+.
 * Google Chrome, Opera, or Chromium browser (html5-dialog ready).
+
+Features:
+* Double entry accounting system including ledger and balance reports.
+* COGS FIFO/LIFO perpetual automatically for sales, sales returns, inventory losses.
+* Automatically sales taxes accounting entries (a goods or a service may has several sales taxes) for sales, purchases and their returns.
+* Prepayments/payments tracking for sales/purchases.
+* Payroll - automatically taxes calculation (by percentage tax table method) and accounting entries.
+* Manufacturing - automatically cost calculation from used materials and direct labor (and other) costs.
+* Multi-databases (organizations) support.
+* and more.
+
+Web-Store is included for study and tests purposes and you are also able to make full DB copy from cloud version.
+Web-Store is draft yet.
+
+Version 1.1.6:
+*Added "omit sales tax for overseas sales/purchase" - if customer/vendor is marked as "foreigner" then sales taxes will be omitted in the invoice.
+*Fixed internationalization - decimal separators...
+*Added advanced internationalization for printing overseas sales invoice in buyer's native language for overseas buyers who bought your products for business purposes.
+*Fixed mistake of reversing single line in invoices form.
+*Fixed sales taxes grouping rounding error (when round(2.244 + 2.244) != round(2.244) + round(2.244)).
+*Fixed dis-balance when subaccount name is changed. Added more slow services that is not affected by changing subaccount name.
+ To recalculate all intermediate balances - in accounting settings change "Balance store period" from "monthly to weekly", then print report "Trial balance", then change "Balance store period" back.
+*Added unit of measure and quantity for services (for purchase/sale).
+
+Version 1.1.5:
+Fixed purchase return sales tax non-extracted.
+Added JAR signing.
+Fixed crossplatform file.separator.
 
 Since 1.1.5 version Beige-Accounting is always in secure enabled mode (protected from scams).
 It requires user authentication with strong password.
