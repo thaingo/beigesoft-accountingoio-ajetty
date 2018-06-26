@@ -30,6 +30,7 @@ import org.beigesoft.accounting.service.HndlAccVarsRequest;
 import org.beigesoft.webstore.service.HndlTradeVarsRequest;
 import org.beigesoft.webstore.service.ISrvTradingSettings;
 import org.beigesoft.webstore.service.UtlTradeJsp;
+import org.beigesoft.webstore.service.ISrvSettingsAdd;
 
 /**
  * <p>
@@ -115,6 +116,8 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
     hndlTradeVarsRequest.setSrvOrm(factoryAppBeans.lazyGetSrvOrm());
     hndlTradeVarsRequest.setUtlTradeJsp((UtlTradeJsp)
       factoryAppBeans.lazyGet("utlTradeJsp"));
+    hndlTradeVarsRequest.setSrvSettingsAdd((ISrvSettingsAdd)
+      factoryAppBeans.lazyGet("ISrvSettingsAdd"));
     hndlTradeVarsRequest.setSrvTradingSettings((ISrvTradingSettings)
       factoryAppBeans.lazyGet("ISrvTradingSettings"));
     HndlAccVarsRequest<RS> hndlAccVarsRequest = new HndlAccVarsRequest<RS>();
