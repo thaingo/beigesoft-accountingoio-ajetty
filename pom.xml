@@ -5,7 +5,7 @@
   <groupId>org.beigesoft</groupId>
   <version>1.1.7-SNAPSHOT</version>
   <artifactId>beigesoft-accountingoio-ajetty</artifactId>
-  <name>Beigesoft ™ Accountion All In One WEB application on embedded A-Jetty.</name>
+  <name>Beigesoft™ Accountion All In One WEB application on embedded A-Jetty.</name>
 
   <description>Beigesoft ™ Accountion All In One WEB application (included Beigesoft Web-Store) on embedded A-Jetty.
     Web-Store is included for study and tests purposes and you are also able to make full DB copy from cloud version.

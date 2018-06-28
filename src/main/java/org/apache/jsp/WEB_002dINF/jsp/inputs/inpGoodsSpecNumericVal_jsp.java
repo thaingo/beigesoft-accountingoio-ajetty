@@ -110,9 +110,9 @@ public final class inpGoodsSpecNumericVal_jsp extends org.apache.jasper.runtime.
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(".numericValue1\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"decimalPlaces\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</label>\n  </td>\n  <td>\n    <div class=\"input-line\">\n      <input type=\"number\" required name=\"");
+      out.write("</label>\n  </td>\n  <td>\n    <div class=\"input-line\">\n      <input type=\"number\" min=\"1\" max=\"10\" required name=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write(".numericValue2\" value=\"");
+      out.write(".longValue2\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${decpl}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\" onchange=\"inputHasBeenChanged(this);\"/> \n    </div>\n  </td>\n</tr>\n<tr>\n  <td>\n    <label for=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
