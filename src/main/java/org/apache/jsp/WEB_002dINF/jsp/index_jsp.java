@@ -80,7 +80,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <link rel=\"shortcut icon\" href=\"static/img/favicon.png\">\n  <link rel=\"stylesheet\" href=\"static/css/beige.common.css\" />\n  <title>Beigesoft ™ Accounting All In One</title>\n</head>\n<body>\n\n<div class=\"navbar\">\n  <div class=\"dropdown\">\n    <a href=\"#\" class=\"dropdown-btn\">");
+      out.write("\n\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <link rel=\"shortcut icon\" href=\"static/img/favicon.png\">\n  <link rel=\"stylesheet\" href=\"static/css/beige.common.css\" />\n  <title>Beigesoft™ Accounting All In One</title>\n</head>\n<body>\n\n<div class=\"navbar\">\n  <div class=\"dropdown\">\n    <a href=\"#\" class=\"dropdown-btn\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Appearance\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n    <div class=\"dropdown-content\">\n      <a href=\"secure/jspd?nmRnd=main\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Standard\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

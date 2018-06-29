@@ -1442,6 +1442,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.toString.toStrGdSpecNum1_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.toString.toStrGdSpecNum1_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.toString.toStrDocumentWithPayments_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.toString.toStrDocumentWithPayments_jsp</servlet-class>
     </servlet>
@@ -3609,6 +3614,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.toString.toStrDate_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/toString/toStrDate.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.toString.toStrGdSpecNum1_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/toString/toStrGdSpecNum1.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
