@@ -332,11 +332,6 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreGoods_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.webstoreGoods_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.editEntity_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.editEntity_jsp</servlet-class>
     </servlet>
@@ -394,6 +389,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.listAfterAccountJson_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.listAfterAccountJson_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreGOODS1_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.webstoreGOODS1_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2507,11 +2507,6 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreGoods_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/webstoreGoods.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.editEntity_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/editEntity.jsp</url-pattern>
     </servlet-mapping>
@@ -2569,6 +2564,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.listAfterAccountJson_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/listAfterAccountJson.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreGOODS1_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/webstoreGOODS1.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
