@@ -602,6 +602,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreI18n_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.webstoreI18n_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webStoreAdmin_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.webStoreAdmin_jsp</servlet-class>
     </servlet>
@@ -2774,6 +2779,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.balance_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/balance.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreI18n_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/webstoreI18n.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
