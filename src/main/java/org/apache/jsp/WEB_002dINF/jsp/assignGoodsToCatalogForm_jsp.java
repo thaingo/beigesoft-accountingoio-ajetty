@@ -97,7 +97,7 @@ public final class assignGoodsToCatalogForm_jsp extends org.apache.jasper.runtim
         return;
       out.write("\n      </ul>\n    </div>\n    <form id=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlace}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("AssignGoodsToCatalogFrm\" action=\"service/\" method=\"POST\" target=\"_blank\">\n      <input type=\"hidden\" name=\"nmRnd\" value=\"assignCatalogResult\">\n      <input type=\"hidden\" name=\"nmHnd\" value=\"hndTrdTrnsReq\">\n      <input type=\"hidden\" name=\"nmPrc\" value=\"PrcAssignGoodsToCatalog\">\n      ");
+      out.write("AssignGoodsToCatalogFrm\" action=\"service/\" method=\"POST\" target=\"_blank\">\n      <input type=\"hidden\" name=\"nmRnd\" value=\"assignCatalogResult\">\n      <input type=\"hidden\" name=\"nmHnd\" value=\"hndTrdTrnsReq\">\n      <input type=\"hidden\" name=\"nmPrc\" value=\"PrcAssignItemsToCatalog\">\n      <input type=\"hidden\" name=\"itemType\" value=\"InvItem\">\n      ");
       if (_jspx_meth_c_005fforEach_005f1(_jspx_page_context))
         return;
       out.write("\n      <table class=\"tbl-fieldset\">\n        <tr>\n          <td>\n            <label for=\"totalItems\">");
@@ -108,7 +108,7 @@ public final class assignGoodsToCatalogForm_jsp extends org.apache.jasper.runtim
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${totalItems}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <label for=\"accId\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg('action', reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write(":</label>\n          </td>\n          <td>\n            <div class=\"input-line\">\n              <select name=\"goodsCatalogAction\" onchange=\"inputHasBeenChanged(this);\">\n                <option value=\"add\">");
+      out.write(":</label>\n          </td>\n          <td>\n            <div class=\"input-line\">\n              <select name=\"itemsCatalogAction\" onchange=\"inputHasBeenChanged(this);\">\n                <option value=\"add\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"add\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</option>\n                <option value=\"remove\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"remove\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -189,10 +189,10 @@ public final class assignGoodsToCatalogForm_jsp extends org.apache.jasper.runtim
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f1.setParent(null);
-    // /WEB-INF/jsp/assignGoodsToCatalogForm.jsp(24,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/assignGoodsToCatalogForm.jsp(25,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setVar("entry");
-    // /WEB-INF/jsp/assignGoodsToCatalogForm.jsp(24,6) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/assignGoodsToCatalogForm.jsp(24,6) '${filterMap}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${filterMap}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/assignGoodsToCatalogForm.jsp(25,6) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/assignGoodsToCatalogForm.jsp(25,6) '${filterMap}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${filterMap}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f1 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f1 = _jspx_th_c_005fforEach_005f1.doStartTag();

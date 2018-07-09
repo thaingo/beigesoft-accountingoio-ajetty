@@ -292,6 +292,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreSERVICE1_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.webstoreSERVICE1_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.warehouseSiteRests_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.warehouseSiteRests_jsp</servlet-class>
     </servlet>
@@ -684,6 +689,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.reverseDocJson_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.reverseDocJson_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreItem1_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.webstoreItem1_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2472,6 +2482,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreSERVICE1_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/webstoreSERVICE1.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.warehouseSiteRests_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/warehouseSiteRests.jsp</url-pattern>
     </servlet-mapping>
@@ -2864,6 +2879,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.reverseDocJson_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/reverseDocJson.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreItem1_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/webstoreItem1.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

@@ -2494,7 +2494,7 @@ public final class webstore_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("\n        <a href=\"servicePublic?nmRnd=webstore");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${item.itsType}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${item.detailsMethod}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("&nmHnd=hndPubWebStrTr&nmPrc=PrcDetailPage&itemId=");
+        out.write("&nmHnd=hndPubWebStrTr&nmPrc=PrcItemPage&itemId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${item.itemId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&itemType=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${item.itsType}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

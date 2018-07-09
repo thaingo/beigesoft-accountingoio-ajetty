@@ -10,10 +10,10 @@
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
  */
 
-function submitGoodsSpecificByAjax(pIdFrm) {
+function submitItemSpecificsByAjax(pIdFrm, pItemSpecNm) {
   var frm = document.getElementById(pIdFrm);
-  var gsAlUpUrl = document.getElementById("GoodsSpecific.stringValue1");
-  var gsFile = document.getElementById("GoodsSpecific.path");
+  var gsAlUpUrl = document.getElementById(pItemSpecNm + ".stringValue1");
+  var gsFile = document.getElementById(pItemSpecNm + ".path");
   if (gsAlUpUrl.value == "" && gsFile.value == "") {
     showWarning(MSGS["enterEitherAlreadyOrLoadNew"]);
   } else {
