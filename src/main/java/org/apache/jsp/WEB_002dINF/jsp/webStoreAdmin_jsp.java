@@ -166,7 +166,7 @@ public final class webStoreAdmin_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"EmailMsgs\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"service?nmHnd=hndTrdSmpReq&nmRnd=refreshedGoodsInList&nmPrc=PrcRefreshItemsInList\" target=\"_blank\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"RefreshItemsInList\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n        <a href=\"service?nmHnd=hndTrdSmpReq&nmRnd=refreshedGoodsInList&nmPrc=PrcRefreshItemsInList&refreshAllGs=true\" target=\"_blank\">");
+      out.write("</a>\n        <a href=\"service?nmHnd=hndTrdSmpReq&nmRnd=refreshedGoodsInList&nmPrc=PrcRefreshItemsInList&refreshAll=true\" target=\"_blank\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"RefreshItemsInListAll\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"service?nmHnd=hndTrdSmpReq&nmRnd=refreshedCatalog&nmPrc=PrcRefreshCatalog\" target=\"_blank\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"RefreshCatalog\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
