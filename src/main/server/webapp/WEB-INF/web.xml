@@ -161,6 +161,44 @@
     <url-pattern>/secure/service/*</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>seservice</servlet-name>
+    <servlet-class>
+      org.beigesoft.accounting.servlet.WSeService
+    </servlet-class>
+    <init-param>
+      <param-name>dirJsp</param-name>
+      <param-value>/WEB-INF/jsp/</param-value>
+    </init-param>
+    <multipart-config>
+      <max-file-size>10000</max-file-size>
+      <max-request-size>10000</max-request-size>
+      <file-size-threshold>10000</file-size-threshold>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>seservice</servlet-name>
+    <url-pattern>/seseller/service/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>seuploadSingle</servlet-name>
+    <servlet-class>
+      org.beigesoft.accounting.servlet.WSeUploadSingle
+    </servlet-class>
+    <init-param>
+      <param-name>dirJsp</param-name>
+      <param-value>/WEB-INF/jsp/</param-value>
+    </init-param>
+    <multipart-config>
+      <max-file-size>10485760</max-file-size>
+      <max-request-size>20971520</max-request-size>
+      <file-size-threshold>5242880</file-size-threshold>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>seuploadSingle</servlet-name>
+    <url-pattern>/seseller/upload/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>uploadSingle</servlet-name>
     <servlet-class>
       org.beigesoft.web.servlet.WUploadSingle
@@ -589,6 +627,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pickerWholeJson_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pickerWholeJson_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.wsSeSeller_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.wsSeSeller_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2792,6 +2835,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.wsSeSeller_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/wsSeSeller.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.insertDeleteEntityFfolJson_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/insertDeleteEntityFfolJson.jsp</url-pattern>
     </servlet-mapping>
@@ -4765,20 +4813,47 @@ env-entry, and ejb-ref elements should follow this fragment.
   <security-role>
     <role-name>user</role-name>
   </security-role>
+  <security-role>
+    <role-name>seseller</role-name>
+  </security-role>
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name></web-resource-name>
-      <url-pattern>/secure/*</url-pattern>
+      <web-resource-name>Protected for S.E. sellers</web-resource-name>
+      <url-pattern>/seseller/*</url-pattern>
     </web-resource-collection>
     <auth-constraint>
-      <role-name>*</role-name>
+      <role-name>admin</role-name>
+      <role-name>seseller</role-name>
     </auth-constraint>
   </security-constraint>
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name></web-resource-name>
+      <web-resource-name>Login</web-resource-name>
+      <url-pattern>/secure/login.jsp</url-pattern>
+    </web-resource-collection>
+    <web-resource-collection>
+      <web-resource-name>Login</web-resource-name>
+      <url-pattern>/secure/loginError.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>seseller</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Protected for owner and employers</web-resource-name>
+      <url-pattern>/secure/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+      <role-name>user</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>For administrator only</web-resource-name>
       <url-pattern>/mngSoftware/*</url-pattern>
-      <web-resource-name></web-resource-name>
+      <web-resource-name>For administrator only</web-resource-name>
       <url-pattern>/mngDatabase/*</url-pattern>
     </web-resource-collection>
     <auth-constraint>

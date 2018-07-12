@@ -92,7 +92,7 @@ public final class webstoreCart_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\">\n          <input type=\"hidden\" name=\"nmPrcRedirect\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmPrc}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n          <input type=\"hidden\" name=\"nmHnd\" value=\"hndPubWebStrTr\">\n          <input type=\"hidden\" name=\"nmPrc\" value=\"PrcItemInCart\">\n          <input type=\"hidden\" name=\"catalogId\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${catalogId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n          <div class=\"form-group\">\n            <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"item\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n            <textarea id=\"cartItemName\" readonly class=\"form-control\">\n            </textarea>\n            <label>");
@@ -114,7 +114,7 @@ public final class webstoreCart_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\">\n          <input type=\"hidden\" name=\"nmPrcRedirect\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmPrc}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n          <input type=\"hidden\" name=\"nmHnd\" value=\"hndPubWebStrTr\">\n          <input type=\"hidden\" name=\"nmPrc\" value=\"PrcItemInCart\">\n          <input type=\"hidden\" name=\"catalogId\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${catalogId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n          <div class=\"form-group\">\n            <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"item\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n            <textarea id=\"cartItemNameEdit\" readonly class=\"form-control\">\n            </textarea>\n            <label>Price:</label>\n            <input id=\"cartItemPriceEdit\" readonly class=\"form-control\">\n            <label>");
@@ -134,7 +134,7 @@ public final class webstoreCart_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\">\n          <input type=\"hidden\" name=\"nmPrcRedirect\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmPrc}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n          <input type=\"hidden\" name=\"nmHnd\" value=\"hndPubWebStrTr\">\n          <input type=\"hidden\" name=\"nmPrc\" value=\"PrcDelItemFromCart\">\n          <input type=\"hidden\" name=\"catalogId\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${catalogId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n          <div class=\"form-group\">\n            <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"item\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n            <textarea id=\"cartItemNameDel\" readonly class=\"form-control\">\n            </textarea>\n            <label>Price:</label>\n            <input id=\"cartItemPriceDel\" readonly class=\"form-control\">\n            <label>");
