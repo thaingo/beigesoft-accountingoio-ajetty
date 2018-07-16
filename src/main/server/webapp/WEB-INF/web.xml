@@ -800,6 +800,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellDetMulCur_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellDetMulCur_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellDetailSalTaxSales_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellDetailSalTaxSales_jsp</servlet-class>
     </servlet>
@@ -827,6 +832,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellDetailSalTaxPurchSales_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellDetailSalTaxPurchSales_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellHeadMulCur_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellHeadMulCur_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -935,6 +945,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputForeignCurrency_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputForeignCurrency_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpItemSpecNumericVal_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpItemSpecNumericVal_jsp</servlet-class>
     </servlet>
@@ -1032,6 +1047,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDocumentReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDocumentReadOnly_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPriceQuantityTotalFc_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPriceQuantityTotalFc_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1585,6 +1605,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputForeignCurrency_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputForeignCurrency_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpItemSpecNumericVal_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpItemSpecNumericVal_jsp</servlet-class>
     </servlet>
@@ -1682,6 +1707,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDocumentReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDocumentReadOnly_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPriceQuantityTotalFc_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPriceQuantityTotalFc_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -3005,6 +3035,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellDetMulCur_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/forList/wdgToCellDetMulCur.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellDetailSalTaxSales_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/forList/wdgToCellDetailSalTaxSales.jsp</url-pattern>
     </servlet-mapping>
@@ -3032,6 +3067,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellDetailSalTaxPurchSales_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/forList/wdgToCellDetailSalTaxPurchSales.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.forList.wdgToCellHeadMulCur_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/forList/wdgToCellHeadMulCur.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3140,6 +3180,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputForeignCurrency_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputForeignCurrency.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpItemSpecNumericVal_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inpItemSpecNumericVal.jsp</url-pattern>
     </servlet-mapping>
@@ -3237,6 +3282,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDocumentReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputDocumentReadOnly.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPriceQuantityTotalFc_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputPriceQuantityTotalFc.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3790,6 +3840,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputForeignCurrency_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputForeignCurrency.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpItemSpecNumericVal_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inpItemSpecNumericVal.jsp</url-pattern>
     </servlet-mapping>
@@ -3887,6 +3942,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDocumentReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputDocumentReadOnly.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPriceQuantityTotalFc_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputPriceQuantityTotalFc.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
