@@ -1095,6 +1095,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuantityTotalFc_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuantityTotalFc_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBoolean_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBoolean_jsp</servlet-class>
     </servlet>
@@ -1752,6 +1757,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostReadOnly_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuantityTotalFc_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuantityTotalFc_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -3330,6 +3340,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuantityTotalFc_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputCostQuantityTotalFc.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBoolean_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputBoolean.jsp</url-pattern>
     </servlet-mapping>
@@ -3987,6 +4002,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputCostReadOnly.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuantityTotalFc_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputCostQuantityTotalFc.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
