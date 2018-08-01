@@ -595,6 +595,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.editEntityFolSavedNlJson_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.editEntityFolSavedNlJson_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pickerJson_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pickerJson_jsp</servlet-class>
     </servlet>
@@ -1112,6 +1117,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputReal_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputReal_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBnCsvMethCsvCol_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBnCsvMethCsvCol_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1782,6 +1792,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputReal_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputReal_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputBnCsvMethCsvCol_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputBnCsvMethCsvCol_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2885,6 +2900,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.editEntityFolSavedNlJson_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/editEntityFolSavedNlJson.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pickerJson_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/pickerJson.jsp</url-pattern>
     </servlet-mapping>
@@ -3402,6 +3422,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputReal_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputReal.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBnCsvMethCsvCol_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputBnCsvMethCsvCol.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4072,6 +4097,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputReal_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputReal.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputBnCsvMethCsvCol_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputBnCsvMethCsvCol.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

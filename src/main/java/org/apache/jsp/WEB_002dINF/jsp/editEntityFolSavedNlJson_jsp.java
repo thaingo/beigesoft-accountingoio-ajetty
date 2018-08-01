@@ -11,7 +11,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class bnkStLnJson_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class editEntityFolSavedNlJson_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final javax.servlet.jsp.JspFactory _jspxFactory =
@@ -103,9 +103,12 @@ public final class bnkStLnJson_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_c_005fset_005f1(_jspx_page_context))
         return;
       out.write('\n');
-      if (_jspx_meth_c_005fimport_005f0(_jspx_page_context))
+      if (_jspx_meth_c_005fset_005f2(_jspx_page_context))
         return;
       out.write('\n');
+      if (_jspx_meth_c_005fimport_005f0(_jspx_page_context))
+        return;
+      out.write("    \n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
         out = _jspx_out;
@@ -133,9 +136,9 @@ public final class bnkStLnJson_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.fmt.SetLocaleTag _jspx_th_fmt_005fsetLocale_005f0 = (org.apache.taglibs.standard.tag.rt.fmt.SetLocaleTag) _005fjspx_005ftagPool_005ffmt_005fsetLocale_0026_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.fmt.SetLocaleTag.class);
     _jspx_th_fmt_005fsetLocale_005f0.setPageContext(_jspx_page_context);
     _jspx_th_fmt_005fsetLocale_005f0.setParent(null);
-    // /WEB-INF/jsp/bnkStLnJson.jsp(4,0) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(4,0) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_fmt_005fsetLocale_005f0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.localeCurrent}", java.lang.Object.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-    // /WEB-INF/jsp/bnkStLnJson.jsp(4,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(4,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_fmt_005fsetLocale_005f0.setScope("request");
     int _jspx_eval_fmt_005fsetLocale_005f0 = _jspx_th_fmt_005fsetLocale_005f0.doStartTag();
     if (_jspx_th_fmt_005fsetLocale_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -154,11 +157,11 @@ public final class bnkStLnJson_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f0.setParent(null);
-    // /WEB-INF/jsp/bnkStLnJson.jsp(5,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setVar("namePlaceSubForm");
-    // /WEB-INF/jsp/bnkStLnJson.jsp(5,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/bnkStLnJson.jsp(5,0) 'frmSubPlace'",_jsp_getExpressionFactory().createValueExpression("frmSubPlace",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/bnkStLnJson.jsp(5,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(5,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setVar("namePlaceForm");
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(5,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/editEntityFolSavedNlJson.jsp(5,0) 'frmMainPlace'",_jsp_getExpressionFactory().createValueExpression("frmMainPlace",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(5,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setScope("request");
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
     if (_jspx_th_c_005fset_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -174,19 +177,42 @@ public final class bnkStLnJson_jsp extends org.apache.jasper.runtime.HttpJspBase
     javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
     javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
     //  c:set
-    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f1 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
+    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f1 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f1.setParent(null);
-    // /WEB-INF/jsp/bnkStLnJson.jsp(6,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f1.setVar("javascript");
-    // /WEB-INF/jsp/bnkStLnJson.jsp(6,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/bnkStLnJson.jsp(6,0) 'RSdGroup='${reqVars.digitsInGroup}';RSmRound='${reqVars.RSmRound}';RSisUsePrecision0=${reqVars.RSisUsePrecision0};RSisUsePrecision1=${reqVars.RSisUsePrecision1};RSisUsePrecision2=${reqVars.RSisUsePrecision2};RSisUsePrecision3=${reqVars.RSisUsePrecision3};RSisUsePrecision4=${reqVars.RSisUsePrecision4};setAutoNum('${namePlaceSubForm}');openDlg('${namePlaceSubForm}EditDlg');'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"RSdGroup='${reqVars.digitsInGroup}';RSmRound='${reqVars.RSmRound}';RSisUsePrecision0=${reqVars.RSisUsePrecision0};RSisUsePrecision1=${reqVars.RSisUsePrecision1};RSisUsePrecision2=${reqVars.RSisUsePrecision2};RSisUsePrecision3=${reqVars.RSisUsePrecision3};RSisUsePrecision4=${reqVars.RSisUsePrecision4};setAutoNum('${namePlaceSubForm}');openDlg('${namePlaceSubForm}EditDlg');",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(6,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f1.setVar("namePlaceSubForm");
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(6,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/editEntityFolSavedNlJson.jsp(6,0) 'frmSubPlace'",_jsp_getExpressionFactory().createValueExpression("frmSubPlace",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(6,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f1.setScope("request");
     int _jspx_eval_c_005fset_005f1 = _jspx_th_c_005fset_005f1.doStartTag();
     if (_jspx_th_c_005fset_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f1);
+      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f1);
       return true;
     }
-    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f1);
+    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f1);
+    return false;
+  }
+
+  private boolean _jspx_meth_c_005fset_005f2(javax.servlet.jsp.PageContext _jspx_page_context)
+          throws java.lang.Throwable {
+    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
+    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
+    //  c:set
+    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f2 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
+    _jspx_th_c_005fset_005f2.setPageContext(_jspx_page_context);
+    _jspx_th_c_005fset_005f2.setParent(null);
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(7,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f2.setVar("javascript");
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(7,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/editEntityFolSavedNlJson.jsp(7,0) 'RSdGroup='${reqVars.digitsInGroup}';RSmRound='${reqVars.RSmRound}';RSisUsePrecision0=${reqVars.RSisUsePrecision0};RSisUsePrecision1=${reqVars.RSisUsePrecision1};RSisUsePrecision2=${reqVars.RSisUsePrecision2};RSisUsePrecision3=${reqVars.RSisUsePrecision3};RSisUsePrecision4=${reqVars.RSisUsePrecision4};setAutoNum('${namePlaceForm}');showSuccess('${srvI18n.getMsg(param.msgSuccess, reqVars.lang)}');openDlg('${namePlaceForm}EditDlg');'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"RSdGroup='${reqVars.digitsInGroup}';RSmRound='${reqVars.RSmRound}';RSisUsePrecision0=${reqVars.RSisUsePrecision0};RSisUsePrecision1=${reqVars.RSisUsePrecision1};RSisUsePrecision2=${reqVars.RSisUsePrecision2};RSisUsePrecision3=${reqVars.RSisUsePrecision3};RSisUsePrecision4=${reqVars.RSisUsePrecision4};setAutoNum('${namePlaceForm}');showSuccess('${srvI18n.getMsg(param.msgSuccess, reqVars.lang)}');openDlg('${namePlaceForm}EditDlg');",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    int _jspx_eval_c_005fset_005f2 = _jspx_th_c_005fset_005f2.doStartTag();
+    if (_jspx_th_c_005fset_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f2);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f2);
     return false;
   }
 
@@ -198,11 +224,11 @@ public final class bnkStLnJson_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ImportTag _jspx_th_c_005fimport_005f0 = (org.apache.taglibs.standard.tag.rt.core.ImportTag) _005fjspx_005ftagPool_005fc_005fimport_0026_005fvarReader_005furl_005fcharEncoding.get(org.apache.taglibs.standard.tag.rt.core.ImportTag.class);
     _jspx_th_c_005fimport_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fimport_005f0.setParent(null);
-    // /WEB-INF/jsp/bnkStLnJson.jsp(7,0) name = url type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fimport_005f0.setUrl("/WEB-INF/jsp/bnkStLn.jsp");
-    // /WEB-INF/jsp/bnkStLnJson.jsp(7,0) name = varReader type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(8,0) name = url type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fimport_005f0.setUrl("/WEB-INF/jsp/editEntity.jsp");
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(8,0) name = varReader type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fimport_005f0.setVarReader("rdEditEnty");
-    // /WEB-INF/jsp/bnkStLnJson.jsp(7,0) name = charEncoding type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/editEntityFolSavedNlJson.jsp(8,0) name = charEncoding type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fimport_005f0.setCharEncoding("UTF-8");
     int[] _jspx_push_body_count_c_005fimport_005f0 = new int[] { 0 };
     try {
@@ -216,12 +242,14 @@ public final class bnkStLnJson_jsp extends org.apache.jasper.runtime.HttpJspBase
         }
         do {
           out.write("\n{\"multiTargetResponse\":\n  [{\"nameTarget\": \"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlaceSubForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlaceForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("\", \"content\": \"");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.toJsonStringAndClose(rdEditEnty)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("\",\n    \"nameTargetParent\": null, \"javascript\": \"");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.toJsonString(javascript)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-          out.write("\"}]\n}\n");
+          out.write("\"},\n  {\"nameTarget\": \"");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlaceSubForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write("\", \"content\": \"\",\n    \"nameTargetParent\": null, \"javascript\": null}]\n}\n");
           int evalDoAfterBody = _jspx_th_c_005fimport_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
