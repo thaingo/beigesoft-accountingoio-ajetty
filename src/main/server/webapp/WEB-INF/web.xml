@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- Copyright (c) 2016 Beigesoft ™
+ Copyright (c) 2016 Beigesoft™
  
  Licensed under the GNU General Public License (GPL), Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
                       http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
   version="3.0"
   metadata-complete="true">
-  <display-name>Beige Accounting</display-name>
+  <display-name>Beigesoft™ Accounting</display-name>
   <context-param>
     <param-name>webAppFor</param-name>
     <param-value>AJetty</param-value>
@@ -1025,6 +1025,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputEnum_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputEnum_jsp</servlet-class>
     </servlet>
@@ -1697,6 +1702,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputProductInProgress_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputProductInProgress_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -3330,6 +3340,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputKnownCostQuantityTotalFc.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputEnum_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputEnum.jsp</url-pattern>
     </servlet-mapping>
@@ -4002,6 +4017,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputProductInProgress_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputProductInProgress.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
