@@ -88,6 +88,9 @@ public class LstnDbChanged<RS> implements IDelegateSimpleExc {
     factoryAppBeans.lazyGetHndlI18nRequest()
       .setAdditionalI18nReqHndl(hndlAccVarsRequest);
     factoryAppBeans.lazyGet("ISrvOrm");
+    // single user mode anyway:
+    factoryAppBeans.getFactoryBldServices().lazyGetHandlerEntityRequest()
+      .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
     ISrvDatabase<RS> srvDb = (ISrvDatabase<RS>)
       factoryAppBeans.lazyGet("ISrvDatabase");
     @SuppressWarnings("unchecked")

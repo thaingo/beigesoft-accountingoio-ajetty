@@ -131,6 +131,9 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
       .setAdditionalI18nReqHndl(hndlAccVarsRequest);
     //to create/initialize database if need:
     factoryAppBeans.lazyGet("ISrvOrm");
+    // single user mode anyway:
+    factoryAppBeans.getFactoryBldServices().lazyGetHandlerEntityRequest()
+      .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
     @SuppressWarnings("unchecked")
     ISrvDatabase<RS> srvDb = (ISrvDatabase<RS>)
       factoryAppBeans.lazyGet("ISrvDatabase");
