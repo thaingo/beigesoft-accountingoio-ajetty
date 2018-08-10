@@ -132,6 +132,16 @@
     <url-pattern>/secure/jspd/*</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>reportCsv</servlet-name>
+    <servlet-class>
+      org.beigesoft.web.servlet.WReportCsv
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reportCsv</servlet-name>
+    <url-pattern>/secure/reportCsv/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>reportPdf</servlet-name>
     <servlet-class>
       org.beigesoft.web.servlet.WReportPdf
@@ -425,6 +435,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pickerCsvPathJson_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pickerCsvPathJson_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.replicateAccForm_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.replicateAccForm_jsp</servlet-class>
     </servlet>
@@ -595,6 +610,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.priceListFormJson_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.priceListFormJson_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.editEntityFolSavedNlJson_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.editEntityFolSavedNlJson_jsp</servlet-class>
     </servlet>
@@ -675,6 +695,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.priceListForm_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.priceListForm_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.replicateAccFormJson_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.replicateAccFormJson_jsp</servlet-class>
     </servlet>
@@ -702,6 +727,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreEnd_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.webstoreEnd_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pickerCsvPath_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pickerCsvPath_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -990,6 +1020,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputRetriever_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputRetriever_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputWageTax_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputWageTax_jsp</servlet-class>
     </servlet>
@@ -1145,6 +1180,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCsvPath_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCsvPath_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBoolean_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBoolean_jsp</servlet-class>
     </servlet>
@@ -1172,6 +1212,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDate_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDate_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpMatchForCla_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpMatchForCla_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1227,6 +1272,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDisabledDateTimeSec_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDisabledDateTimeSec_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpMatchForVal_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpMatchForVal_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1670,6 +1720,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputRetriever_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputRetriever_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputWageTax_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputWageTax_jsp</servlet-class>
     </servlet>
@@ -1825,6 +1880,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCsvPath_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCsvPath_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputBoolean_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputBoolean_jsp</servlet-class>
     </servlet>
@@ -1852,6 +1912,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDate_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDate_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpMatchForCla_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpMatchForCla_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1907,6 +1972,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDisabledDateTimeSec_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDisabledDateTimeSec_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpMatchForVal_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpMatchForVal_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2740,6 +2810,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pickerCsvPathJson_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pickerCsvPathJson.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.replicateAccForm_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/replicateAccForm.jsp</url-pattern>
     </servlet-mapping>
@@ -2910,6 +2985,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.priceListFormJson_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/priceListFormJson.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.editEntityFolSavedNlJson_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/editEntityFolSavedNlJson.jsp</url-pattern>
     </servlet-mapping>
@@ -2990,6 +3070,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.priceListForm_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/priceListForm.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.replicateAccFormJson_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/replicateAccFormJson.jsp</url-pattern>
     </servlet-mapping>
@@ -3017,6 +3102,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.webstoreEnd_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/webstoreEnd.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pickerCsvPath_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pickerCsvPath.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3305,6 +3395,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputRetriever_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputRetriever.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputWageTax_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputWageTax.jsp</url-pattern>
     </servlet-mapping>
@@ -3460,6 +3555,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCsvPath_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputCsvPath.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBoolean_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputBoolean.jsp</url-pattern>
     </servlet-mapping>
@@ -3487,6 +3587,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDate_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputDate.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpMatchForCla_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inpMatchForCla.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3542,6 +3647,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDisabledDateTimeSec_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputDisabledDateTimeSec.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpMatchForVal_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inpMatchForVal.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3985,6 +4095,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputRetriever_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputRetriever.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputWageTax_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputWageTax.jsp</url-pattern>
     </servlet-mapping>
@@ -4140,6 +4255,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCsvPath_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputCsvPath.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputBoolean_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputBoolean.jsp</url-pattern>
     </servlet-mapping>
@@ -4167,6 +4287,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDate_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputDate.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpMatchForCla_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inpMatchForCla.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4222,6 +4347,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDisabledDateTimeSec_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputDisabledDateTimeSec.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpMatchForVal_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inpMatchForVal.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

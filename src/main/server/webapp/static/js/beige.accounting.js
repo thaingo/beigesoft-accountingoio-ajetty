@@ -174,7 +174,7 @@ function makeFltrPaymentTot(pInp, pIdSelFlt) {
   for (var i=0; i < selFlt.options.length; i++) {
     selFlt.options[i].value = selFlt.options[i].value.replace(fltWas, fltIs);
   }  
-}
+};
 
 function bnStLnAccentryMatchChanged(pInp) {
   var tbPrepPayEntry = document.getElementById("bnkStLnPrepPayEntry");
@@ -201,7 +201,7 @@ function bnStLnAccentryMatchChanged(pInp) {
     if (bnkStLnPrepMatch != null) { bnkStLnPrepMatch.style.display="none"; }
     if (bnkStLnPayMatch != null) { bnkStLnPayMatch.style.display="none"; }
   }
-}
+};
 
 function bnStLnPrepayMatchChanged(pInp) {
   var tbPrepPayEntry = document.getElementById("bnkStLnPrepPayEntry");
@@ -228,7 +228,7 @@ function bnStLnPrepayMatchChanged(pInp) {
     if (bnkStLnPayMatch != null) { bnkStLnPayMatch.style.display="none"; }
     if (bnkStLnAccentryMatch != null) { bnkStLnAccentryMatch.style.display="none"; }
   }
-}
+};
 
 function bnStLnPayMatchChanged(pInp) {
   var tbPrepPayEntry = document.getElementById("bnkStLnPrepPayEntry");
@@ -255,7 +255,7 @@ function bnStLnPayMatchChanged(pInp) {
     if (bnkStLnPrepMatch != null) { bnkStLnPrepMatch.style.display="none"; }
     if (bnkStLnAccentryMatch != null) { bnkStLnAccentryMatch.style.display="none"; }
   }
-}
+};
 
 function bnStLnDocTypeChanged(pInp) {
   var tbPrepPayEntry = document.getElementById("bnkStLnPrepPayEntry");
@@ -303,4 +303,48 @@ function bnStLnDocTypeChanged(pInp) {
     if (bnkStLnPayMatch != null) { bnkStLnPayMatch.style.display="none"; }
     if (bnkStLnAccentryMatch != null) { bnkStLnAccentryMatch.style.display="none"; }
   }
-}
+};
+
+function selectCsvPath(pVal, pPathAppr) {
+  var CsvColumndataIndex = document.getElementById("CsvColumndataIndex");
+  var CsvColumnfieldPath = document.getElementById("CsvColumnfieldPath");
+  var dataPath = document.getElementById("dataPath");
+  var scIdx = pVal.indexOf(";");
+  if (scIdx == -1) {
+    CsvColumndataIndex.value = pVal;
+    CsvColumnfieldPath.value = "";
+  } else {
+    var arr = pVal.split(";");
+    CsvColumndataIndex.value = arr[0];
+    CsvColumnfieldPath.value = arr[1];
+  }
+  dataPath.value = pPathAppr;
+  dataPath.onchange();
+};
+
+function clearCsvPath() {
+  var CsvColumndataIndex = document.getElementById("CsvColumndataIndex");
+  var dataPath = document.getElementById("dataPath");
+  var CsvColumnfieldPath = document.getElementById("CsvColumnfieldPath");
+  CsvColumnfieldPath.value = "";
+  CsvColumndataIndex.value = "";
+  dataPath.value = "";
+  dataPath.onchange();
+};
+
+function openCsvPathPicker() {
+  var pickerPlace = "pickersCsvPath";
+  var readerName = null;
+  var readerNameSel = document.getElementById("CsvMethodretrieverName");
+  if (readerNameSel.selectedIndex > 0) {
+    readerName = readerNameSel.options[readerNameSel.selectedIndex].value;
+  }
+  if (readerName != null) {
+    var picker = document.getElementById(pickerPlace + readerName + "Dlg");
+    if (picker != null) {
+        picker.showModal();
+    } else {
+      getHtmlByAjax('GET', 'service/?nmHnd=hndTrdTrnsReq&nmPrc=PrcCsvSampleDataRow&nmRnd=pickerCsvPathJson&nmRet=' + readerName);
+    }
+  }
+};
