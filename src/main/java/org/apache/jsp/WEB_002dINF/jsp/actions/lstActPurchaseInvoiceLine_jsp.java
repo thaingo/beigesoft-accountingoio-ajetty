@@ -168,7 +168,7 @@ public final class lstActPurchaseInvoiceLine_jsp extends org.apache.jasper.runti
       do {
         out.write("\n    <button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmHnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("&nmRnd=editEntityFolJson&nmsAct=entityCopy&nmEnt=");
+        out.write("&nmRnd=editInvLnJson&nmsAct=entityCopy&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&PurchaseInvoiceLine.itsId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

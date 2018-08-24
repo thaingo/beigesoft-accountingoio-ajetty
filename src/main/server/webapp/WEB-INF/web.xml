@@ -510,6 +510,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.revealTaxCatJson_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.revealTaxCatJson_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.confirmDeleteEntityJson_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.confirmDeleteEntityJson_jsp</servlet-class>
     </servlet>
@@ -675,6 +680,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.editInvLnJson_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.editInvLnJson_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.reverseDoc_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.reverseDoc_jsp</servlet-class>
     </servlet>
@@ -822,6 +832,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ownedList.wdgInpAccEntriesLines_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.ownedList.wdgInpAccEntriesLines_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ownedList.wdgInvoiceLines_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.ownedList.wdgInvoiceLines_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1025,6 +1040,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpSalesInvLnTmp_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpSalesInvLnTmp_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputWageTax_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputWageTax_jsp</servlet-class>
     </servlet>
@@ -1035,13 +1055,13 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputUserTomcatReadOnly_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputUserTomcatReadOnly_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpSalesInvGoodsLn_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpSalesInvGoodsLn_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPurchaseItemKnownCost_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPurchaseItemKnownCost_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputUserTomcatReadOnly_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputUserTomcatReadOnly_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1062,6 +1082,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpSalesInvServLn_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpSalesInvServLn_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1105,38 +1130,13 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPercentage_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPercentage_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputAccountExpenseOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputAccountExpenseOnly_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputKnownCostQuantityTotal_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputKnownCostQuantityTotal_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDocumentReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDocumentReadOnly_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPriceQuantityTotalFc_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPriceQuantityTotalFc_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDepartmentIdEq1Tst_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDepartmentIdEq1Tst_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoodsUom_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoodsUom_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1147,11 +1147,6 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoods_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoods_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPurchasetemUnknownCost_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPurchasetemUnknownCost_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1172,11 +1167,6 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostReadOnly_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuantityTotalFc_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuantityTotalFc_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1280,8 +1270,18 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputTaxRate_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputTaxRate_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBalanceStorePeriod_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBalanceStorePeriod_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPurchaseInvServLn_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPurchaseInvServLn_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1325,8 +1325,18 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPriceIncTaxOmit_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPriceIncTaxOmit_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDateReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDateReadOnly_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPurchaseInvLnTmp_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPurchaseInvLnTmp_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1347,6 +1357,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputEntityHasIdHidden_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputEntityHasIdHidden_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpCostIncTaxOmit_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpCostIncTaxOmit_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1410,11 +1425,6 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoodsReadOnly_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoodsReadOnly_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDateTimeReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDateTimeReadOnly_jsp</servlet-class>
     </servlet>
@@ -1425,13 +1435,8 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuantityTotal_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuantityTotal_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPriceQuantityTotal_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPriceQuantityTotal_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPurchaseInvGoodsLn_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPurchaseInvGoodsLn_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1635,6 +1640,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.toString.toStrTaxRate_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.toString.toStrTaxRate_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.toString.toStrUserRoleTomcat_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.toString.toStrUserRoleTomcat_jsp</servlet-class>
     </servlet>
@@ -1725,6 +1735,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpSalesInvLnTmp_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpSalesInvLnTmp_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputWageTax_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputWageTax_jsp</servlet-class>
     </servlet>
@@ -1735,13 +1750,13 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputUserTomcatReadOnly_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputUserTomcatReadOnly_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpSalesInvGoodsLn_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpSalesInvGoodsLn_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPurchaseItemKnownCost_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPurchaseItemKnownCost_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputUserTomcatReadOnly_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputUserTomcatReadOnly_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1762,6 +1777,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpSalesInvServLn_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpSalesInvServLn_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1805,38 +1825,13 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPercentage_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPercentage_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputAccountExpenseOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputAccountExpenseOnly_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputKnownCostQuantityTotal_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputKnownCostQuantityTotal_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDocumentReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDocumentReadOnly_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPriceQuantityTotalFc_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPriceQuantityTotalFc_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDepartmentIdEq1Tst_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDepartmentIdEq1Tst_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoodsUom_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoodsUom_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1847,11 +1842,6 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoods_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoods_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPurchasetemUnknownCost_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPurchasetemUnknownCost_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1872,11 +1862,6 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostReadOnly_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuantityTotalFc_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuantityTotalFc_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1980,8 +1965,18 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputTaxRate_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputTaxRate_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputBalanceStorePeriod_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputBalanceStorePeriod_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPurchaseInvServLn_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPurchaseInvServLn_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2025,8 +2020,18 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPriceIncTaxOmit_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPriceIncTaxOmit_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDateReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDateReadOnly_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPurchaseInvLnTmp_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPurchaseInvLnTmp_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2047,6 +2052,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputEntityHasIdHidden_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputEntityHasIdHidden_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpCostIncTaxOmit_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpCostIncTaxOmit_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2110,11 +2120,6 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoodsReadOnly_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoodsReadOnly_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDateTimeReadOnly_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDateTimeReadOnly_jsp</servlet-class>
     </servlet>
@@ -2125,13 +2130,8 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuantityTotal_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuantityTotal_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPriceQuantityTotal_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPriceQuantityTotal_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPurchaseInvGoodsLn_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPurchaseInvGoodsLn_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2290,6 +2290,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lstActSalesInvLine_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.actions.lstActSalesInvLine_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lstActAll_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.actions.lstActAll_jsp</servlet-class>
     </servlet>
@@ -2317,6 +2322,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lstActEditDelete_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.actions.lstActEditDelete_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lstActInvServiceLine_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.actions.lstActInvServiceLine_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2410,6 +2420,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemCostTax_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemCostTax_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickHasName_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickHasName_jsp</servlet-class>
     </servlet>
@@ -2440,18 +2455,18 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickInvItem_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickInvItem_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickAccSubacc_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickAccSubacc_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickInvItemCost_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickInvItemCost_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemCost_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemCost_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemUomTax_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemUomTax_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2467,6 +2482,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickUserTomcat_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickUserTomcat_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemUom_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemUom_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2885,6 +2905,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.revealTaxCatJson_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/revealTaxCatJson.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.confirmDeleteEntityJson_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/confirmDeleteEntityJson.jsp</url-pattern>
     </servlet-mapping>
@@ -3050,6 +3075,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.editInvLnJson_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/editInvLnJson.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.reverseDoc_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/reverseDoc.jsp</url-pattern>
     </servlet-mapping>
@@ -3197,6 +3227,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ownedList.wdgInpAccEntriesLines_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/ownedList/wdgInpAccEntriesLines.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ownedList.wdgInvoiceLines_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/ownedList/wdgInvoiceLines.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3400,6 +3435,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpSalesInvLnTmp_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputWageTax_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputWageTax.jsp</url-pattern>
     </servlet-mapping>
@@ -3410,13 +3450,13 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputUserTomcatReadOnly_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputUserTomcatReadOnly.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpSalesInvGoodsLn_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inpSalesInvGoodsLn.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPurchaseItemKnownCost_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputPurchaseItemKnownCost.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputUserTomcatReadOnly_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputUserTomcatReadOnly.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3437,6 +3477,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputKnownCostQuantityTotalFc.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpSalesInvServLn_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inpSalesInvServLn.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3480,38 +3525,13 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPercentage_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputPercentage.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputAccountExpenseOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputAccountExpenseOnly.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputKnownCostQuantityTotal_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputKnownCostQuantityTotal.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDocumentReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputDocumentReadOnly.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPriceQuantityTotalFc_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputPriceQuantityTotalFc.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDepartmentIdEq1Tst_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputDepartmentIdEq1Tst.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoodsUom_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputGoodsUom.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3522,11 +3542,6 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoods_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputGoods.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPurchasetemUnknownCost_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputPurchasetemUnknownCost.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3547,11 +3562,6 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputCostReadOnly.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuantityTotalFc_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputCostQuantityTotalFc.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3655,8 +3665,18 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputTaxRate_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputTaxRate.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputBalanceStorePeriod_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputBalanceStorePeriod.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPurchaseInvServLn_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inpPurchaseInvServLn.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3700,8 +3720,18 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPriceIncTaxOmit_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inpPriceIncTaxOmit.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDateReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputDateReadOnly.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPurchaseInvLnTmp_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inpPurchaseInvLnTmp.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3722,6 +3752,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputEntityHasIdHidden_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputEntityHasIdHidden.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpCostIncTaxOmit_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inpCostIncTaxOmit.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3785,11 +3820,6 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputGoodsReadOnly_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputGoodsReadOnly.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputDateTimeReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputDateTimeReadOnly.jsp</url-pattern>
     </servlet-mapping>
@@ -3800,13 +3830,8 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuantityTotal_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputCostQuantityTotal.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputPriceQuantityTotal_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/mobile/inputs/inputPriceQuantityTotal.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inpPurchaseInvGoodsLn_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inpPurchaseInvGoodsLn.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4010,6 +4035,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.toString.toStrTaxRate_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/toString/toStrTaxRate.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.toString.toStrUserRoleTomcat_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/toString/toStrUserRoleTomcat.jsp</url-pattern>
     </servlet-mapping>
@@ -4100,6 +4130,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpSalesInvLnTmp_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inpSalesInvLnTmp.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputWageTax_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputWageTax.jsp</url-pattern>
     </servlet-mapping>
@@ -4110,13 +4145,13 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputUserTomcatReadOnly_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputUserTomcatReadOnly.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpSalesInvGoodsLn_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inpSalesInvGoodsLn.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPurchaseItemKnownCost_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputPurchaseItemKnownCost.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputUserTomcatReadOnly_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputUserTomcatReadOnly.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4137,6 +4172,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputKnownCostQuantityTotalFc_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpSalesInvServLn_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inpSalesInvServLn.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4180,38 +4220,13 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPercentage_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputPercentage.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputAccountExpenseOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputAccountExpenseOnly.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputKnownCostQuantityTotal_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputKnownCostQuantityTotal.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDocumentReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputDocumentReadOnly.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPriceQuantityTotalFc_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputPriceQuantityTotalFc.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDepartmentIdEq1Tst_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputDepartmentIdEq1Tst.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoodsUom_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputGoodsUom.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4222,11 +4237,6 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoods_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputGoods.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPurchasetemUnknownCost_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputPurchasetemUnknownCost.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4247,11 +4257,6 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputCostReadOnly.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuantityTotalFc_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputCostQuantityTotalFc.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4355,8 +4360,18 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputTaxRate_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inputTaxRate.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputBalanceStorePeriod_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputBalanceStorePeriod.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPurchaseInvServLn_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inpPurchaseInvServLn.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4400,8 +4415,18 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPriceIncTaxOmit_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inpPriceIncTaxOmit.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDateReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputDateReadOnly.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPurchaseInvLnTmp_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inpPurchaseInvLnTmp.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4422,6 +4447,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputEntityHasIdHidden_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputEntityHasIdHidden.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpCostIncTaxOmit_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4485,11 +4515,6 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputGoodsReadOnly_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputGoodsReadOnly.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputDateTimeReadOnly_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputDateTimeReadOnly.jsp</url-pattern>
     </servlet-mapping>
@@ -4500,13 +4525,8 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuantityTotal_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputCostQuantityTotal.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputPriceQuantityTotal_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/inputs/inputPriceQuantityTotal.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inpPurchaseInvGoodsLn_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inpPurchaseInvGoodsLn.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4665,6 +4685,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lstActSalesInvLine_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/actions/lstActSalesInvLine.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lstActAll_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/actions/lstActAll.jsp</url-pattern>
     </servlet-mapping>
@@ -4692,6 +4717,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lstActEditDelete_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/actions/lstActEditDelete.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lstActInvServiceLine_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/actions/lstActInvServiceLine.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4785,6 +4815,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemCostTax_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pick/pickItemCostTax.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickHasName_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/pick/pickHasName.jsp</url-pattern>
     </servlet-mapping>
@@ -4815,18 +4850,18 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickInvItem_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/pick/pickInvItem.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickAccSubacc_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/pick/pickAccSubacc.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickInvItemCost_jsp</servlet-name>
-        <url-pattern>/WEB-INF/jsp/pick/pickInvItemCost.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemCost_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pick/pickItemCost.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemUomTax_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pick/pickItemUomTax.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -4842,6 +4877,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickUserTomcat_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/pick/pickUserTomcat.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pick.pickItemUom_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pick/pickItemUom.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

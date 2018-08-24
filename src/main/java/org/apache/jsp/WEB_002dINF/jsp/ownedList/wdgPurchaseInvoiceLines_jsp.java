@@ -109,7 +109,7 @@ public final class wdgPurchaseInvoiceLines_jsp extends org.apache.jasper.runtime
         return;
       out.write("\n</table>\n<div class=\"pages\">\n  <button onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmHnd=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("&nmRnd=editEntityFolJson&nmsAct=entityCreate&nmEnt=PurchaseInvoiceLine&PurchaseInvoiceLine.itsOwner=");
+      out.write("&nmRnd=editInvLnJson&nmsAct=entityCreate&nmEnt=PurchaseInvoiceLine&PurchaseInvoiceLine.itsOwner=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ownerIdStr}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ownerVersion}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
