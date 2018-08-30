@@ -980,6 +980,16 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellDetMulCur_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellDetMulCur_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSlTxTot_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSlTxTot_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellDetailSalTaxSales_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellDetailSalTaxSales_jsp</servlet-class>
     </servlet>
@@ -995,8 +1005,23 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSalTaxSalInvIt_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSalTaxSalInvIt_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellDetailSalTaxPurch_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellDetailSalTaxPurch_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSlTxSubt_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSlTxSubt_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSlTxTot_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSlTxTot_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1010,8 +1035,23 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSalTaxSalInvIt_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSalTaxSalInvIt_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellHeadMulCur_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellHeadMulCur_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellHeaderSalTaxPurchSales_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellHeaderSalTaxPurchSales_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSlTxSubt_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSlTxSubt_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1022,6 +1062,16 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellHeaderSalTaxPurch_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellHeaderSalTaxPurch_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSalTaxPurchInvIt_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSalTaxPurchInvIt_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSalTaxPurchInvIt_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSalTaxPurchInvIt_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -3405,6 +3455,16 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellDetMulCur_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCellDetMulCur.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSlTxTot_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCelDetSlTxTot.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellDetailSalTaxSales_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCellDetailSalTaxSales.jsp</url-pattern>
     </servlet-mapping>
@@ -3420,8 +3480,23 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSalTaxSalInvIt_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCelHeaSalTaxSalInvIt.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellDetailSalTaxPurch_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCellDetailSalTaxPurch.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSlTxSubt_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCelDetSlTxSubt.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSlTxTot_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCelHeaSlTxTot.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3435,8 +3510,23 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSalTaxSalInvIt_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCelDetSalTaxSalInvIt.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellHeadMulCur_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCellHeadMulCur.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellHeaderSalTaxPurchSales_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCellHeaderSalTaxPurchSales.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSlTxSubt_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCelHeaSlTxSubt.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -3447,6 +3537,16 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCellHeaderSalTaxPurch_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCellHeaderSalTaxPurch.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelDetSalTaxPurchInvIt_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCelDetSalTaxPurchInvIt.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.forList.wdgToCelHeaSalTaxPurchInvIt_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/forList/wdgToCelHeaSalTaxPurchInvIt.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

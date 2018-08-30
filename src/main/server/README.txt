@@ -12,15 +12,32 @@ This software requires:
 Features:
 * Double entry accounting system including ledger and balance reports.
 * COGS FIFO/LIFO perpetual automatically for sales, sales returns, inventory losses.
-* Automatically sales taxes accounting entries (a goods or a service may has several sales taxes) for sales, purchases and their returns.
-* Prepayments/payments tracking for sales/purchases.
+* Automatically sales taxes accounting entries for sales, purchases and their returns.
+* Sales tax methods: item/invoice basis, destination-based, aggregate rate, price inclusive of tax.
+* Prepayments/payments tracking for sales/purchases (including invoices with foreign currency).
 * Payroll - automatically taxes calculation (by percentage tax table method) and accounting entries.
 * Manufacturing - automatically cost calculation from used materials and direct labor (and other) costs.
 * Multi-databases (organizations) support.
 * and more.
 
-Web-Store is included for study and tests purposes and you are also able to make full DB copy from cloud version.
-Web-Store is draft yet.
+Web-Store is included for pricing, study, and tests purposes and you are also able to make full DB copy from cloud version.
+You can make price lists (in different price categories) and export it in CSV file to your customers or POS.
+Online Web-Store is draft yet.
+
+Version 1.1.7:
+*added multi-currency (including payments tracking).
+*sales taxes:
+  1. added invoice level switcher "omit taxes"
+  2. added invoice basis method.
+  3. added aggregate rate method.
+  4. added "price inclusive of tax" method (it should be used along with aggregate rate method or only tax).
+  5. purchases - user is allowed to change tax amount in line (item basis) or in total tax (invoice basis)
+  6. purchases - vendor can has "tax destination" method that is actually overrides tax calculation method (rounding mode, invoice/item basis, aggregate/not rate)
+  7. sales - added destination-based method for "other-region" customers, that "other region" has different sales taxes.
+*added importing  bank statement from CSV file, semi-automatically bank reconciliation.
+*added exporting price list into CSV file.
+*PDF reports (sales invoice, balance sheet): User can change paper size, orientation, margins and font size in "Accounting Settings".
+*it use entered by user invoice line's price, amount, total, prior to 1.1.7 total was always calculated from price and quantity.
 
 Version 1.1.6:
 *Added "omit sales tax for overseas sales/purchase" - if customer/vendor is marked as "foreigner" then sales taxes will be omitted in the invoice.
