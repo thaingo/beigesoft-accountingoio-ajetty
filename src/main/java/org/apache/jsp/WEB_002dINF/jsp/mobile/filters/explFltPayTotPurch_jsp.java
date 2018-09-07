@@ -11,7 +11,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class explicitFilterPaymentTotalSales_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class explFltPayTotPurch_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final javax.servlet.jsp.JspFactory _jspxFactory =
@@ -87,7 +87,7 @@ public final class explicitFilterPaymentTotalSales_jsp extends org.apache.jasper
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
       out.write('\n');
-      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "explicitFilterPaymentTotalTmpl.jsp", out, false);
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "explFltPayTotTmpl.jsp", out, false);
       out.write('\n');
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
@@ -116,11 +116,11 @@ public final class explicitFilterPaymentTotalSales_jsp extends org.apache.jasper
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f0.setParent(null);
-    // /WEB-INF/jsp/mobile/filters/explicitFilterPaymentTotalSales.jsp(3,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/mobile/filters/explFltPayTotPurch.jsp(3,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setVar("docName");
-    // /WEB-INF/jsp/mobile/filters/explicitFilterPaymentTotalSales.jsp(3,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/filters/explicitFilterPaymentTotalSales.jsp(3,0) 'SALESINVOICE'",_jsp_getExpressionFactory().createValueExpression("SALESINVOICE",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/mobile/filters/explicitFilterPaymentTotalSales.jsp(3,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/mobile/filters/explFltPayTotPurch.jsp(3,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/filters/explFltPayTotPurch.jsp(3,0) 'PURCHASEINVOICE'",_jsp_getExpressionFactory().createValueExpression("PURCHASEINVOICE",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/mobile/filters/explFltPayTotPurch.jsp(3,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setScope("request");
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
     if (_jspx_th_c_005fset_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
