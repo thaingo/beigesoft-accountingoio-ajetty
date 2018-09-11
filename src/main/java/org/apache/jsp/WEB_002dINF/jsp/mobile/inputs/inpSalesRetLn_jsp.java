@@ -838,7 +838,7 @@ public final class inpSalesRetLn_jsp extends org.apache.jasper.runtime.HttpJspBa
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${taxIncludedPar}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(");\"/> \n        </div>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <label>\n           ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"totalTaxes\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\n        </label>\n      </td>\n    <tr>\n    </tr>\n      <td>\n        <div class=\"input-line\">\n          <input type=\"text\" required id=\"SalesReturnLinetotalTaxes\" class=\"autoNumSalTaxTot\" data-a-sep=\"");
+        out.write("\n        </label>\n      </td>\n    <tr>\n    </tr>\n      <td>\n        <div class=\"input-line\">\n          <input type=\"text\" required id=\"SalesReturnLinetotalTaxes\" name=\"SalesReturnLine.totalTaxes\" class=\"autoNumSalTaxTot\" data-a-sep=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.dgseparatorv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\" data-a-dec=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.dseparatorv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
