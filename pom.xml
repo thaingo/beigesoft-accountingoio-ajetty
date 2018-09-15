@@ -8,7 +8,8 @@
   <name>Beigesoft™ Accountion All In One WEB application on embedded A-Jetty.</name>
 
   <description>Beigesoft ™ Accountion All In One WEB application (included Beigesoft Web-Store) on embedded A-Jetty.
-    Web-Store is included for study and tests purposes and you are also able to make full DB copy from cloud version.
+    Web-Store is included for study and tests purposes and you are also able to make full DB copy from cloud version,
+    and you can make price lists (in different price categories) and export it in CSV file to your customers or POS.
     Web-Store is draft yet.</description>
   <url>https://sites.google.com/site/beigesoftware</url>
   <inceptionYear>2017</inceptionYear>
@@ -216,7 +217,7 @@
     <dependency>
       <groupId>org.beigesoft</groupId>
       <artifactId>beigesoft-accounting-weboio-jar</artifactId>
-      <version>1.1.7-SNAPSHOT</version>
+      <version>1.1.7</version>
     </dependency>
     <dependency>
       <groupId>org.xerial</groupId>
