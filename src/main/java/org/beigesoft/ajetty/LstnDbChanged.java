@@ -22,6 +22,7 @@ import org.beigesoft.delegate.IDelegateSimpleExc;
 import org.beigesoft.service.ISrvDatabase;
 import org.beigesoft.web.model.FactoryAndServlet;
 import org.beigesoft.web.factory.AFactoryAppBeans;
+import org.beigesoft.accounting.factory.FactoryBldAccServices;
 import org.beigesoft.web.service.SrvAddTheFirstUser;
 import org.beigesoft.accounting.service.ISrvAccSettings;
 import org.beigesoft.accounting.service.HndlAccVarsRequest;
@@ -89,7 +90,14 @@ public class LstnDbChanged<RS> implements IDelegateSimpleExc {
       .setAdditionalI18nReqHndl(hndlAccVarsRequest);
     factoryAppBeans.lazyGet("ISrvOrm");
     // single user mode anyway:
-    factoryAppBeans.getFactoryBldServices().lazyGetHandlerEntityRequest()
+    @SuppressWarnings("unchecked")
+    FactoryBldAccServices<RS> fblds = (FactoryBldAccServices<RS>)
+      factoryAppBeans.getFactoryBldServices();
+    fblds.lazyGetHandlerEntityRequest()
+      .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
+    fblds.lazyGetHndlWebAdminReq()
+      .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
+    fblds.lazyGetHndlSeSellerReq()
       .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
     ISrvDatabase<RS> srvDb = (ISrvDatabase<RS>)
       factoryAppBeans.lazyGet("ISrvDatabase");

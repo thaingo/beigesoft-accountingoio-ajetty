@@ -27,6 +27,7 @@ import org.beigesoft.web.service.SrvAddTheFirstUser;
 import org.beigesoft.web.factory.AFactoryAppBeans;
 import org.beigesoft.accounting.service.ISrvAccSettings;
 import org.beigesoft.accounting.service.HndlAccVarsRequest;
+import org.beigesoft.accounting.factory.FactoryBldAccServices;
 import org.beigesoft.webstore.service.HndlTradeVarsRequest;
 import org.beigesoft.webstore.service.ISrvTradingSettings;
 import org.beigesoft.webstore.service.UtlTradeJsp;
@@ -132,7 +133,14 @@ public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
     //to create/initialize database if need:
     factoryAppBeans.lazyGet("ISrvOrm");
     // single user mode anyway:
-    factoryAppBeans.getFactoryBldServices().lazyGetHandlerEntityRequest()
+    @SuppressWarnings("unchecked")
+    FactoryBldAccServices<RS> fblds = (FactoryBldAccServices<RS>)
+      factoryAppBeans.getFactoryBldServices();
+    fblds.lazyGetHandlerEntityRequest()
+      .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
+    fblds.lazyGetHndlWebAdminReq()
+      .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
+    fblds.lazyGetHndlSeSellerReq()
       .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
     @SuppressWarnings("unchecked")
     ISrvDatabase<RS> srvDb = (ISrvDatabase<RS>)
