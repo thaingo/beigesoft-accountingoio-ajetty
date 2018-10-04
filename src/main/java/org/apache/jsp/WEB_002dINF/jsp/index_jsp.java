@@ -82,9 +82,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <link rel=\"shortcut icon\" href=\"static/img/favicon.png\">\n  <link rel=\"stylesheet\" href=\"static/css/beige.common.css\" />\n  <title>Beigesoft™ Accounting All In One</title>\n</head>\n<body>\n\n<div class=\"navbar\">\n  <div class=\"dropdown\">\n    <a href=\"#\" class=\"dropdown-btn\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Appearance\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n    <div class=\"dropdown-content\">\n      <a href=\"secure/jspd?nmRnd=main\">");
+      out.write("</a>\n    <div class=\"dropdown-content\">\n      <a href=\"secure/service?nmRnd=main\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Standard\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n      <a href=\"secure/jspd?nmRnd=mainMobile\">");
+      out.write("</a>\n      <a href=\"secure/service?nmRnd=mainMobile\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Mobile\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n      <a href=\"privacypolicy-");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.lang}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -92,7 +92,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"privacy_policy\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n    </div>\n  </div>\n  <div class=\"dropdown\">\n    <a href=\"#\" class=\"dropdown-btn\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Admin\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n    <div class=\"dropdown-content\">\n      <a href=\"secure/jspd?nmRnd=getDatabaseCopyForm\">");
+      out.write("</a>\n    <div class=\"dropdown-content\">\n      <a href=\"secure/service?nmRnd=getDatabaseCopyForm\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"ImportDatabase\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n      <a href=\"webadmin/service?nmRnd=webStoreAdmin\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"WEBStoreAdmin\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -105,7 +105,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\n      <a href=\"mngSoftware/?nmRnd=mngSoftware\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"SoftwareManagement\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n      <a href=\"servicePublic?nmHnd=hndPubWebStrTr&nmRnd=webstore&nmPrc=PrcWebstorePage\" target=\"_blank\">");
+      out.write("</a>\n      <a href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage\" target=\"_blank\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Webstore\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n    </div>\n  </div>\n  <div class=\"nav-right\">\n    <a href=\"https://sites.google.com/site/beigesoftware\" target=\"_blank\">Beigesoft ™</a>\n  </div>\n</div>  \n\n</body>\n</html>\n");
     } catch (java.lang.Throwable t) {
