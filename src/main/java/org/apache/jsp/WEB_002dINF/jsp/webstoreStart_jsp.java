@@ -93,7 +93,7 @@ public final class webstoreStart_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("        $('.autoNum0').autoNumeric('init', {mDec: '0'});\n    });\n    </script>\n  </head>\n\n  <body>\n\n    <header id=\"top\">\n    <nav class=\"navbar navbar-expand-sm navbar-dark bg-dark fixed-top\">\n      ");
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
         return;
-      out.write("\n      \n      <a class=\"navbar-brand\" href=\"servicePublic?nmRnd=webstore&nmHnd=hndPubWebStrTr&nmPrc=PrcWebstorePage\">");
+      out.write("\n      \n      <a class=\"navbar-brand\" href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlTradeJsp.webstoreName(reqVars.tradingSettings, reqVars.i18nWebStoreList, reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbar1\" aria-controls=\"navbar1\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div id=\"navbar1\" class=\"collapse navbar-collapse\">\n        <ul class=\"navbar-nav mr-auto\">\n            ");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
@@ -152,7 +152,7 @@ public final class webstoreStart_jsp extends org.apache.jasper.runtime.HttpJspBa
     int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n        <a href=\"servicePublic?nmRnd=webstore&nmHnd=hndPubWebStrTr&nmPrc=PrcWebstorePage&catalogId\" class=\"navbar-brand navbar-brand-img\"><img src=\"static/img/logo-web-store.png\"></a>\n      ");
+        out.write("\n        <a href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId\" class=\"navbar-brand navbar-brand-img\"><img src=\"static/img/logo-web-store.png\"></a>\n      ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -230,7 +230,7 @@ public final class webstoreStart_jsp extends org.apache.jasper.runtime.HttpJspBa
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlTradeJsp.catalogToStr(cat1l.catalog, reqVars.i18nCatalogs, reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</a>\n                  <div class=\"dropdown-menu\" aria-labelledby=\"dropdown");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${status.index}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\">\n                    <a class=\"dropdown-item\" href=\"servicePublic?nmRnd=webstore&nmHnd=hndPubWebStrTr&nmPrc=PrcWebstorePage&catalogId=");
+        out.write("\">\n                    <a class=\"dropdown-item\" href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cat1l.catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('"');
         out.write('>');
@@ -340,7 +340,7 @@ public final class webstoreStart_jsp extends org.apache.jasper.runtime.HttpJspBa
     int _jspx_eval_c_005fif_005f3 = _jspx_th_c_005fif_005f3.doStartTag();
     if (_jspx_eval_c_005fif_005f3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n                        <a class=\"dropdown-item\" href=\"servicePublic?nmRnd=webstore&nmHnd=hndPubWebStrTr&nmPrc=PrcWebstorePage&catalogId=");
+        out.write("\n                        <a class=\"dropdown-item\" href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cat2l.catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('"');
         out.write('>');
@@ -372,7 +372,7 @@ public final class webstoreStart_jsp extends org.apache.jasper.runtime.HttpJspBa
     int _jspx_eval_c_005fif_005f4 = _jspx_th_c_005fif_005f4.doStartTag();
     if (_jspx_eval_c_005fif_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n                <li class=\"nav-item\"><a class=\"nav-link\" href=\"servicePublic?nmRnd=webstore&nmHnd=hndPubWebStrTr&nmPrc=PrcWebstorePage&catalogId=");
+        out.write("\n                <li class=\"nav-item\"><a class=\"nav-link\" href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cat1l.catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('"');
         out.write('>');

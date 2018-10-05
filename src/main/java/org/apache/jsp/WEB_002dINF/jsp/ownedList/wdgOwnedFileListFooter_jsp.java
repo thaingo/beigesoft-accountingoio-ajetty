@@ -85,9 +85,7 @@ public final class wdgOwnedFileListFooter_jsp extends org.apache.jasper.runtime.
       out.write("\n\n<div class=\"pages\">\n  ");
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
-      out.write("\n  <button onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmHnd=");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("&nmRnd=insertDeleteEntityFfolJson&nmsAct=entityCreate&nmEnt=");
+      out.write("\n  <button onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmRnd=insertDeleteEntityFfolJson&nmsAct=entityCreate&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('&');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

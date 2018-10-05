@@ -90,9 +90,7 @@ public final class inputSubaccLine_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.subaccId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n      <button id=\"SubaccountLinesubaccNameChoose\" type=\"button\" class=\"btn\" onclick=\"openEntityPicker('");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${typeCodeSubaccMap.get(entity.subaccType).simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("', 'SubaccountLine', 'subaccName', '&nmHnd=");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("&wdgPick=pickAccSubacc&mobile=");
+      out.write("', 'SubaccountLine', 'subaccName', '&wdgPick=pickAccSubacc&mobile=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("');\">...</button>\n      <button id=\"SubaccountLinesubaccNameClear\" type=\"button\" class=\"btn\" onclick=\"clearSubaccLine('SubaccountLine');\">X</button>\n    </div>\n  </td>\n</tr>\n");
     } catch (java.lang.Throwable t) {

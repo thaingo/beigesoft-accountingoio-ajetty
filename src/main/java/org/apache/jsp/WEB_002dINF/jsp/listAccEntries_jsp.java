@@ -524,9 +524,7 @@ public final class listAccEntries_jsp extends org.apache.jasper.runtime.HttpJspB
             return true;
           out.write("\n    <tr>\n      ");
           org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}forList/wdgToRowDetail.jsp", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false), out, false);
-          out.write("\n      <td class=\"column-actions\">\n        <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-          out.write("&nmRnd=editAccEntryJson&nmsAct=entityEdit&nmEnt=AccountingEntry&AccountingEntry.itsId=");
+          out.write("\n      <td class=\"column-actions\">\n        <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=editAccEntryJson&nmsAct=entityEdit&nmEnt=AccountingEntry&AccountingEntry.itsId=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("&page=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.page}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -664,9 +662,7 @@ public final class listAccEntries_jsp extends org.apache.jasper.runtime.HttpJspB
     int _jspx_eval_c_005fif_005f4 = _jspx_th_c_005fif_005f4.doStartTag();
     if (_jspx_eval_c_005fif_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n      <a href=\"#\" class=\"page-current\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("&nmsAct=list&nmRnd=");
+        out.write("\n      <a href=\"#\" class=\"page-current\" onclick=\"getHtmlByAjax('GET', 'service/?nmsAct=list&nmRnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${nmRndList}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmEnt=AccountingEntry&page=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${page.value}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -700,9 +696,7 @@ public final class listAccEntries_jsp extends org.apache.jasper.runtime.HttpJspB
     int _jspx_eval_c_005fif_005f5 = _jspx_th_c_005fif_005f5.doStartTag();
     if (_jspx_eval_c_005fif_005f5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n      <a href=\"#\" class=\"page\" onclick=\"getHtmlByAjax('GET', 'service/?nmHnd=");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("&nmsAct=list&nmRnd=");
+        out.write("\n      <a href=\"#\" class=\"page\" onclick=\"getHtmlByAjax('GET', 'service/?nmsAct=list&nmRnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${nmRndList}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmEnt=AccountingEntry&page=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${page.value}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

@@ -100,7 +100,7 @@ public final class webstoreItem1_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write('\n');
       if (_jspx_meth_c_005fset_005f3(_jspx_page_context))
         return;
-      out.write("\n<div class=\"card cat-name\">\n  <div class=\"card-header\">\n    <a href=\"servicePublic?nmRnd=webstore&nmHnd=hndPubWebStrTr&nmPrc=PrcWebstorePage&catalogId=");
+      out.write("\n<div class=\"card cat-name\">\n  <div class=\"card-header\">\n    <a href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.catalogId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${filterUrl}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('"');

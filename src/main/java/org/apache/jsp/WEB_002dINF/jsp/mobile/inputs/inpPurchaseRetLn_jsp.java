@@ -111,9 +111,7 @@ public final class inpPurchaseRetLn_jsp extends org.apache.jasper.runtime.HttpJs
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${docLineAppr}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\" onchange=\"inputHasBeenChanged(this);\">\n      <input id=\"PurchaseReturnLinepurchaseInvoiceLineId\" type=\"hidden\" required name=\"PurchaseReturnLine.purchaseInvoiceLine\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.purchaseInvoiceLine.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\">\n      <button type=\"button\" class=\"btn\" onclick=\"openEntityPicker('PurchaseInvoiceLine', 'PurchaseReturnLine', 'purchaseInvoiceLine', '&nmHnd=");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmHnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("&fltordPitsOwnerValId=");
+      out.write("\">\n      <button type=\"button\" class=\"btn\" onclick=\"openEntityPicker('PurchaseInvoiceLine', 'PurchaseReturnLine', 'purchaseInvoiceLine', '&fltordPitsOwnerValId=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsOwner.purchaseInvoice.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("&fltordPitsOwnerOpr=eq&fltordPforcedFor=itsOwner&mobile=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

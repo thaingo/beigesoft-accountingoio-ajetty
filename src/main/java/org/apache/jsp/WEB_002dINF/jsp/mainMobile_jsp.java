@@ -204,7 +204,7 @@ public final class mainMobile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"TrialBalance\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n         <a href=\"#\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=balanceSheetFormJson');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"balance_sheet\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n      </div>\n    </div>\n    <div class=\"dropdown\">\n      <a href=\"#\" class=\"dropdown-btn\">...</a>\n      <div class=\"dropdown-content\">\n        <a href=\"jspd?nmRnd=mainMobile\">");
+      out.write("</a>\n      </div>\n    </div>\n    <div class=\"dropdown\">\n      <a href=\"#\" class=\"dropdown-btn\">...</a>\n      <div class=\"dropdown-content\">\n        <a href=\"?nmRnd=mainMobile\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Refresh\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"getHtmlByAjax('GET', 'service/?nmsAct=list&nmRnd=listWholeJson&nmEnt=Languages&page=1&mobile=mobile/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Languagess\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -228,7 +228,7 @@ public final class mainMobile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"changeLangPreferences\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"transact?nmRnd=refreshedHndlI18n&nmPrc=PrcRefreshHndlI18n\" target=\"_blank\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"RefreshHndlI18n\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n        <a href=\"#\" onclick=\"getHtmlByAjax('GET', 'transact/?nmRnd=aboutJson&nmPrc=PrcAbout');\">");
+      out.write("</a>\n        <a href=\"#\" onclick=\"getHtmlByAjax('GET', 'service/?nmsAct=about&nmEnt=DatabaseInfo&nmRnd=aboutJson');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"About\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        ");
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
@@ -241,7 +241,7 @@ public final class mainMobile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"No\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</button>\n        </div>\n     </div>\n  </dialog>\n\n  <dialog id=\"dlgI18n\" class=\"dlg dlg-alert\">\n      <div class=\"confirm\">\n        <div class=\"dialog-title confirm-title\">\n          ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"changeLangPreferences\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\n          <button onclick=\"document.getElementById('dlgI18n').close();\" class=\"btn-close btn-confirm\">x</button>\n        </div>\n        <form id=\"lngPrefFrm\" action=\"jspd?nmRnd=mainMobile\" method=\"POST\">\n          <div>\n            <table class=\"tbl-fieldset\">\n              <tbody>\n                <tr>\n                  <td>\n                    <label>");
+      out.write("\n          <button onclick=\"document.getElementById('dlgI18n').close();\" class=\"btn-close btn-confirm\">x</button>\n        </div>\n        <form id=\"lngPrefFrm\" action=\"?nmRnd=mainMobile\" method=\"POST\">\n          <div>\n            <table class=\"tbl-fieldset\">\n              <tbody>\n                <tr>\n                  <td>\n                    <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"lang\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</label>\n                  </td>\n                  <td>\n                    <div class=\"input-line\">\n                      <select name=\"lang\" onchange=\"inputHasBeenChanged(this);\">\n                        ");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
