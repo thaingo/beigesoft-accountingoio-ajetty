@@ -1,7 +1,7 @@
 package org.beigesoft.ajetty;
 
 /*
- * Copyright (c) 2017 Beigesoft ™
+ * Copyright (c) 2017 Beigesoft™
  *
  * Licensed under the GNU General Public License (GPL), Version 2.0
  * (the "License");
@@ -14,12 +14,13 @@ package org.beigesoft.ajetty;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
 import java.io.File;
 import java.security.KeyStore;
 
 import org.eclipse.jetty.security.DataBaseLoginService;
 
-import org.beigesoft.delegate.IDelegateExc;
+import org.beigesoft.delegate.IDelegate;
 import org.beigesoft.service.ISrvDatabase;
 import org.beigesoft.orm.service.ASrvOrm;
 import org.beigesoft.web.model.FactoryAndServlet;
@@ -41,15 +42,16 @@ import org.beigesoft.webstore.service.ISrvSettingsAdd;
  * @param <RS> platform dependent RDBMS recordset
  * @author Yury Demidenko
  */
-public class InitAppFactory<RS> implements IDelegateExc<FactoryAndServlet> {
+public class InitAppFactory<RS> implements IDelegate<FactoryAndServlet> {
 
   /**
    * <p>Make something with a model.</p>
+   * @param pReqVars additional request scoped parameters
    * @throws Exception - an exception
    * @param pFactoryAndServlet with make
    **/
   @Override
-  public final synchronized void makeWith(
+  public final synchronized void makeWith(final Map<String, Object> pReqVars,
     final FactoryAndServlet pFactoryAndServlet) throws Exception {
     @SuppressWarnings("unchecked")
     AFactoryAppBeans<RS> factoryAppBeans =
