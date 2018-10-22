@@ -5,13 +5,13 @@
  *       the last modified time of the source file after
  *       generation to assist with modification tracking.
  */
-package org.apache.jsp.WEB_002dINF.jsp;
+package org.apache.jsp.WEB_002dINF.jsp.toString;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class webstoreSERVICE1_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class toStrUserTomcat_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final javax.servlet.jsp.JspFactory _jspxFactory =
@@ -58,6 +58,7 @@ public final class webstoreSERVICE1_jsp extends org.apache.jasper.runtime.HttpJs
         throws java.io.IOException, javax.servlet.ServletException {
 
     final javax.servlet.jsp.PageContext pageContext;
+    javax.servlet.http.HttpSession session = null;
     final javax.servlet.ServletContext application;
     final javax.servlet.ServletConfig config;
     javax.servlet.jsp.JspWriter out = null;
@@ -69,16 +70,18 @@ public final class webstoreSERVICE1_jsp extends org.apache.jasper.runtime.HttpJs
     try {
       response.setContentType("text/html;charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
-      			null, false, 8192, true);
+      			null, true, 8192, true);
       _jspx_page_context = pageContext;
       application = pageContext.getServletContext();
       config = pageContext.getServletConfig();
+      session = pageContext.getSession();
       out = pageContext.getOut();
       _jspx_out = out;
 
       out.write('\n');
       out.write('\n');
-      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "webstoreItem1.jsp", out, false);
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${model.itsUser}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write('\n');
       out.write('\n');
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
