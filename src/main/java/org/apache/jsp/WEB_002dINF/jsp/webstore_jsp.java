@@ -175,7 +175,7 @@ public final class webstore_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\n\n<!-- Modal filter -->\n<div class=\"modal fade\" id=\"filterMdl\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"filterMdlLabel\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"filterMdlLabel\"><span class=\"oi oi-sort-ascending\" aria-hidden=\"true\"></span> ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.catalogName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</h5>\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n      </div>\n      <div class=\"modal-body\">\n        <form action=\"servicePublic\" method=\"GET\">\n          <input type=\"hidden\" name=\"nmRnd\" value=\"webstore\">\n          <input type=\"hidden\" name=\"nmPrc\" value=\"PrcWebstorePage\">\n          <input type=\"hidden\" name=\"catalogId\" value=\"");
+      out.write("</h5>\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n      </div>\n      <div class=\"modal-body\">\n        <form action=\"\" method=\"GET\">\n          <input type=\"hidden\" name=\"nmRnd\" value=\"webstore\">\n          <input type=\"hidden\" name=\"nmPrc\" value=\"PrcWebstorePage\">\n          <input type=\"hidden\" name=\"catalogId\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${catalogId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n          ");
       if (_jspx_meth_c_005fif_005f31(_jspx_page_context))
@@ -2517,7 +2517,7 @@ public final class webstore_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_005fif_005f24 = _jspx_th_c_005fif_005f24.doStartTag();
     if (_jspx_eval_c_005fif_005f24 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n        <a href=\"servicePublic?nmRnd=webstore");
+        out.write("\n        <a href=\"?nmRnd=webstore");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${item.itsType}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${item.detailsMethod}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmPrc=PrcItemPage&itemId=");
@@ -2715,7 +2715,7 @@ public final class webstore_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_005fif_005f29 = _jspx_th_c_005fif_005f29.doStartTag();
     if (_jspx_eval_c_005fif_005f29 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n          <li class=\"page-item active\"><a class=\"page-link\" href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
+        out.write("\n          <li class=\"page-item active\"><a class=\"page-link\" href=\"?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${catalogId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&page=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pg.value}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -2750,7 +2750,7 @@ public final class webstore_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_005fif_005f30 = _jspx_th_c_005fif_005f30.doStartTag();
     if (_jspx_eval_c_005fif_005f30 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n          <li class=\"page-item\"><a class=\"page-link\" href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
+        out.write("\n          <li class=\"page-item\"><a class=\"page-link\" href=\"?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${catalogId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&page=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pg.value}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -3811,7 +3811,7 @@ public final class webstore_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cat2l.catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("Label\"><span class=\"oi oi-folder\" aria-hidden=\"true\"></span> ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlTradeJsp.catalogToStr(cat2l.catalog, reqVars.i18nCatalogs, reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</h5>\n              <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n            </div>\n            <div class=\"modal-body\">\n              <h5><a href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
+        out.write("</h5>\n              <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n            </div>\n            <div class=\"modal-body\">\n              <h5><a href=\"?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cat2l.catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('"');
         out.write('>');
@@ -3850,7 +3850,7 @@ public final class webstore_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_005fforEach_005f13 = _jspx_th_c_005fforEach_005f13.doStartTag();
       if (_jspx_eval_c_005fforEach_005f13 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n                <li><a href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
+          out.write("\n                <li><a href=\"?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cat3l.catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write('"');
           out.write('>');
@@ -3925,7 +3925,7 @@ public final class webstore_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_005fforEach_005f14 = _jspx_th_c_005fforEach_005f14.doStartTag();
       if (_jspx_eval_c_005fforEach_005f14 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n                    <li><a href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
+          out.write("\n                    <li><a href=\"?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cat4l.catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write('"');
           out.write('>');
@@ -4000,7 +4000,7 @@ public final class webstore_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_005fforEach_005f15 = _jspx_th_c_005fforEach_005f15.doStartTag();
       if (_jspx_eval_c_005fforEach_005f15 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n                          <li><a href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
+          out.write("\n                          <li><a href=\"?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cat5l.catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write('"');
           out.write('>');
@@ -4075,7 +4075,7 @@ public final class webstore_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_005fforEach_005f16 = _jspx_th_c_005fforEach_005f16.doStartTag();
       if (_jspx_eval_c_005fforEach_005f16 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n                                <li><a href=\"servicePublic?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
+          out.write("\n                                <li><a href=\"?nmRnd=webstore&nmPrc=PrcWebstorePage&catalogId=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cat6l.catalog.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write('"');
           out.write('>');
