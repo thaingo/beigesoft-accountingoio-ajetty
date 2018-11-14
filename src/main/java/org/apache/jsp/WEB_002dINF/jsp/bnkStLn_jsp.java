@@ -1153,7 +1153,7 @@ public final class bnkStLn_jsp extends org.apache.jasper.runtime.HttpJspBase
             return true;
           out.write(',');
           out.write(' ');
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entity.itsAmount.toString(), reqVars.dseparatorv, reqVars.dgseparatorv, reqVars.pricePrecision, reqVars.digitsInGroup)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entity.itsAmount.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.priceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("\n                      ");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${accent.description}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("\n                    </option>\n                  ");
@@ -1426,12 +1426,8 @@ public final class bnkStLn_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("</label>\n            </td>\n            ");
         if (_jspx_meth_c_005fif_005f32(_jspx_th_c_005fif_005f22, _jspx_page_context))
           return true;
-        out.write("\n            <td>\n              <div class=\"input-line\">\n                <input type=\"text\" name=\"foreignTotal\" value=\"0.0\" onchange=\"inputHasBeenChanged(this);\" class=\"autoNum");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.pricePrecision}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\" data-a-sep=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.dgseparatorv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\" data-a-dec=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.dseparatorv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("\n            <td>\n              <div class=\"input-line\">\n                <input type=\"text\" name=\"foreignTotal\" value=\"0.0\" onchange=\"inputHasBeenChanged(this);\" class=\"bsNum");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.priceDp}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\"/> \n              </div>\n            </td>\n          </tr>\n        </table>\n      ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f22.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

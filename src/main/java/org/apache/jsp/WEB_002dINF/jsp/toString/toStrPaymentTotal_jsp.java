@@ -84,7 +84,7 @@ public final class toStrPaymentTotal_jsp extends org.apache.jasper.runtime.HttpJ
 
       out.write('\n');
       out.write('\n');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(model.toString(), reqVars.dseparatorv, reqVars.dgseparatorv, reqVars.pricePrecision, reqVars.digitsInGroup)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(model.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.priceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(',');
       out.write('\n');
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))

@@ -78,7 +78,7 @@ public final class toStrNumber2dp_jsp extends org.apache.jasper.runtime.HttpJspB
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(model.toString(), reqVars.dseparatorv, reqVars.dgseparatorv, reqVars.pricePrecision, reqVars.digitsInGroup)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(model.toString(), reqVars.decSepv, reqVars.decGrSepv, 2, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('\n');
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){

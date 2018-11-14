@@ -5,13 +5,13 @@
  *       the last modified time of the source file after
  *       generation to assist with modification tracking.
  */
-package org.apache.jsp.WEB_002dINF.jsp.mobile.inputs;
+package org.apache.jsp.WEB_002dINF.jsp.toString;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class inputQuantityReadOnly_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class toStrReal_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final javax.servlet.jsp.JspFactory _jspxFactory =
@@ -68,7 +68,7 @@ public final class inputQuantityReadOnly_jsp extends org.apache.jasper.runtime.H
 
 
     try {
-      response.setContentType("text/html;charset=UTF-8");
+      response.setContentType("text/html");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -78,17 +78,8 @@ public final class inputQuantityReadOnly_jsp extends org.apache.jasper.runtime.H
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n<tr>\n  <td>\n    <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(fieldName, reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</label>\n  </td>\n<tr>\n</tr>\n  <td>\n    <div class=\"input-line\">\n      <input disabled value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entity[fieldName].toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.quantityDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\"/> \n      <input type=\"hidden\" name=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write('.');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fieldName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entity[fieldName].toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.quantityDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\"/> \n    </div>\n  </td>\n</tr>\n");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(model.toString(), reqVars.decSepv, reqVars.decGrSepv, 4, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write('\n');
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
         out = _jspx_out;

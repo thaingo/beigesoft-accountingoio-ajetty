@@ -122,9 +122,7 @@ public final class inpSalesInvServLn_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("\n      ");
       if (_jspx_meth_c_005fif_005f2(_jspx_page_context))
         return;
-      out.write("\n      <button type=\"button\" class=\"btn\" onclick=\"clearSelectedEntity('");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("service');\">X</button>\n    </div>\n  </td>\n</tr>\n<tr>\n  <td>\n    <label for=\"");
+      out.write("\n    </div>\n  </td>\n</tr>\n<tr>\n  <td>\n    <label for=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(".unitOfMeasureAppearanceVisible\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg('unitOfMeasure', reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -142,9 +140,7 @@ public final class inpSalesInvServLn_jsp extends org.apache.jasper.runtime.HttpJ
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("', 'unitOfMeasure','&mobile=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("');\">...</button>\n      <button type=\"button\" class=\"btn\" onclick=\"clearSelectedEntity('");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("unitOfMeasure');\">X</button>\n    </div>\n  </td>\n</tr>\n");
+      out.write("');\">...</button>\n    </div>\n  </td>\n</tr>\n");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "inpSalesInvLnTmp.jsp", out, false);
       out.write('\n');
     } catch (java.lang.Throwable t) {
@@ -177,7 +173,7 @@ public final class inpSalesInvServLn_jsp extends org.apache.jasper.runtime.HttpJ
     // /WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(4,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setVar("isTaxable");
     // /WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(4,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(4,0) '${reqVars.accSettings.isExtractSalesTaxFromSales && !entity.itsOwner.omitTaxes && !entity.itsOwner.customer.isForeigner}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${reqVars.accSettings.isExtractSalesTaxFromSales && !entity.itsOwner.omitTaxes && !entity.itsOwner.customer.isForeigner}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(4,0) '${reqVars.accSet.isExtractSalesTaxFromSales && !entity.itsOwner.omitTaxes && !entity.itsOwner.customer.isForeigner}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${reqVars.accSet.isExtractSalesTaxFromSales && !entity.itsOwner.omitTaxes && !entity.itsOwner.customer.isForeigner}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(4,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setScope("request");
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
@@ -200,7 +196,7 @@ public final class inpSalesInvServLn_jsp extends org.apache.jasper.runtime.HttpJ
     // /WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(5,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f1.setVar("isItemBasis");
     // /WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(5,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(5,0) '${!reqVars.accSettings.salTaxIsInvoiceBase}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${!reqVars.accSettings.salTaxIsInvoiceBase}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(5,0) '${!reqVars.accSet.salTaxIsInvoiceBase}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${!reqVars.accSet.salTaxIsInvoiceBase}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(5,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f1.setScope("request");
     int _jspx_eval_c_005fset_005f1 = _jspx_th_c_005fset_005f1.doStartTag();
@@ -223,7 +219,7 @@ public final class inpSalesInvServLn_jsp extends org.apache.jasper.runtime.HttpJ
     // /WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(6,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f2.setVar("isAggrOnlyRate");
     // /WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(6,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(6,0) '${reqVars.accSettings.salTaxUseAggregItBas}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${reqVars.accSettings.salTaxUseAggregItBas}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(6,0) '${reqVars.accSet.salTaxUseAggregItBas}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${reqVars.accSet.salTaxUseAggregItBas}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/inputs/inpSalesInvServLn.jsp(6,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f2.setScope("request");
     int _jspx_eval_c_005fset_005f2 = _jspx_th_c_005fset_005f2.doStartTag();
@@ -356,7 +352,9 @@ public final class inpSalesInvServLn_jsp extends org.apache.jasper.runtime.HttpJ
       do {
         out.write("\n        <button type=\"button\" autofocus class=\"btn\" onclick=\"openEntityPicker('ServiceToSale','");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("', 'service','&wdgPick=pickItemUomTax&mobile=");
+        out.write("', 'service','&wdgPick=pickItemUomTax&flyPrIncTax=");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsOwner.priceIncTax}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("&mobile=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("');\">...</button>\n      ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f1.doAfterBody();

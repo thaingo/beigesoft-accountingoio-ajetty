@@ -117,7 +117,7 @@ public final class warehouseRests_jsp extends org.apache.jasper.runtime.HttpJspB
       if (_jspx_meth_fmt_005fformatDate_005f1(_jspx_page_context))
         return;
       out.write(" <br>\n      ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.accSettings.organization}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.accSet.organization}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n    </h4>\n  </div>\n  <table>\n    <tr>\n      <th>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"warehouse\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</th>\n      <th>");
@@ -161,7 +161,7 @@ public final class warehouseRests_jsp extends org.apache.jasper.runtime.HttpJspB
     _jspx_th_fmt_005fsetLocale_005f0.setPageContext(_jspx_page_context);
     _jspx_th_fmt_005fsetLocale_005f0.setParent(null);
     // /WEB-INF/jsp/warehouseRests.jsp(4,0) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_fmt_005fsetLocale_005f0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.localeCurrent}", java.lang.Object.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+    _jspx_th_fmt_005fsetLocale_005f0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.localeCurr}", java.lang.Object.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
     // /WEB-INF/jsp/warehouseRests.jsp(4,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_fmt_005fsetLocale_005f0.setScope("request");
     int _jspx_eval_fmt_005fsetLocale_005f0 = _jspx_th_fmt_005fsetLocale_005f0.doStartTag();
@@ -265,7 +265,7 @@ public final class warehouseRests_jsp extends org.apache.jasper.runtime.HttpJspB
           out.write("</td>\n        <td>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${warehouseRestsLine.unitOfMeasure}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n        <td align=\"right\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(warehouseRestsLine.theRest.toString(), reqVars.dseparatorv, reqVars.dgseparatorv, reqVars.quantityPrecision, reqVars.digitsInGroup)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(warehouseRestsLine.theRest.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.quantityDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n      </tr>\n    ");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

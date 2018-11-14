@@ -128,7 +128,7 @@ public final class priceListFormJson_jsp extends org.apache.jasper.runtime.HttpJ
     _jspx_th_fmt_005fsetLocale_005f0.setPageContext(_jspx_page_context);
     _jspx_th_fmt_005fsetLocale_005f0.setParent(null);
     // /WEB-INF/jsp/priceListFormJson.jsp(4,0) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_fmt_005fsetLocale_005f0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.localeCurrent}", java.lang.Object.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+    _jspx_th_fmt_005fsetLocale_005f0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.localeCurr}", java.lang.Object.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
     // /WEB-INF/jsp/priceListFormJson.jsp(4,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_fmt_005fsetLocale_005f0.setScope("request");
     int _jspx_eval_fmt_005fsetLocale_005f0 = _jspx_th_fmt_005fsetLocale_005f0.doStartTag();
@@ -151,7 +151,7 @@ public final class priceListFormJson_jsp extends org.apache.jasper.runtime.HttpJ
     // /WEB-INF/jsp/priceListFormJson.jsp(5,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setVar("javascript");
     // /WEB-INF/jsp/priceListFormJson.jsp(5,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/priceListFormJson.jsp(5,0) 'openDlg('frmPriceListDlg');'",_jsp_getExpressionFactory().createValueExpression("openDlg('frmPriceListDlg');",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/priceListFormJson.jsp(5,0) 'setVarsNum('${reqVars.decSepv}','${reqVars.decGrSepv}',${reqVars.digInGr});initBsInpsNum('${reqVars.priceDp},0','frmReport');openDlg('frmPriceListDlg');'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"setVarsNum('${reqVars.decSepv}','${reqVars.decGrSepv}',${reqVars.digInGr});initBsInpsNum('${reqVars.priceDp},0','frmReport');openDlg('frmPriceListDlg');",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
     if (_jspx_th_c_005fset_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f0);

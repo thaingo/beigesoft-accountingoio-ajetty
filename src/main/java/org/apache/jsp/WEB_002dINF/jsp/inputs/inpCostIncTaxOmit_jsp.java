@@ -135,7 +135,7 @@ public final class inpCostIncTaxOmit_jsp extends org.apache.jasper.runtime.HttpJ
     // /WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(3,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setVar("isTaxable");
     // /WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(3,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(3,0) '${reqVars.accSettings.isExtractSalesTaxFromPurchase && !entity.omitTaxes && (entity.vendor == null || entity.vendor != null && !entity.vendor.isForeigner)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${reqVars.accSettings.isExtractSalesTaxFromPurchase && !entity.omitTaxes && (entity.vendor == null || entity.vendor != null && !entity.vendor.isForeigner)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(3,0) '${reqVars.accSet.isExtractSalesTaxFromPurchase && !entity.omitTaxes && (entity.vendor == null || entity.vendor != null && !entity.vendor.isForeigner)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${reqVars.accSet.isExtractSalesTaxFromPurchase && !entity.omitTaxes && (entity.vendor == null || entity.vendor != null && !entity.vendor.isForeigner)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(3,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setScope("request");
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
@@ -158,7 +158,7 @@ public final class inpCostIncTaxOmit_jsp extends org.apache.jasper.runtime.HttpJ
     // /WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(4,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f1.setVar("isItemBasis");
     // /WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(4,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(4,0) '${!reqVars.accSettings.salTaxIsInvoiceBase}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${!reqVars.accSettings.salTaxIsInvoiceBase}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(4,0) '${!reqVars.accSet.salTaxIsInvoiceBase}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${!reqVars.accSet.salTaxIsInvoiceBase}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(4,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f1.setScope("request");
     int _jspx_eval_c_005fset_005f1 = _jspx_th_c_005fset_005f1.doStartTag();
@@ -204,7 +204,7 @@ public final class inpCostIncTaxOmit_jsp extends org.apache.jasper.runtime.HttpJ
     // /WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(6,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f3.setVar("isAggrOnlyRate");
     // /WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(6,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f3.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(6,0) '${reqVars.accSettings.salTaxUseAggregItBas}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${reqVars.accSettings.salTaxUseAggregItBas}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f3.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(6,0) '${reqVars.accSet.salTaxUseAggregItBas}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${reqVars.accSet.salTaxUseAggregItBas}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(6,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f3.setScope("request");
     int _jspx_eval_c_005fset_005f3 = _jspx_th_c_005fset_005f3.doStartTag();
@@ -225,7 +225,7 @@ public final class inpCostIncTaxOmit_jsp extends org.apache.jasper.runtime.HttpJ
     _jspx_th_c_005fif_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f0.setParent(null);
     // /WEB-INF/jsp/inputs/inpCostIncTaxOmit.jsp(7,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.accSettings.isExtractSalesTaxFromPurchase && (entity.vendor == null || entity.vendor != null && !entity.vendor.isForeigner)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.accSet.isExtractSalesTaxFromPurchase && (entity.vendor == null || entity.vendor != null && !entity.vendor.isForeigner)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
