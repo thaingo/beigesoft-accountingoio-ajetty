@@ -110,16 +110,16 @@ public final class pickPurchaseInvoiceLine_jsp extends org.apache.jasper.runtime
       out.write('\'');
       out.write(',');
       out.write(' ');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.costPrecision}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.costDp}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(',');
       out.write(' ');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.pricePrecision}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.priceDp}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(',');
       out.write(' ');
       out.write('\'');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.dseparatorv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.decSepv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("', '");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.dgseparatorv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.decGrSepv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('\'');
       out.write(')');
       out.write(';');
@@ -296,7 +296,7 @@ public final class pickPurchaseInvoiceLine_jsp extends org.apache.jasper.runtime
     // /WEB-INF/jsp/pick/pickPurchaseInvoiceLine.jsp(10,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f2.setVar("setTaxFn");
     // /WEB-INF/jsp/pick/pickPurchaseInvoiceLine.jsp(10,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/pick/pickPurchaseInvoiceLine.jsp(10,2) 'setTaxCat(${entity.taxCategory.aggrOnlyPercent},'${entity.taxCategory.itsName}','${namePlace}${param.nmEnt}','${reqVars.dgseparatorv}')'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"setTaxCat(${entity.taxCategory.aggrOnlyPercent},'${entity.taxCategory.itsName}','${namePlace}${param.nmEnt}','${reqVars.dgseparatorv}')",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/pick/pickPurchaseInvoiceLine.jsp(10,2) 'setTaxCat(${entity.taxCategory.aggrOnlyPercent},'${entity.taxCategory.itsName}','${namePlace}${param.nmEnt}',${param.flyPrIncTax},${reqVars.taxDp},${reqVars.accSet.salTaxRoundMode.ordinal()},${reqVars.priceDp})'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"setTaxCat(${entity.taxCategory.aggrOnlyPercent},'${entity.taxCategory.itsName}','${namePlace}${param.nmEnt}',${param.flyPrIncTax},${reqVars.taxDp},${reqVars.accSet.salTaxRoundMode.ordinal()},${reqVars.priceDp})",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f2 = _jspx_th_c_005fset_005f2.doStartTag();
     if (_jspx_th_c_005fset_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f2);
