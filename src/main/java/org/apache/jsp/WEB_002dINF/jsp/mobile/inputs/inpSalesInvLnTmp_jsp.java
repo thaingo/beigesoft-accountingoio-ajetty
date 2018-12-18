@@ -147,19 +147,16 @@ public final class inpSalesInvLnTmp_jsp extends org.apache.jasper.runtime.HttpJs
       if (_jspx_meth_c_005fif_005f26(_jspx_page_context))
         return;
       out.write('\n');
-      if (_jspx_meth_c_005fif_005f27(_jspx_page_context))
+      if (_jspx_meth_c_005fset_005f12(_jspx_page_context))
         return;
       out.write('\n');
       if (_jspx_meth_c_005fset_005f13(_jspx_page_context))
         return;
       out.write('\n');
-      if (_jspx_meth_c_005fset_005f14(_jspx_page_context))
+      if (_jspx_meth_c_005fif_005f27(_jspx_page_context))
         return;
       out.write('\n');
       if (_jspx_meth_c_005fif_005f28(_jspx_page_context))
-        return;
-      out.write('\n');
-      if (_jspx_meth_c_005fif_005f29(_jspx_page_context))
         return;
       out.write('\n');
     } catch (java.lang.Throwable t) {
@@ -190,7 +187,7 @@ public final class inpSalesInvLnTmp_jsp extends org.apache.jasper.runtime.HttpJs
     _jspx_th_c_005fif_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f0.setParent(null);
     // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(4,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${isTaxable && isItemBasis && isAggrOnlyRate}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${isTaxable && isItemBasis && (isAggrOnlyRate || entity.itsOwner.priceIncTax)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -295,7 +292,7 @@ public final class inpSalesInvLnTmp_jsp extends org.apache.jasper.runtime.HttpJs
     _jspx_th_c_005fif_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f1.setParent(null);
     // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(9,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f1.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${!(isTaxable && isItemBasis && isAggrOnlyRate)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f1.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${!(isTaxable && isItemBasis && (isAggrOnlyRate || entity.itsOwner.priceIncTax))}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f1 = _jspx_th_c_005fif_005f1.doStartTag();
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -1004,7 +1001,7 @@ public final class inpSalesInvLnTmp_jsp extends org.apache.jasper.runtime.HttpJs
     _jspx_th_c_005fif_005f20.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f20.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f18);
     // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(126,2) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f20.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${isItemBasis && isAggrOnlyRate}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f20.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${isItemBasis && (isAggrOnlyRate || entity.itsOwner.priceIncTax)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f20 = _jspx_th_c_005fif_005f20.doStartTag();
     if (_jspx_eval_c_005fif_005f20 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -1365,6 +1362,48 @@ public final class inpSalesInvLnTmp_jsp extends org.apache.jasper.runtime.HttpJs
     return false;
   }
 
+  private boolean _jspx_meth_c_005fset_005f12(javax.servlet.jsp.PageContext _jspx_page_context)
+          throws java.lang.Throwable {
+    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
+    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
+    //  c:set
+    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f12 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
+    _jspx_th_c_005fset_005f12.setPageContext(_jspx_page_context);
+    _jspx_th_c_005fset_005f12.setParent(null);
+    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(175,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f12.setVar("numJsAfl");
+    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(175,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f12.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(175,0) 'jQuery('#${entity.getClass().simpleName}itsTotal').on('change', function(){${calcPriceFnNm}(this,'${entity.getClass().simpleName}','itsPrice',${reqVars.priceDp},${reqVars.accSet.roundingMode.ordinal()}${taxParam});});'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"jQuery('#${entity.getClass().simpleName}itsTotal').on('change', function(){${calcPriceFnNm}(this,'${entity.getClass().simpleName}','itsPrice',${reqVars.priceDp},${reqVars.accSet.roundingMode.ordinal()}${taxParam});});",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    int _jspx_eval_c_005fset_005f12 = _jspx_th_c_005fset_005f12.doStartTag();
+    if (_jspx_th_c_005fset_005f12.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f12);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f12);
+    return false;
+  }
+
+  private boolean _jspx_meth_c_005fset_005f13(javax.servlet.jsp.PageContext _jspx_page_context)
+          throws java.lang.Throwable {
+    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
+    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
+    //  c:set
+    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f13 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
+    _jspx_th_c_005fset_005f13.setPageContext(_jspx_page_context);
+    _jspx_th_c_005fset_005f13.setParent(null);
+    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(176,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f13.setVar("numJsAfl");
+    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(176,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f13.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(176,0) '${numJsAfl}jQuery('.changingTot').on('change', function(){${calcTotalFnNm}(this,'${entity.getClass().simpleName}','itsPrice',${reqVars.priceDp},${reqVars.accSet.roundingMode.ordinal()}${taxParam});});'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${numJsAfl}jQuery('.changingTot').on('change', function(){${calcTotalFnNm}(this,'${entity.getClass().simpleName}','itsPrice',${reqVars.priceDp},${reqVars.accSet.roundingMode.ordinal()}${taxParam});});",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    int _jspx_eval_c_005fset_005f13 = _jspx_th_c_005fset_005f13.doStartTag();
+    if (_jspx_th_c_005fset_005f13.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f13);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f13);
+    return false;
+  }
+
   private boolean _jspx_meth_c_005fif_005f27(javax.servlet.jsp.PageContext _jspx_page_context)
           throws java.lang.Throwable {
     javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
@@ -1373,15 +1412,15 @@ public final class inpSalesInvLnTmp_jsp extends org.apache.jasper.runtime.HttpJs
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f27 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f27.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f27.setParent(null);
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(175,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f27.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${!usedPdStr.contains(reqVars.priceDp.toString())}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(177,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fif_005f27.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty numJsAf}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f27 = _jspx_th_c_005fif_005f27.doStartTag();
     if (_jspx_eval_c_005fif_005f27 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write('\n');
         out.write(' ');
         out.write(' ');
-        if (_jspx_meth_c_005fset_005f12(_jspx_th_c_005fif_005f27, _jspx_page_context))
+        if (_jspx_meth_c_005fset_005f14(_jspx_th_c_005fif_005f27, _jspx_page_context))
           return true;
         out.write('\n');
         int evalDoAfterBody = _jspx_th_c_005fif_005f27.doAfterBody();
@@ -1397,68 +1436,26 @@ public final class inpSalesInvLnTmp_jsp extends org.apache.jasper.runtime.HttpJs
     return false;
   }
 
-  private boolean _jspx_meth_c_005fset_005f12(javax.servlet.jsp.tagext.JspTag _jspx_th_c_005fif_005f27, javax.servlet.jsp.PageContext _jspx_page_context)
+  private boolean _jspx_meth_c_005fset_005f14(javax.servlet.jsp.tagext.JspTag _jspx_th_c_005fif_005f27, javax.servlet.jsp.PageContext _jspx_page_context)
           throws java.lang.Throwable {
     javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
     javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
     //  c:set
-    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f12 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
-    _jspx_th_c_005fset_005f12.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fset_005f12.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f27);
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(176,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f12.setVar("usedPdStr");
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(176,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f12.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(176,2) '${usedPdStr},${reqVars.priceDp.toString()}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${usedPdStr},${reqVars.priceDp.toString()}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(176,2) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f12.setScope("request");
-    int _jspx_eval_c_005fset_005f12 = _jspx_th_c_005fset_005f12.doStartTag();
-    if (_jspx_th_c_005fset_005f12.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f12);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f12);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005fset_005f13(javax.servlet.jsp.PageContext _jspx_page_context)
-          throws java.lang.Throwable {
-    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
-    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
-    //  c:set
-    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f13 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
-    _jspx_th_c_005fset_005f13.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fset_005f13.setParent(null);
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(178,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f13.setVar("numJsAfl");
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(178,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f13.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(178,0) 'jQuery('#${entity.getClass().simpleName}itsTotal').on('change', function(){${calcPriceFnNm}(this,'${entity.getClass().simpleName}','itsPrice',${reqVars.priceDp},${reqVars.accSet.roundingMode.ordinal()}${taxParam});});'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"jQuery('#${entity.getClass().simpleName}itsTotal').on('change', function(){${calcPriceFnNm}(this,'${entity.getClass().simpleName}','itsPrice',${reqVars.priceDp},${reqVars.accSet.roundingMode.ordinal()}${taxParam});});",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    int _jspx_eval_c_005fset_005f13 = _jspx_th_c_005fset_005f13.doStartTag();
-    if (_jspx_th_c_005fset_005f13.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f13);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f13);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005fset_005f14(javax.servlet.jsp.PageContext _jspx_page_context)
-          throws java.lang.Throwable {
-    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
-    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
-    //  c:set
-    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f14 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
+    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f14 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f14.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fset_005f14.setParent(null);
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(179,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f14.setVar("numJsAfl");
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(179,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f14.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(179,0) '${numJsAfl}jQuery('.changingTot').on('change', function(){${calcTotalFnNm}(this,'${entity.getClass().simpleName}','itsPrice',${reqVars.priceDp},${reqVars.accSet.roundingMode.ordinal()}${taxParam});});'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${numJsAfl}jQuery('.changingTot').on('change', function(){${calcTotalFnNm}(this,'${entity.getClass().simpleName}','itsPrice',${reqVars.priceDp},${reqVars.accSet.roundingMode.ordinal()}${taxParam});});",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f14.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f27);
+    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(178,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f14.setVar("numJsAf");
+    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(178,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f14.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(178,2) '${numJsAf}${numJsAfl}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${numJsAf}${numJsAfl}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(178,2) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f14.setScope("request");
     int _jspx_eval_c_005fset_005f14 = _jspx_th_c_005fset_005f14.doStartTag();
     if (_jspx_th_c_005fset_005f14.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f14);
+      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f14);
       return true;
     }
-    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f14);
+    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f14);
     return false;
   }
 
@@ -1471,7 +1468,7 @@ public final class inpSalesInvLnTmp_jsp extends org.apache.jasper.runtime.HttpJs
     _jspx_th_c_005fif_005f28.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f28.setParent(null);
     // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(180,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f28.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty numJsAf}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f28.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty numJsAf}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f28 = _jspx_th_c_005fif_005f28.doStartTag();
     if (_jspx_eval_c_005fif_005f28 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -1505,7 +1502,7 @@ public final class inpSalesInvLnTmp_jsp extends org.apache.jasper.runtime.HttpJs
     // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(181,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f15.setVar("numJsAf");
     // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(181,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f15.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(181,2) '${numJsAf}${numJsAfl}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${numJsAf}${numJsAfl}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f15.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(181,2) '${numJsAfl}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${numJsAfl}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(181,2) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f15.setScope("request");
     int _jspx_eval_c_005fset_005f15 = _jspx_th_c_005fset_005f15.doStartTag();
@@ -1514,61 +1511,6 @@ public final class inpSalesInvLnTmp_jsp extends org.apache.jasper.runtime.HttpJs
       return true;
     }
     _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f15);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005fif_005f29(javax.servlet.jsp.PageContext _jspx_page_context)
-          throws java.lang.Throwable {
-    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
-    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
-    //  c:if
-    org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f29 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
-    _jspx_th_c_005fif_005f29.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fif_005f29.setParent(null);
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(183,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f29.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty numJsAf}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
-    int _jspx_eval_c_005fif_005f29 = _jspx_th_c_005fif_005f29.doStartTag();
-    if (_jspx_eval_c_005fif_005f29 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      do {
-        out.write('\n');
-        out.write(' ');
-        out.write(' ');
-        if (_jspx_meth_c_005fset_005f16(_jspx_th_c_005fif_005f29, _jspx_page_context))
-          return true;
-        out.write('\n');
-        int evalDoAfterBody = _jspx_th_c_005fif_005f29.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-    }
-    if (_jspx_th_c_005fif_005f29.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f29);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f29);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005fset_005f16(javax.servlet.jsp.tagext.JspTag _jspx_th_c_005fif_005f29, javax.servlet.jsp.PageContext _jspx_page_context)
-          throws java.lang.Throwable {
-    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
-    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
-    //  c:set
-    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f16 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
-    _jspx_th_c_005fset_005f16.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fset_005f16.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f29);
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(184,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f16.setVar("numJsAf");
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(184,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f16.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(184,2) '${numJsAfl}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${numJsAfl}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/mobile/inputs/inpSalesInvLnTmp.jsp(184,2) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f16.setScope("request");
-    int _jspx_eval_c_005fset_005f16 = _jspx_th_c_005fset_005f16.doStartTag();
-    if (_jspx_th_c_005fset_005f16.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f16);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f16);
     return false;
   }
 }
