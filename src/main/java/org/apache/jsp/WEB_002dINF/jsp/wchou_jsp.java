@@ -171,12 +171,12 @@ public final class wchou_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write('\n');
         out.write(' ');
         out.write(' ');
-        org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "webstoreStart.jsp", out, false);
+        if (_jspx_meth_c_005fset_005f0(_jspx_th_c_005fif_005f1, _jspx_page_context))
+          return true;
         out.write('\n');
         out.write(' ');
         out.write(' ');
-        if (_jspx_meth_c_005fset_005f0(_jspx_th_c_005fif_005f1, _jspx_page_context))
-          return true;
+        org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "webstoreStart.jsp", out, false);
         out.write('\n');
         out.write(' ');
         out.write(' ');
@@ -255,11 +255,11 @@ public final class wchou_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f1);
-    // /WEB-INF/jsp/wchou.jsp(9,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/wchou.jsp(8,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setVar("catalogId");
-    // /WEB-INF/jsp/wchou.jsp(9,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/wchou.jsp(9,2) '${param.catalogId}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${param.catalogId}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/wchou.jsp(9,2) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/wchou.jsp(8,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/wchou.jsp(8,2) '${param.catalogId}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${param.catalogId}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/wchou.jsp(8,2) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setScope("request");
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
     if (_jspx_th_c_005fset_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -938,7 +938,7 @@ public final class wchou_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"tot\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write(' ');
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ord.tot}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.wscurr.itsSign}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ord.curr.stCo}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("\n        ");
           if (_jspx_meth_c_005fif_005f12(_jspx_th_c_005fforEach_005f1, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f1))
             return true;
@@ -1484,6 +1484,8 @@ public final class wchou_jsp extends org.apache.jasper.runtime.HttpJspBase
       do {
         out.write("\n        <a href=\"ntr/?nmPrc=PrPur&nmRnd=waor&nmRndRed=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmRndRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("&catalogId=");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${catalogId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\" type=\"button\" class=\"btn btn-lg btn-block btn-primary\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"accept\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</a>\n      ");
@@ -1514,8 +1516,12 @@ public final class wchou_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_005fif_005f22 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n    <script src=\"https://www.paypalobjects.com/api/checkout.js\"></script>\n    <script>\n      paypal.Button.render({\n        env: '");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${paymd.mde}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("', // 'sandbox' or 'production'\n        // Set up the payment:\n        // 1. Add a payment callback\n        payment: function(data, actions) {\n          // 2. Make a request to your server\n          return actions.request.post('ntr/?nmPrc=PrPpl&nmRnd=ppl')\n            .then(function(res) {\n              // 3. Return res.id from the response\n              return res.id;\n            });\n        },\n        // Execute the payment:\n        // 1. Add an onAuthorize callback\n        onAuthorize: function(data, actions) {\n          // 2. Make a request to your server\n          return actions.request.post('ntr/?nmPrc=PrPpl&nmRnd=ppl', {\n            paymentID: data.paymentID,\n            payerID:   data.payerID\n          })\n            .then(function(res) {\n              // 3. Show the buyer a confirmation message:\n              window.location.assign('ntr/?nmPrc=PrBur&nmRnd=waor');\n            });\n        }\n      }, '#paypal-button');\n    </script>\n  ");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pmde}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("', // 'sandbox' or 'production'\n        // Set up the payment:\n        // 1. Add a payment callback\n        payment: function(data, actions) {\n          // 2. Make a request to your server\n          return actions.request.post('ntr/?nmPrc=PrPpl&nmRnd=ppl')\n            .then(function(res) {\n              // 3. Return res.id from the response\n              return res.id;\n            });\n        },\n        // Execute the payment:\n        // 1. Add an onAuthorize callback\n        onAuthorize: function(data, actions) {\n          // 2. Make a request to your server\n          return actions.request.post('ntr/?nmPrc=PrPpl&nmRnd=ppl', {\n            paymentID: data.paymentID,\n            payerID:   data.payerID\n          })\n            .then(function(res) {\n              // 3. Show the buyer a confirmation message:\n              window.location.assign('ntr/?nmPrc=PrBur&nmRnd=waor&pur=");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${orders[0].pur}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("&bur=");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${orders[0].buyer.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("');\n            });\n        }\n      }, '#paypal-button');\n    </script>\n  ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f22.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;

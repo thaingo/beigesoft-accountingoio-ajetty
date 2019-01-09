@@ -28,7 +28,6 @@ import org.beigesoft.web.service.SrvAddTheFirstUser;
 import org.beigesoft.web.factory.AFactoryAppBeans;
 import org.beigesoft.accounting.service.ISrvAccSettings;
 import org.beigesoft.accounting.service.HndlAccVarsRequest;
-import org.beigesoft.accounting.factory.FactoryBldAccServices;
 import org.beigesoft.webstore.service.HndlTradeVarsRequest;
 import org.beigesoft.webstore.service.ISrvTradingSettings;
 import org.beigesoft.webstore.service.UtlTradeJsp;
@@ -78,6 +77,18 @@ public class InitAppFactory<RS> implements IDelegate<FactoryAndServlet> {
     String uvdSettingsBaseFile = pFactoryAndServlet.getHttpServlet()
       .getInitParameter("uvdSettingsBaseFile");
     factoryAppBeans.setUvdSettingsBaseFile(uvdSettingsBaseFile);
+    String writeTi = pFactoryAndServlet.getHttpServlet()
+      .getInitParameter("writeTi");
+    factoryAppBeans.setWriteTi(Integer.parseInt(writeTi));
+    String readTi = pFactoryAndServlet.getHttpServlet()
+      .getInitParameter("readTi");
+    factoryAppBeans.setReadTi(Integer.parseInt(readTi));
+    String writeReTi = pFactoryAndServlet.getHttpServlet()
+      .getInitParameter("writeReTi");
+    factoryAppBeans.setWriteReTi(Integer.parseInt(writeReTi));
+    String wrReSpTr = pFactoryAndServlet.getHttpServlet()
+      .getInitParameter("wrReSpTr");
+    factoryAppBeans.setWrReSpTr(Boolean.valueOf(wrReSpTr));
     String jdbcUrl = pFactoryAndServlet.getHttpServlet()
       .getInitParameter("databaseName");
     if (jdbcUrl != null && jdbcUrl.contains(ASrvOrm.WORD_CURRENT_DIR)) {
@@ -132,18 +143,6 @@ public class InitAppFactory<RS> implements IDelegate<FactoryAndServlet> {
       .lazyGet("ISrvAccSettings"));
     factoryAppBeans.lazyGetHndlI18nRequest()
       .setAdditionalI18nReqHndl(hndlAccVarsRequest);
-    //to create/initialize database if need:
-    factoryAppBeans.lazyGet("ISrvOrm");
-    // single user mode anyway:
-    @SuppressWarnings("unchecked")
-    FactoryBldAccServices<RS> fblds = (FactoryBldAccServices<RS>)
-      factoryAppBeans.getFactoryBldServices();
-    fblds.lazyGetHandlerEntityRequest()
-      .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
-    fblds.lazyGetHndlWebAdminReq()
-      .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
-    fblds.lazyGetHndlSeSellerReq()
-      .setChangingTranIsol(ISrvDatabase.TRANSACTION_READ_UNCOMMITTED);
     @SuppressWarnings("unchecked")
     ISrvDatabase<RS> srvDb = (ISrvDatabase<RS>)
       factoryAppBeans.lazyGet("ISrvDatabase");
