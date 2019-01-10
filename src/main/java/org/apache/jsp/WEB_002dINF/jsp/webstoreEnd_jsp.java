@@ -85,7 +85,13 @@ public final class webstoreEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write('\n');
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
         return;
-      out.write("\n\n    </main>\n\n    <button id=\"toTop\">^</button>\n\n    <script>\n      $(window).scroll(function() { if ($(this).scrollTop() > 200) { $(\"#toTop\").fadeIn(); } else { $(\"#toTop\").fadeOut(); } });\n      $(\"#toTop\").click(function() { $(\"html, body\").animate({scrollTop: 0}, 1000); });\n    </script>\n\n  </body>\n</html>\n");
+      out.write("\n\n<div class=\"modal fade\" id=\"infoDlg\" tabindex=\"-1\" role=\"dialog\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"About\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</h5>\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n      </div>\n      <div class=\"modal-body\">\n        <h4>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"app_name\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</h4>\n        <h5><a href=\"https://sites.google.com/site/beigesoftware\" target=\"_blank\">Beigesoft™ https://beigesoft.org</a></h5>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Close\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n    </main>\n\n    <button id=\"toTop\">^</button>\n\n    <script>\n      $(window).scroll(function() { if ($(this).scrollTop() > 200) { $(\"#toTop\").fadeIn(); } else { $(\"#toTop\").fadeOut(); } });\n      $(\"#toTop\").click(function() { $(\"html, body\").animate({scrollTop: 0}, 1000); });\n    </script>\n\n  </body>\n</html>\n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
         out = _jspx_out;
