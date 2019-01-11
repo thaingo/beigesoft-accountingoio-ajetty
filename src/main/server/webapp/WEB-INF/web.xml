@@ -1109,6 +1109,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lsAcCuOr_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.actions.lsAcCuOr_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lstActPrintEdit_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.actions.lstActPrintEdit_jsp</servlet-class>
     </servlet>
@@ -1681,6 +1686,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuanTotCst_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuanTotCst_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inOrSt_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inOrSt_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -2541,6 +2551,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuanTotCst_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuanTotCst_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inOrSt_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.inputs.inOrSt_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -3719,6 +3734,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lsAcCuOr_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/actions/lsAcCuOr.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.actions.lstActPrintEdit_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/actions/lstActPrintEdit.jsp</url-pattern>
     </servlet-mapping>
@@ -4291,6 +4311,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inputCostQuanTotCst_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mobile/inputs/inputCostQuanTotCst.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mobile.inputs.inOrSt_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mobile/inputs/inOrSt.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -5151,6 +5176,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inputCostQuanTotCst_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/inputs/inputCostQuanTotCst.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.inputs.inOrSt_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/inputs/inOrSt.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
