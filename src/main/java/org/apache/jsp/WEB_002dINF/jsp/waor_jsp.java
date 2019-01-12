@@ -185,6 +185,10 @@ public final class waor_jsp extends org.apache.jasper.runtime.HttpJspBase
         if (_jspx_meth_c_005fforEach_005f0(_jspx_th_c_005fif_005f1, _jspx_page_context))
           return true;
         out.write("\n    </div>\n  </div>\n\n  ");
+        org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "webstoreI18n.jsp", out, false);
+        out.write('\n');
+        out.write(' ');
+        out.write(' ');
         org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "webstoreEnd.jsp", out, false);
         out.write('\n');
         int evalDoAfterBody = _jspx_th_c_005fif_005f1.doAfterBody();

@@ -939,16 +939,9 @@ public final class webstoreStart_jsp extends org.apache.jasper.runtime.HttpJspBa
     int _jspx_eval_c_005fif_005f14 = _jspx_th_c_005fif_005f14.doStartTag();
     if (_jspx_eval_c_005fif_005f14 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n            <li class=\"nav-item\"><a href=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${urlPrf}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("?nmRnd=");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${nmRndRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("&nmPrc=PrLog&nmPrcRed=");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${nmPrcRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\" class=\"nav-link\" data-toggle=\"tooltip\" title=\"");
+        out.write("\n            <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\" data-toggle=\"tooltip\" title=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg('log_out', reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write('"');
-        out.write('>');
+        out.write("\" onclick=\"$('#logoutDlg').modal('toggle');\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${buyr.itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(" <span class=\"oi oi-account-logout\" aria-hidden=\"true\"></span></a></li>\n          ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f14.doAfterBody();
