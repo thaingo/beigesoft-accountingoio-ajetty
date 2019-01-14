@@ -107,7 +107,7 @@ public final class wdgInvoiceLns_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("</th>\n  </tr>\n  ");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
-      out.write("\n</table>\n<div class=\"pages\">\n  <button onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmRnd=editInvLnJson&nmsAct=entityCreate&nmEnt=");
+      out.write("\n</table>\n<div class=\"pages\">\n  <button onclick=\"getHtmlByAjaxCareful('GET', 'service?nmRnd=editInvLnJson&nmsAct=entityCreate&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ownedListsMapEntry.key.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('&');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ownedListsMapEntry.key.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

@@ -78,7 +78,7 @@ public final class lstActInvServiceLine_jsp extends org.apache.jasper.runtime.Ht
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n<button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmRnd=editInvLnJson&nmsAct=entityCopy&nmEnt=");
+      out.write("\n<button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service?nmRnd=editInvLnJson&nmsAct=entityCopy&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('&');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -88,7 +88,7 @@ public final class lstActInvServiceLine_jsp extends org.apache.jasper.runtime.Ht
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Copy\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</button>\n<button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmRnd=editInvLnJson&nmsAct=entityEdit&nmEnt=");
+      out.write("</button>\n<button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service?nmRnd=editInvLnJson&nmsAct=entityEdit&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('&');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -98,7 +98,7 @@ public final class lstActInvServiceLine_jsp extends org.apache.jasper.runtime.Ht
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Edit\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</button>\n<button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmRnd=confirmDeleteEntityFolJson&nmsAct=entityConfirmDelete&nmEnt=");
+      out.write("</button>\n<button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service?nmRnd=confirmDeleteEntityFolJson&nmsAct=entityConfirmDelete&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('&');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

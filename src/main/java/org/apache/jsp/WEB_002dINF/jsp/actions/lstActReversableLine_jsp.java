@@ -127,7 +127,7 @@ public final class lstActReversableLine_jsp extends org.apache.jasper.runtime.Ht
         out.write(' ');
         if (_jspx_meth_c_005fset_005f0(_jspx_th_c_005fif_005f0, _jspx_page_context))
           return true;
-        out.write("\n  <button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmRnd=editEntityFolJson&nmsAct=entityCopy&nmEnt=");
+        out.write("\n  <button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service?nmRnd=editEntityFolJson&nmsAct=entityCopy&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('&');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -139,7 +139,7 @@ public final class lstActReversableLine_jsp extends org.apache.jasper.runtime.Ht
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("');\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Copy\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</button>\n  <button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmRnd=reverseLineJson&nmsAct=entityReverse&nmEnt=");
+        out.write("</button>\n  <button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service?nmRnd=reverseLineJson&nmsAct=entityReverse&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('&');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entitySimpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

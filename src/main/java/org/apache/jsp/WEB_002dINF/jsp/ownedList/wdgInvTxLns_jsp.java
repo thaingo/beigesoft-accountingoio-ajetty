@@ -505,7 +505,7 @@ public final class wdgInvTxLns_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entity.taxableInvBas.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.priceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("\n        </td>\n        <td style=\"text-align: right;\">\n          ");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entity.itsTotal.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.priceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-          out.write("\n        </td>\n        <td>\n          <button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service/?nmRnd=editEntityFolJson&nmsAct=entityEdit&nmEnt=");
+          out.write("\n        </td>\n        <td>\n          <button class=\"btn\" onclick=\"getHtmlByAjaxCareful('GET', 'service?nmRnd=editEntityFolJson&nmsAct=entityEdit&nmEnt=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write('&');
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

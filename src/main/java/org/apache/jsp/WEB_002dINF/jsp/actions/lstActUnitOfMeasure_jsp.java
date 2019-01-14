@@ -151,14 +151,14 @@ public final class lstActUnitOfMeasure_jsp extends org.apache.jasper.runtime.Htt
     int _jspx_eval_c_005fif_005f1 = _jspx_th_c_005fif_005f1.doStartTag();
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=editEntityJson&nmsAct=entityEdit&nmEnt=UnitOfMeasure&UnitOfMeasure.itsId=");
+        out.write("\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=editEntityJson&nmsAct=entityEdit&nmEnt=UnitOfMeasure&UnitOfMeasure.itsId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&page=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.page}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("');\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Edit\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</button>\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=confirmDeleteEntityJson&nmsAct=entityConfirmDelete&nmEnt=UnitOfMeasure&UnitOfMeasure.itsId=");
+        out.write("</button>\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=confirmDeleteEntityJson&nmsAct=entityConfirmDelete&nmEnt=UnitOfMeasure&UnitOfMeasure.itsId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&page=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.page}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

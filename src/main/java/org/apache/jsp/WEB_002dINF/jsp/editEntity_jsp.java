@@ -114,7 +114,7 @@ public final class editEntity_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlaceForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("Edit')\" class=\"btn-close\">x</button>\n    </div>\n    <form id=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlaceForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("EditFrm\" action=\"service/\" method=\"POST\" enctype=\"multipart/form-data\">\n      <input type=\"hidden\" id=\"");
+      out.write("EditFrm\" action=\"service\" method=\"POST\" enctype=\"multipart/form-data\">\n      <input type=\"hidden\" id=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlaceForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("EditFrm.nmsAct\" name=\"nmsAct\" value=\"entitySave,entityEdit,list\">\n      <input type=\"hidden\" name=\"nmEnt\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

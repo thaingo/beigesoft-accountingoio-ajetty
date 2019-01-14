@@ -119,11 +119,11 @@ public final class lstActEmailMsg_jsp extends org.apache.jasper.runtime.HttpJspB
     int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n  <button onclick=\"window.open('service/?nmRnd=printEntity&nmsAct=entityPrint&nmEnt=EmailMsg&EmailMsg.itsId=");
+        out.write("\n  <button onclick=\"window.open('service?nmRnd=printEntity&nmsAct=entityPrint&nmEnt=EmailMsg&EmailMsg.itsId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("','_blank');\" class=\"btn\" >");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Print\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</button>\n  <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=editEntityJson&nmsAct=entityCopy&nmEnt=EmailMsg&EmailMsg.itsId=");
+        out.write("</button>\n  <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=editEntityJson&nmsAct=entityCopy&nmEnt=EmailMsg&EmailMsg.itsId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&page=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.page}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -160,21 +160,21 @@ public final class lstActEmailMsg_jsp extends org.apache.jasper.runtime.HttpJspB
     int _jspx_eval_c_005fif_005f1 = _jspx_th_c_005fif_005f1.doStartTag();
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=editEntityJson&nmsAct=entityEdit&nmEnt=EmailMsg&EmailMsg.itsId=");
+        out.write("\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=editEntityJson&nmsAct=entityEdit&nmEnt=EmailMsg&EmailMsg.itsId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&page=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.page}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("');\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Edit\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</button>\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=listWholeAfterListActionJson&nmsAct=entitySave&actionAdd=sendFromList&msgSuccess=send_ok&nmEnt=EmailMsg&EmailMsg.itsId=");
+        out.write("</button>\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=listWholeAfterListActionJson&nmsAct=entitySave&actionAdd=sendFromList&msgSuccess=send_ok&nmEnt=EmailMsg&EmailMsg.itsId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&page=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.page}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("');\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Send\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</button>\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=confirmDeleteEntityJson&nmsAct=entityConfirmDelete&nmEnt=EmailMsg&EmailMsg.itsId=");
+        out.write("</button>\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=confirmDeleteEntityJson&nmsAct=entityConfirmDelete&nmEnt=EmailMsg&EmailMsg.itsId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&page=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.page}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

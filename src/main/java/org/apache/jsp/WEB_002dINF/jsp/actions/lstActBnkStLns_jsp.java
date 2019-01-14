@@ -156,7 +156,7 @@ public final class lstActBnkStLns_jsp extends org.apache.jasper.runtime.HttpJspB
     int _jspx_eval_c_005fif_005f1 = _jspx_th_c_005fif_005f1.doStartTag();
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=bnkStLnJson&nmsAct=entityEdit&nmEnt=BankStatementLine&BankStatementLine.itsId=");
+        out.write("\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=bnkStLnJson&nmsAct=entityEdit&nmEnt=BankStatementLine&BankStatementLine.itsId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ownerVersion}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -189,7 +189,7 @@ public final class lstActBnkStLns_jsp extends org.apache.jasper.runtime.HttpJspB
     int _jspx_eval_c_005fif_005f2 = _jspx_th_c_005fif_005f2.doStartTag();
     if (_jspx_eval_c_005fif_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=bnkStLnJson&nmsAct=entityEdit&nmEnt=BankStatementLine&BankStatementLine.itsId=");
+        out.write("\n    <button class=\"btn\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=bnkStLnJson&nmsAct=entityEdit&nmEnt=BankStatementLine&BankStatementLine.itsId=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ownerVersion}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyParams}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

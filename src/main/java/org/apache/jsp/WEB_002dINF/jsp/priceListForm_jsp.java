@@ -88,7 +88,7 @@ public final class priceListForm_jsp extends org.apache.jasper.runtime.HttpJspBa
       }
       out.write("\n<dialog id=\"frmPriceListDlg\" class=\"dlg\" oncancel=\"return false;\">\n  <div class=\"form-std\">\n    <div class=\"dialog-title\">\n      ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"priceList\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\n      <button onclick=\"closeDlgCareful('frmPriceList')\" class=\"btn-close\">x</button>\n    </div>\n    <form id=\"frmPriceListFrm\" action=\"../secure/reportCsv/\" method=\"GET\" target=\"_blank\">\n      <input type=\"hidden\" name=\"fileName\" value=\"priceList");
+      out.write("\n      <button onclick=\"closeDlgCareful('frmPriceList')\" class=\"btn-close\">x</button>\n    </div>\n    <form id=\"frmPriceListFrm\" action=\"../secure/reportCsv\" method=\"GET\" target=\"_blank\">\n      <input type=\"hidden\" name=\"fileName\" value=\"priceList");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvDate.toDdMmYy(now, null)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n      <table class=\"tbl-fieldset\">\n        <tr>\n          <td>\n            <label for=\"priceCategory\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"priceCategory\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

@@ -101,7 +101,7 @@ public final class confDelEntity_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlaceForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("Delete')\" class=\"btn-close\">x</button>\n    </div>\n    <form id=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlaceForm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("DeleteFrm\" action=\"service/\" method=\"POST\" enctype=\"multipart/form-data\">\n      <input type=\"hidden\" name=\"nmsAct\" value=\"");
+      out.write("DeleteFrm\" action=\"service\" method=\"POST\" enctype=\"multipart/form-data\">\n      <input type=\"hidden\" name=\"nmsAct\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.entAct}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(",list\">\n      <input type=\"hidden\" name=\"nmEnt\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.nmEnt}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

@@ -92,7 +92,7 @@ public final class wdgListFooterWebstoreGoods_jsp extends org.apache.jasper.runt
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${namePlace}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("AssignGoodsToCatalogDlg');\" class=\"btn\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"assign_catalog_bulk\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</button>\n  <button id=\"listMainNew\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=editEntityJson&nmsAct=entityCreate&nmEnt=");
+      out.write("</button>\n  <button id=\"listMainNew\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=editEntityJson&nmsAct=entityCreate&nmEnt=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("&page=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.page}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -207,7 +207,7 @@ public final class wdgListFooterWebstoreGoods_jsp extends org.apache.jasper.runt
     int _jspx_eval_c_005fif_005f1 = _jspx_th_c_005fif_005f1.doStartTag();
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n      <a href=\"#\" class=\"page-current\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=");
+        out.write("\n      <a href=\"#\" class=\"page-current\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${nmRndList}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmsAct=list&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -243,7 +243,7 @@ public final class wdgListFooterWebstoreGoods_jsp extends org.apache.jasper.runt
     int _jspx_eval_c_005fif_005f2 = _jspx_th_c_005fif_005f2.doStartTag();
     if (_jspx_eval_c_005fif_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n      <a href=\"#\" class=\"page\" onclick=\"getHtmlByAjax('GET', 'service/?nmRnd=");
+        out.write("\n      <a href=\"#\" class=\"page\" onclick=\"getHtmlByAjax('GET', 'service?nmRnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${nmRndList}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&nmsAct=list&nmEnt=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${classEntity.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

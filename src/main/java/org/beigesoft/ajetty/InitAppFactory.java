@@ -89,6 +89,9 @@ public class InitAppFactory<RS> implements IDelegate<FactoryAndServlet> {
     String wrReSpTr = pFactoryAndServlet.getHttpServlet()
       .getInitParameter("wrReSpTr");
     factoryAppBeans.setWrReSpTr(Boolean.valueOf(wrReSpTr));
+    String fastLoc = pFactoryAndServlet.getHttpServlet()
+      .getInitParameter("fastLoc");
+    factoryAppBeans.setFastLoc(Boolean.parseBoolean(fastLoc));
     String jdbcUrl = pFactoryAndServlet.getHttpServlet()
       .getInitParameter("databaseName");
     if (jdbcUrl != null && jdbcUrl.contains(ASrvOrm.WORD_CURRENT_DIR)) {
