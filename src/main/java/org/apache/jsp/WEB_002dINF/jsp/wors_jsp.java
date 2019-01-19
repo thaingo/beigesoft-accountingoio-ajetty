@@ -437,7 +437,7 @@ public final class wors_jsp extends org.apache.jasper.runtime.HttpJspBase
             return true;
           out.write("</h6>\n        <a href=\"#\" onclick=\"window.open('?nmRnd=printEntity&nmPrc=PrBuOr&orId=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ord.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-          out.write("&unSc=1');\" type=\"button\" class=\"btn\">");
+          out.write("&unSc=1');\" type=\"button\" class=\"btn btn-outline-primary\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"print\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</a>\n      </div>\n      ");
           if (_jspx_meth_c_005fif_005f8(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
@@ -1019,7 +1019,7 @@ public final class wors_jsp extends org.apache.jasper.runtime.HttpJspBase
             return true;
           out.write("</h6>\n        <a href=\"#\" onclick=\"window.open('?nmRnd=printEntity&nmPrc=PrBuOr&sorId=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ord.itsId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-          out.write("&unSc=1');\" type=\"button\" class=\"btn\">");
+          out.write("&unSc=1');\" type=\"button\" class=\"btn btn-outline-primary\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"print\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</a>\n      </div>\n      ");
           if (_jspx_meth_c_005fif_005f19(_jspx_th_c_005fforEach_005f2, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f2))
