@@ -173,7 +173,11 @@ public final class webstoreEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write('"');
         out.write('>');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg('CustOrders', reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write(" <span class=\"oi oi-book\" aria-hidden=\"true\"></span></a></h5>\n          <h5><a href=\"");
+        out.write(" <span class=\"oi oi-book\" aria-hidden=\"true\"></span></a></h5>\n          <h5><a href=\"#\" data-dismiss=\"modal\" data-toggle=\"tooltip\" title=\"");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg('shipping_address', reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("\" onclick=\"$('#buyrMdl').modal('show');\">");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"shipping_address\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write(" <span class=\"oi oi-pencil\" aria-hidden=\"true\"></span></a></h5>\n        </div>\n        <div class=\"modal-footer\">\n          <a type=\"button\" class=\"btn btn-outline-primary\" href=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${urlPrf}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("?nmRnd=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${nmRndRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -184,11 +188,7 @@ public final class webstoreEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${buyr.itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(" <span class=\"oi oi-account-logout\" aria-hidden=\"true\"></span> ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"logout\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</a></h5>\n          <h5><a href=\"#\" data-dismiss=\"modal\" data-toggle=\"tooltip\" title=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg('shipping_address', reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\" onclick=\"$('#buyrMdl').modal('show');\">");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"shipping_address\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write(" <span class=\"oi oi-pencil\" aria-hidden=\"true\"></span></a></h5>\n        </div>\n        <div class=\"modal-footer\">\n          <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">");
+        out.write("</a>\n          <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Close\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</button>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"modal fade\" id=\"buyrMdl\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"buyrMdlLabel\">\n    <div class=\"modal-dialog\" role=\"document\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <h5 class=\"modal-title\" id=\"buyrMdlLabel\"><span class=\"oi oi-cart\" aria-hidden=\"true\"></span> ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"shipping_address\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
