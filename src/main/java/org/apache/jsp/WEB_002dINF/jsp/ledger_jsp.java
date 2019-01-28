@@ -147,11 +147,11 @@ public final class ledger_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n    <tr>\n      <td colspan=\"3\" class=\"total\"><b>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Previous\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</b></td>\n      <td class=\"total\"><b>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.debitAcc.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.debitAcc.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n      <td class=\"total\"><b>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.creditAcc.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.creditAcc.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n      <td class=\"total\"><b>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.balanceAcc.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.balanceAcc.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n    </tr>\n    ");
       if (_jspx_meth_c_005fforEach_005f1(_jspx_page_context))
         return;
@@ -161,15 +161,15 @@ public final class ledger_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n    <tr>\n      <td colspan=\"3\" class=\"total\"><b>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"itsTotal\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</b></td>\n      <td class=\"total\"><b>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.debitAcc.add(ledgerDetail.debitAcc).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.debitAcc.add(ledgerDetail.debitAcc).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(' ');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.accSet.currency.itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n      <td class=\"total\"><b>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.creditAcc.add(ledgerDetail.creditAcc).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.creditAcc.add(ledgerDetail.creditAcc).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(' ');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.accSet.currency.itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n      <td class=\"total\"><b>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.balanceAcc.add(ledgerDetail.balanceAcc).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerPrevious.balanceAcc.add(ledgerDetail.balanceAcc).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(' ');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.accSet.currency.itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n    </tr>\n  </table>\n</body>\n</html>\n");
@@ -350,11 +350,11 @@ public final class ledger_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\n        <tr>\n          <td colspan=\"3\" class=\"total\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entry.key}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write(":</td>\n          <td class=\"total\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.debit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.debit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n          <td class=\"total\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.credit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.credit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n          <td class=\"total\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.balance.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.balance.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n        </tr>\n      ");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -411,11 +411,11 @@ public final class ledger_jsp extends org.apache.jasper.runtime.HttpJspBase
           if (_jspx_meth_c_005fif_005f3(_jspx_th_c_005fforEach_005f1, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f1))
             return true;
           out.write("\n        </td>\n        <td class=\"debit-credit\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerLine.debit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerLine.debit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n        <td class=\"debit-credit\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerLine.credit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerLine.credit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n        <td class=\"debit-credit\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerLine.balance.add(ledgerPrevious.balanceAcc).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(ledgerLine.balance.add(ledgerPrevious.balanceAcc).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n      </tr>\n    ");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -610,11 +610,11 @@ public final class ledger_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\n        <tr>\n          <td colspan=\"3\" class=\"total\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entry.key}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write(":</td>\n          <td class=\"total\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.debit.add(ledgerDetail.subaccDebitTotal[entry.key]).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.debit.add(ledgerDetail.subaccDebitTotal[entry.key]).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n          <td class=\"total\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.credit.add(ledgerDetail.subaccCreditTotal[entry.key]).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.credit.add(ledgerDetail.subaccCreditTotal[entry.key]).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n          <td class=\"total\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.balance.add(ledgerDetail.subaccBalanceTotal[entry.key]).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(entry.value.balance.add(ledgerDetail.subaccBalanceTotal[entry.key]).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</td>\n        </tr>\n      ");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f2.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

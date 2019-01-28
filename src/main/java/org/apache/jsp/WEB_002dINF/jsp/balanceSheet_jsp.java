@@ -118,13 +118,13 @@ public final class balanceSheet_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\n    <tr>\n      <td align=\"center\"><b>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"total_assets\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n      <td align=\"right\"><b>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.totalAssets.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.totalAssets.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(' ');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.accSet.currency.itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n      <td align=\"center\"><b>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"total_l_oe\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n      <td align=\"right\"><b>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.totalLiabilities.add(balanceSheet.totalOwnersEquity).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.totalLiabilities.add(balanceSheet.totalOwnersEquity).toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(' ');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.accSet.currency.itsName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n    </tr>\n  </table>\n</body>\n</html>\n");
@@ -326,7 +326,7 @@ public final class balanceSheet_jsp extends org.apache.jasper.runtime.HttpJspBas
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              ");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(currIdx - 1).debit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(currIdx - 1).debit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f1.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -355,7 +355,7 @@ public final class balanceSheet_jsp extends org.apache.jasper.runtime.HttpJspBas
     if (_jspx_eval_c_005fif_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              (");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(currIdx - 1).credit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(currIdx - 1).credit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(")\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f2.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -446,7 +446,7 @@ public final class balanceSheet_jsp extends org.apache.jasper.runtime.HttpJspBas
     if (_jspx_eval_c_005fif_005f5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              ");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(balanceSheet.totalLinesAssets + currIdx - 1).credit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(balanceSheet.totalLinesAssets + currIdx - 1).credit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f5.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -475,7 +475,7 @@ public final class balanceSheet_jsp extends org.apache.jasper.runtime.HttpJspBas
     if (_jspx_eval_c_005fif_005f6 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              (");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(balanceSheet.totalLinesAssets + currIdx - 1).debit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(balanceSheet.totalLinesAssets + currIdx - 1).debit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(")\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f6.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -506,7 +506,7 @@ public final class balanceSheet_jsp extends org.apache.jasper.runtime.HttpJspBas
         out.write("\n          <td align=\"center\"><b>");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"total_l\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</b></td>\n          <td align=\"right\"><b>");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.totalLiabilities.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.totalLiabilities.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</b></td>\n        ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f7.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -599,7 +599,7 @@ public final class balanceSheet_jsp extends org.apache.jasper.runtime.HttpJspBas
     if (_jspx_eval_c_005fif_005f10 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              ");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(balanceSheet.totalLinesAssets + currIdx - 3).credit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(balanceSheet.totalLinesAssets + currIdx - 3).credit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f10.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -628,7 +628,7 @@ public final class balanceSheet_jsp extends org.apache.jasper.runtime.HttpJspBas
     if (_jspx_eval_c_005fif_005f11 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              (");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(balanceSheet.totalLinesAssets + currIdx - 3).debit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.itsLines.get(balanceSheet.totalLinesAssets + currIdx - 3).debit.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(")\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f11.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -659,7 +659,7 @@ public final class balanceSheet_jsp extends org.apache.jasper.runtime.HttpJspBas
         out.write("\n          <td align=\"center\"><b>");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"total_oe\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</b></td>\n          <td align=\"right\"><b>");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.totalOwnersEquity.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.balanceDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlJsp.printNumber(balanceSheet.totalOwnersEquity.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.reportDp, reqVars.digInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</b></td>\n        ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f12.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
