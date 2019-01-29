@@ -253,7 +253,7 @@ public final class mainMobile_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\n                      </select>\n                    </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"decimalGroupSep\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</label>\n                  </td>\n                  <td>\n                    <div class=\"input-line\">\n                      <select name=\"decGrSeps\" onchange=\"inputHasBeenChanged(this);\">\n                        ");
+      out.write("</label>\n                  </td>\n                  <td>\n                    <div class=\"input-line\">\n                      <select name=\"decGrSep\" onchange=\"inputHasBeenChanged(this);\">\n                        ");
       if (_jspx_meth_c_005fforEach_005f2(_jspx_page_context))
         return;
       out.write("\n                      </select>\n                    </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    <label>");
