@@ -465,7 +465,7 @@ public final class inputKnownCostQuantityTotalFc_jsp extends org.apache.jasper.r
     // /WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(14,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f7.setVar("taxParam");
     // /WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(14,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f7.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(14,2) ',${entity.itsOwner.priceIncTax},${reqVars.taxDp},${reqVars.accSet.salTaxRoundMode.ordinal()}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),",${entity.itsOwner.priceIncTax},${reqVars.taxDp},${reqVars.accSet.salTaxRoundMode.ordinal()}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f7.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(14,2) ',${entity.itsOwner.priceIncTax},${reqVars.priceDp},${reqVars.accSet.salTaxRoundMode.ordinal()}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),",${entity.itsOwner.priceIncTax},${reqVars.priceDp},${reqVars.accSet.salTaxRoundMode.ordinal()}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f7 = _jspx_th_c_005fset_005f7.doStartTag();
     if (_jspx_th_c_005fset_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f7);
@@ -616,7 +616,7 @@ public final class inputKnownCostQuantityTotalFc_jsp extends org.apache.jasper.r
       do {
         out.write("\n        <button type=\"button\" autofocus class=\"btn\" onclick=\"openEntityPicker('InvItem','");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("', 'invItem','&fltordPknownCostOpr1=isnotnull&fltordPforcedFor=knownCost&flyPrIncTax=");
+        out.write("', 'invItem','&fltordPknownCostOpr1=gt&fltordPknownCostVal1=0&fltordPforcedFor=knownCost&flyPrIncTax=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsOwner.priceIncTax}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&wdgPick=pickItemCostTax&mobile=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -649,7 +649,7 @@ public final class inputKnownCostQuantityTotalFc_jsp extends org.apache.jasper.r
       do {
         out.write("\n        <button type=\"button\" autofocus class=\"btn\" onclick=\"openEntityPicker('InvItem','");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("', 'invItem','&fltordPknownCostOpr1=isnotnull&fltordPforcedFor=knownCost&flyPrIncTax=");
+        out.write("', 'invItem','&fltordPknownCostOpr1=gt&fltordPknownCostVal1=0&fltordPforcedFor=knownCost&flyPrIncTax=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsOwner.priceIncTax}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&wdgPick=pickItemCost&mobile=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -1425,7 +1425,7 @@ public final class inputKnownCostQuantityTotalFc_jsp extends org.apache.jasper.r
     // /WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(172,12) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f13.setVar("aggrOnlyPercent");
     // /WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(172,12) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f13.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(172,12) '${utlJsp.printNumber('0.0', reqVars.decSepv, reqVars.decGrSepv, reqVars.accSet.taxDp, reqVars.digInGr)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${utlJsp.printNumber('0.0', reqVars.decSepv, reqVars.decGrSepv, reqVars.accSet.taxDp, reqVars.digInGr)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f13.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(172,12) '${utlJsp.printNumber('0.0', reqVars.decSepv, reqVars.decGrSepv, reqVars.taxDp, reqVars.digInGr)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${utlJsp.printNumber('0.0', reqVars.decSepv, reqVars.decGrSepv, reqVars.taxDp, reqVars.digInGr)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f13 = _jspx_th_c_005fset_005f13.doStartTag();
     if (_jspx_th_c_005fset_005f13.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f13);
@@ -1476,7 +1476,7 @@ public final class inputKnownCostQuantityTotalFc_jsp extends org.apache.jasper.r
     // /WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(175,12) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f14.setVar("aggrOnlyPercent");
     // /WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(175,12) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f14.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(175,12) '${utlJsp.printNumber(entity.taxCategory.aggrOnlyPercent.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.accSet.taxDp, reqVars.digInGr)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${utlJsp.printNumber(entity.taxCategory.aggrOnlyPercent.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.accSet.taxDp, reqVars.digInGr)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f14.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/inputs/inputKnownCostQuantityTotalFc.jsp(175,12) '${utlJsp.printNumber(entity.taxCategory.aggrOnlyPercent.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.taxDp, reqVars.digInGr)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${utlJsp.printNumber(entity.taxCategory.aggrOnlyPercent.toString(), reqVars.decSepv, reqVars.decGrSepv, reqVars.taxDp, reqVars.digInGr)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f14 = _jspx_th_c_005fset_005f14.doStartTag();
     if (_jspx_th_c_005fset_005f14.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f14);

@@ -354,7 +354,7 @@ public final class inpPurchaseInvGoodsLn_jsp extends org.apache.jasper.runtime.H
       do {
         out.write("\n        <button type=\"button\" autofocus class=\"btn\" onclick=\"openEntityPicker('InvItem','");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("', 'invItem','&wdgPick=pickItemUomTax&flyPrIncTax=");
+        out.write("', 'invItem','&fltordPknownCostOpr1=eq&fltordPknownCostVal1=0&fltordPforcedFor=knownCost&wdgPick=pickItemUomTax&flyPrIncTax=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsOwner.priceIncTax}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&mobile=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -387,7 +387,7 @@ public final class inpPurchaseInvGoodsLn_jsp extends org.apache.jasper.runtime.H
       do {
         out.write("\n        <button type=\"button\" autofocus class=\"btn\" onclick=\"openEntityPicker('InvItem','");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.getClass().simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("', 'invItem','&mobile=");
+        out.write("', 'invItem','&fltordPknownCostOpr1=eq&fltordPknownCostVal1=0&fltordPforcedFor=knownCost&mobile=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mobile}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("');\">...</button>\n      ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f2.doAfterBody();

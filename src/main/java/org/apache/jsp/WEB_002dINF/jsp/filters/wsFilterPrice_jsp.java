@@ -133,9 +133,7 @@ public final class wsFilterPrice_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Value1\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n    <input id=\"fltPriVal1\" name=\"fltPriVal1\" ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${disbV1}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write(" type=\"text\" class=\"form-control bsNum");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.priceDp}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" value=\"");
+      out.write(" type=\"text\" class=\"form-control bsNum0\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${filterPrice.value1}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n  </div>\n  <div class=\"col-12 col-md-4 mb-3\">\n    ");
       if (_jspx_meth_c_005fif_005f10(_jspx_page_context))
@@ -147,9 +145,7 @@ public final class wsFilterPrice_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(\"Value2\", reqVars.lang)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n    <input id=\"fltPriVal2\" name=\"fltPriVal2\" ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${disbV2}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write(" type=\"text\" class=\"form-control bsNum");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${reqVars.priceDp}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" value=\"");
+      out.write(" type=\"text\" class=\"form-control bsNum0\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${filterPrice.value2}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n  </div>\n</div>\n");
     } catch (java.lang.Throwable t) {
