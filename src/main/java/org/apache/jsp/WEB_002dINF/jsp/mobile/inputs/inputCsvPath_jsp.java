@@ -125,7 +125,9 @@ public final class inputCsvPath_jsp extends org.apache.jasper.runtime.HttpJspBas
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.dataIndex}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('-');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.fieldPath}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\" onchange=\"inputHasBeenChanged(this);\"/> \n        <button type=\"button\" class=\"btn\" onclick=\"openCsvPathPicker();\">...</button>\n        <button type=\"button\" class=\"btn\" onclick=\"clearCsvPath();\">X</button>\n        <input type=\"hidden\" id=\"CsvColumndataIndex\" name=\"CsvColumn.dataIndex\" value=\"");
+        out.write("\" onchange=\"inputHasBeenChanged(this);\"/> \n        <button type=\"button\" class=\"btn\" onclick=\"openCsvPathPicker('../webadmin/nontransact?nmHnd=hndTrdTrnsReq&nmPrc=PrcCsvSampleDataRow&nmRnd=pickerCsvPathJson&nmRet=','");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.itsOwner.retrieverName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("');\">...</button>\n        <button type=\"button\" class=\"btn\" onclick=\"clearCsvPath();\">X</button>\n        <input type=\"hidden\" id=\"CsvColumndataIndex\" name=\"CsvColumn.dataIndex\" value=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.dataIndex}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\">\n        <input type=\"hidden\" id=\"CsvColumnfieldPath\" name=\"CsvColumn.fieldPath\" value=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${entity.fieldPath}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
