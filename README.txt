@@ -22,7 +22,11 @@ Features:
 
 Web-Store is included for pricing, study, and tests purposes and you are also able to make full DB copy from cloud version.
 You can make price lists (in different price categories) and export it in CSV file to your customers or POS.
-Online Web-Store is draft yet.
+
+Version 1.1.8:
+*web-store first release
+*sales taxes: allowed to edit them in any invoice
+*new input number instead of auto-numeric.
 
 Version 1.1.7:
 *added multi-currency (including payments tracking).
